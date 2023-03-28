@@ -28,6 +28,13 @@ then
         docker compose -f docker-compose-build.yaml rm
 fi
 
+if [ "$1" == "build" ]
+then
+	make all
+        sudo docker compose -f docker-compose-build.yaml build
+fi
+
+
 if [ "$1" == "status" ]
 then
         docker ps -a

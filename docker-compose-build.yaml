@@ -261,7 +261,8 @@ services:
 
   ueransim-ue_1:
     container_name: ue_1
-    image: free5gc/ueransim:latest
+    build:
+      context: ./ueransim
     command: ./nr-ue -c ./config/uecfg.yaml
     volumes:
       - ./config/uecfg.yaml:/ueransim/config/uecfg.yaml
@@ -280,7 +281,8 @@ services:
 
   ueransim-ue_2:
     container_name: ue_2
-    image: free5gc/ueransim:latest
+    build:
+      context: ./ueransim
     command: ./nr-ue -c ./config/uecfg_2.yaml
     volumes:
       - ./config/uecfg_2.yaml:/ueransim/config/uecfg_2.yaml
@@ -299,7 +301,8 @@ services:
 
   ueransim-ue_3:
     container_name: ue_3
-    image: free5gc/ueransim:latest
+    build:
+      context: ./ueransim
     command: ./nr-ue -c ./config/uecfg_3.yaml
     volumes:
       - ./config/uecfg_3.yaml:/ueransim/config/uecfg_3.yaml
@@ -322,7 +325,9 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - backend
+      privnet:
+        aliases:
+          - http_server.com
 
 networks:
   privnet:

@@ -43,11 +43,21 @@ sessions:
     slice:
       sst: 0x01
       sd: 0x010203
+  - type: 'IPv4'
+    apn: 'highspeed'
+    slice:
+      sst: 0x02
+      sd: 0x010203
+
+
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
   - sst: 0x01
     sd: 0x010203
+  - sst: 0x02
+    sd: 0x010203
+
 
 # Default Configured NSSAI for this UE
 default-nssai:

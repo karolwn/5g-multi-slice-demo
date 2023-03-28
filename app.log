@@ -1,0 +1,728 @@
+Attaching to amf, ausf, gnodeb, http_server, mongodb, n3iwf, nrf, nssf, pcf, smf, udm, udr, ue_1, ue_2, ue_3, upf, webui
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.579+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"-","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.579+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.580+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.581+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.581+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.581+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.581+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"91406b0e3524"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.4","gitVersion":"44ff59461c1353638a71e710f385a566bcd2f547","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*","port":27017}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:53.582+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=8270M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+http_server  |  * Serving Flask app 'app.py'
+http_server  |  * Debug mode: off
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.310+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":728}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.310+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.323+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.323+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.326+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.326+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.326+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"collection-0--4550159773585403909"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.327+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"index-1--4550159773585403909"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.327+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.331+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.331+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.333+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.333+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.334+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.334+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.334+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.769+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:36328","uuid":"84f1bb15-1337-430a-b901-a249964f3d0e","connectionId":1,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.770+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"10.100.200.6:36328","client":"conn1","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.771+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:36334","uuid":"16b99522-a56c-45e0-b669-9839a8a1e094","connectionId":2,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.771+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"10.100.200.6:36334","client":"conn2","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.775+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn2","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"b097a00c-acf6-4f76-9504-86a9a617877e"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:54.787+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn2","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"b097a00c-acf6-4f76-9504-86a9a617877e"}},"namespace":"free5gc.NfProfile","index":"_id_","ident":"index-1-4480302202480272412","collectionIdent":"collection-0-4480302202480272412","commitTimestamp":null}}
+ausf         | ausf context =  &{{{0 0} {<nil>} map[] 0} {{0 0} {<nil>} map[] 0} e36116a7-be97-4c37-a6e7-68ba1be63403 ausfGroup001 8000 ausf.free5gc.org ausf.free5gc.org http://ausf.free5gc.org:8000 http http://nrf.free5gc.org:8000 map[nausf-auth:{e36116a7-be97-4c37-a6e7-68ba1be63403 nausf-auth 0xc0003a5f40 http REGISTERED   0xc0003a5f20  [] <nil> [] [] <nil> 0 0 0 <nil> <nil> }] [{208 93} {123 45}]  0xc00038bd60 false}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.121+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:55282","uuid":"06ccbe56-03f8-4e21-93dd-0baa3935ae67","connectionId":3,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.121+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:55268","uuid":"b58e3905-885c-4b80-95a3-543781a858a9","connectionId":4,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.121+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"10.100.200.10:55268","client":"conn4","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.121+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"10.100.200.10:55282","client":"conn3","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+smf exited with code 0
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.233+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:33582","uuid":"a8db52c0-4f14-4d3e-8285-74f067c86a5a","connectionId":5,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.233+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:33586","uuid":"c476c2eb-414d-471b-a171-8a405911f5a6","connectionId":6,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.233+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"10.100.200.5:33582","client":"conn5","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.234+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"10.100.200.5:33586","client":"conn6","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.235+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:33596","uuid":"6c91d395-79e5-4f46-9e29-c4fdfc2643d9","connectionId":7,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.235+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"10.100.200.5:33596","client":"conn7","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.333+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.13:59124","uuid":"191260c1-b012-4074-ae05-2f36ea7a57e2","connectionId":8,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.333+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.13:59130","uuid":"c059d4d8-3aa5-4f4f-b50f-7f237e2e68ec","connectionId":9,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.334+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"10.100.200.13:59130","client":"conn9","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.334+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"10.100.200.13:59124","client":"conn8","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.335+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:36342","uuid":"898193b9-e5aa-40d0-9f78-e466f1a9a304","connectionId":10,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.335+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"10.100.200.6:36342","client":"conn10","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.336+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:36352","uuid":"a6b6b16f-479c-46ad-854e-8298648e7a19","connectionId":11,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:55.336+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"10.100.200.6:36352","client":"conn11","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+gnodeb       | UERANSIM v3.2.6
+gnodeb       | [2023-03-28 16:52:55.693] [sctp] [info] Trying to establish SCTP connection... (10.100.200.11:38412)
+gnodeb       | [2023-03-28 16:52:55.698] [sctp] [info] SCTP connection established (10.100.200.11:38412)
+gnodeb       | [2023-03-28 16:52:55.698] [sctp] [debug] SCTP association setup ascId[53]
+gnodeb       | [2023-03-28 16:52:55.698] [ngap] [debug] Sending NG Setup Request
+gnodeb       | [2023-03-28 16:52:55.699] [ngap] [debug] NG Setup Response received
+gnodeb       | [2023-03-28 16:52:55.699] [ngap] [info] NG Setup procedure is successful
+ue_3         | UERANSIM v3.2.6
+ue_3         | [2023-03-28 16:52:56.083] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-03-28 16:52:56.083] [rrc] [debug] UE[1] new signal detected
+ue_3         | [2023-03-28 16:52:56.083] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_3         | [2023-03-28 16:52:56.083] [nas] [info] Selected plmn[208/93]
+ue_3         | [2023-03-28 16:52:56.083] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_3         | [2023-03-28 16:52:56.083] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_3         | [2023-03-28 16:52:56.083] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-03-28 16:52:56.083] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_3         | [2023-03-28 16:52:56.084] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:52:56.084] [nas] [debug] Sending Initial Registration
+ue_3         | [2023-03-28 16:52:56.084] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_3         | [2023-03-28 16:52:56.084] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-03-28 16:52:56.085] [rrc] [info] RRC Setup for UE[1]
+ue_3         | [2023-03-28 16:52:56.085] [rrc] [info] RRC connection established
+ue_3         | [2023-03-28 16:52:56.085] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_3         | [2023-03-28 16:52:56.085] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-03-28 16:52:56.085] [ngap] [debug] Initial NAS message received from UE[1]
+udm          | http://nrf.free5gc.org:8000
+mongodb      | {"t":{"$date":"2023-03-28T16:52:56.094+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:55288","uuid":"ad3fa80b-44c6-4e09-9120-5576b36bea5a","connectionId":12,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-03-28T16:52:56.094+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"10.100.200.10:55288","client":"conn12","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_3         | [2023-03-28 16:52:56.099] [nas] [debug] Authentication Request received
+ue_3         | [2023-03-28 16:52:56.105] [nas] [debug] Security Mode Command received
+ue_3         | [2023-03-28 16:52:56.105] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-03-28 16:52:56.130] [ngap] [debug] Initial Context Setup Request received
+ue_3         | [2023-03-28 16:52:56.130] [nas] [debug] Registration accept received
+ue_3         | [2023-03-28 16:52:56.130] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-03-28 16:52:56.130] [nas] [debug] Sending Registration Complete
+ue_3         | [2023-03-28 16:52:56.130] [nas] [info] Initial Registration is successful
+ue_3         | [2023-03-28 16:52:56.130] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:52:56.130] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | UERANSIM v3.2.6
+ue_2         | UERANSIM v3.2.6
+ue_1         | [2023-03-28 16:52:56.262] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-03-28 16:52:56.263] [rrc] [debug] UE[2] new signal detected
+ue_1         | [2023-03-28 16:52:56.263] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_1         | [2023-03-28 16:52:56.263] [nas] [info] Selected plmn[208/93]
+ue_1         | [2023-03-28 16:52:56.263] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+gnodeb       | [2023-03-28 16:52:56.263] [rrc] [debug] UE[3] new signal detected
+ue_1         | [2023-03-28 16:52:56.263] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_1         | [2023-03-28 16:52:56.263] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-03-28 16:52:56.263] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_2         | [2023-03-28 16:52:56.263] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_1         | [2023-03-28 16:52:56.263] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_2         | [2023-03-28 16:52:56.263] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-03-28 16:52:56.263] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_2         | [2023-03-28 16:52:56.263] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_2         | [2023-03-28 16:52:56.263] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-03-28 16:52:56.264] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:56.264] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-03-28 16:52:56.263] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_2         | [2023-03-28 16:52:56.263] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:52:56.264] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-03-28 16:52:56.264] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_2         | [2023-03-28 16:52:56.264] [rrc] [debug] Sending RRC Setup Request
+ue_1         | [2023-03-28 16:52:56.264] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_1         | [2023-03-28 16:52:56.264] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-03-28 16:52:56.264] [rrc] [info] RRC Setup for UE[3]
+gnodeb       | [2023-03-28 16:52:56.264] [rrc] [info] RRC Setup for UE[2]
+ue_2         | [2023-03-28 16:52:56.264] [rrc] [info] RRC connection established
+ue_2         | [2023-03-28 16:52:56.264] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_2         | [2023-03-28 16:52:56.264] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_1         | [2023-03-28 16:52:56.264] [rrc] [info] RRC connection established
+ue_1         | [2023-03-28 16:52:56.264] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_1         | [2023-03-28 16:52:56.264] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-03-28 16:52:56.264] [ngap] [debug] Initial NAS message received from UE[3]
+gnodeb       | [2023-03-28 16:52:56.264] [ngap] [debug] Initial NAS message received from UE[2]
+ue_3         | [2023-03-28 16:52:56.339] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:52:56.339] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+udm          | http://nrf.free5gc.org:8000
+udm          | http://nrf.free5gc.org:8000
+ue_1         | [2023-03-28 16:52:56.441] [nas] [debug] Authentication Request received
+ue_2         | [2023-03-28 16:52:56.441] [nas] [debug] Authentication Request received
+ue_2         | [2023-03-28 16:52:56.446] [nas] [debug] Security Mode Command received
+ue_2         | [2023-03-28 16:52:56.446] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_1         | [2023-03-28 16:52:56.449] [nas] [debug] Security Mode Command received
+ue_1         | [2023-03-28 16:52:56.449] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-03-28 16:52:56.465] [ngap] [debug] Initial Context Setup Request received
+ue_2         | [2023-03-28 16:52:56.466] [nas] [debug] Registration accept received
+ue_2         | [2023-03-28 16:52:56.466] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-03-28 16:52:56.466] [nas] [debug] Sending Registration Complete
+ue_2         | [2023-03-28 16:52:56.466] [nas] [info] Initial Registration is successful
+ue_2         | [2023-03-28 16:52:56.466] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:52:56.466] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-03-28 16:52:56.484] [ngap] [debug] Initial Context Setup Request received
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] Registration accept received
+ue_1         | [2023-03-28 16:52:56.485] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] Sending Registration Complete
+ue_1         | [2023-03-28 16:52:56.485] [nas] [info] Initial Registration is successful
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:56.485] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:52:56.489] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:52:56.489] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:56.492] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:56.492] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:56.593] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:56.593] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:52:57.185] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:52:57.185] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:52:57.188] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:52:57.188] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:57.363] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:57.363] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:57.363] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:57.363] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:52:57.364] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:52:57.364] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:57.367] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:57.367] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:57.369] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:57.369] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:52:57.474] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:52:57.474] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:52:58.286] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:52:58.286] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:52:58.290] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:52:58.290] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:58.464] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:58.464] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:58.464] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:58.464] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:52:58.465] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:52:58.465] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:58.467] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:58.467] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:58.470] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:58.470] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:52:58.574] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:52:58.574] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:52:59.388] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:52:59.388] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:52:59.391] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:52:59.391] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:59.565] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:59.565] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:59.565] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:52:59.565] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:52:59.566] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:52:59.566] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:52:59.568] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:59.568] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:52:59.571] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:52:59.571] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:52:59.674] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:52:59.674] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:53:00.490] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:00.490] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:00.493] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:00.493] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:00.668] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:00.668] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:00.668] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:00.669] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:00.669] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:00.669] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:00.672] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:00.672] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:00.675] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:00.675] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:00.778] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:00.778] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:01.591] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:01.591] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:01.596] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:01.596] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:01.769] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:01.769] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:01.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:01.769] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:01.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:01.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:01.772] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:01.772] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:01.775] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:01.775] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:01.877] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:01.877] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:02.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:02.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:02.697] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:02.697] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:02.870] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:02.870] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:02.870] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:02.870] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:02.870] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:02.870] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:02.874] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:02.874] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:02.876] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:02.876] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:02.979] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:02.979] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:03.796] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:03.796] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:03.800] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:03.800] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:03.971] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:03.971] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:03.971] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:03.971] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:03.971] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:03.971] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:03.974] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:03.974] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:03.976] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:03.976] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:04.077] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:04.077] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+mongodb      | {"t":{"$date":"2023-03-28T16:53:04.268+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:51374","uuid":"86b0c7e8-7013-4358-8292-19c662302916","connectionId":13,"connectionCount":13}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:04.268+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"10.100.200.6:51374","client":"conn13","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_3         | [2023-03-28 16:53:04.899] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:04.899] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:04.903] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:04.903] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:05.072] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:05.072] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:05.072] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:05.072] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:05.072] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:05.072] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:05.076] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:05.076] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:05.079] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:05.079] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:05.183] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:05.183] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:05.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:05.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:05.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:05.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:05.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:05.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:05.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:05.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:05.698] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:05.698] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:05.701] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:05.701] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:05.806] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:05.806] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:05.806] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:05.806] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:53:06.000] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:06.000] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:06.006] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:06.006] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:06.173] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:06.173] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:06.173] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:06.173] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:06.173] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:06.173] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:06.177] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:06.177] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:06.180] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:06.180] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:06.283] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:06.283] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:07.103] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:07.103] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:07.107] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:07.107] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:07.274] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:07.274] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:07.274] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:07.274] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:07.274] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:07.274] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:07.279] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:07.279] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:07.282] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:07.282] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:07.385] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:07.385] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:08.204] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:08.204] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:08.208] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:08.208] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:08.375] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:08.375] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:08.375] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:08.375] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:08.375] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:08.375] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:08.378] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:08.378] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:08.381] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:08.381] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:08.482] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:08.482] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:09.305] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:09.305] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:09.308] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:09.308] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:09.476] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:09.476] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:09.476] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:09.476] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:09.476] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:09.476] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:09.481] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:09.481] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:09.483] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:09.483] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:09.586] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:09.586] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:10.406] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:10.406] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:10.410] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:10.410] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:10.577] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:10.577] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:10.577] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:10.577] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:10.577] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:10.577] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:10.581] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:10.581] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:10.583] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:10.583] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:10.690] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:10.690] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:11.507] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:11.507] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:11.511] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:11.511] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:11.678] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:11.678] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:11.678] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:11.678] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:11.678] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:11.678] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:11.682] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:11.682] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:11.684] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:11.684] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:11.787] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:11.787] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:12.608] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:12.608] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:12.612] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:12.612] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:12.779] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:12.779] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:12.779] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:12.779] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:12.779] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:12.779] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:12.782] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:12.782] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:12.784] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:12.784] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:53:12.887] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:12.887] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:53:13.709] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:13.709] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:13.713] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:13.713] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:13.880] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:13.880] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:13.880] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:13.880] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:13.880] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:13.880] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:13.883] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:13.883] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:13.886] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:13.886] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:13.989] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:13.989] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:14.813] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:14.813] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:14.816] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:14.816] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:14.981] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:14.981] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:14.981] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:14.981] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:14.981] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:14.981] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:14.984] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:14.984] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:14.987] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:14.987] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:15.090] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:15.090] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:15.696] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:15.696] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:15.696] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:15.696] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:15.696] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:15.696] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:15.696] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:15.696] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:15.702] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:15.702] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:15.704] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:15.704] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:53:15.806] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:15.806] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:15.806] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:15.806] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:15.913] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:15.914] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:15.917] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:15.917] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:16.082] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:16.082] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:16.082] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:16.082] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:16.082] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:16.082] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:16.085] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:16.085] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:16.087] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:16.087] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:16.189] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:16.189] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:17.015] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:17.015] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:17.019] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:17.019] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:17.183] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:17.183] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:17.183] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:17.183] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:17.183] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:17.183] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:17.187] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:17.187] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:17.189] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:17.189] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:17.298] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:17.298] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:18.116] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:18.116] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:18.120] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:18.120] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:18.284] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:18.285] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:18.284] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:18.285] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:18.285] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:18.285] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:18.289] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:18.289] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:18.291] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:18.291] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:18.393] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:18.393] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:19.218] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:19.218] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:19.222] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:19.222] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:19.385] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:19.385] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:19.385] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:19.385] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:19.385] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:19.385] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:19.388] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:19.388] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:19.390] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:19.390] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:19.493] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:19.493] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:20.320] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:20.320] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:20.324] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:20.324] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:20.487] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:20.487] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:20.487] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:20.487] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:20.487] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:20.487] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:20.491] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:20.491] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:20.493] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:20.493] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:20.597] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:20.597] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:21.421] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:21.421] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:21.424] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:21.424] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:21.588] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:21.588] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:21.588] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:21.588] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:21.588] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:21.588] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:21.591] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:21.591] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:21.594] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:21.594] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:21.698] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:21.698] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:22.523] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:22.523] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:22.527] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:22.527] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_2         | [2023-03-28 16:53:22.689] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:22.689] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:22.689] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:22.689] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:22.689] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:22.689] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:22.692] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:22.692] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:22.695] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:22.695] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:22.798] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:22.798] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_3         | [2023-03-28 16:53:23.625] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:23.625] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:23.628] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:23.628] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:23.790] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:23.790] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:23.790] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:23.790] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:23.790] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:23.790] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:23.793] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:23.793] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:23.795] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:23.795] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:53:23.898] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:23.898] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_3         | [2023-03-28 16:53:24.726] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-03-28 16:53:24.726] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-03-28 16:53:24.737] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_3         | [2023-03-28 16:53:24.737] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:24.891] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:24.891] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-03-28 16:53:24.891] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-03-28 16:53:24.891] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:24.891] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-03-28 16:53:24.891] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-03-28 16:53:24.894] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:24.894] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+ue_1         | [2023-03-28 16:53:24.897] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_1         | [2023-03-28 16:53:24.897] [nas] [debug] Aborting SM procedure for PTI[2], PSI[2]
+ue_2         | [2023-03-28 16:53:24.997] [nas] [error] SM forwarding failure for message type[193] with cause[DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED]
+ue_2         | [2023-03-28 16:53:24.997] [nas] [debug] Aborting SM procedure for PTI[1], PSI[1]
+mongodb      | {"t":{"$date":"2023-03-28T16:53:25.632+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn5","msg":"Interrupted operation as its client disconnected","attr":{"opId":666}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:25.632+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"10.100.200.5:33596","uuid":"6c91d395-79e5-4f46-9e29-c4fdfc2643d9","connectionId":7,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:25.632+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"10.100.200.5:33586","uuid":"c476c2eb-414d-471b-a171-8a405911f5a6","connectionId":6,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:25.632+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"10.100.200.5:33582","uuid":"a8db52c0-4f14-4d3e-8285-74f067c86a5a","connectionId":5,"connectionCount":10}}
+ue_2 exited with code 0
+ue_2 exited with code 0
+ue_3 exited with code 0
+ue_1 exited with code 0
+ue_1 exited with code 0
+webui exited with code 0
+webui exited with code 2
+gnodeb exited with code 0
+gnodeb exited with code 0
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.634+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:37640","uuid":"0a39b66c-33c8-4a56-9c1c-d23d22a9e7a9","connectionId":14,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.634+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"10.100.200.6:37640","client":"conn14","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.635+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:37656","uuid":"bc29219e-decb-4af2-afcd-49ec13864943","connectionId":15,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.635+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"10.100.200.6:37656","client":"conn15","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.636+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:37668","uuid":"8630201b-3fa4-4607-b6ca-ac90dcc4e6d8","connectionId":16,"connectionCount":13}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.636+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"10.100.200.6:37668","client":"conn16","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn3","msg":"Interrupted operation as its client disconnected","attr":{"opId":664}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"10.100.200.10:55288","uuid":"ad3fa80b-44c6-4e09-9120-5576b36bea5a","connectionId":12,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn9","msg":"Interrupted operation as its client disconnected","attr":{"opId":670}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"10.100.200.13:59124","uuid":"191260c1-b012-4074-ae05-2f36ea7a57e2","connectionId":8,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"10.100.200.10:55282","uuid":"06ccbe56-03f8-4e21-93dd-0baa3935ae67","connectionId":3,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"10.100.200.10:55268","uuid":"b58e3905-885c-4b80-95a3-543781a858a9","connectionId":4,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:26.638+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"10.100.200.13:59130","uuid":"c059d4d8-3aa5-4f4f-b50f-7f237e2e68ec","connectionId":9,"connectionCount":8}}
+udm exited with code 0
+udm exited with code 0
+nssf exited with code 0
+nssf exited with code 0
+udr exited with code 0
+udr exited with code 0
+ausf exited with code 0
+ausf exited with code 0
+pcf exited with code 0
+pcf exited with code 0
+n3iwf exited with code 0
+n3iwf exited with code 0
+upf exited with code 0
+upf exited with code 0
+amf exited with code 0
+amf exited with code 0
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.091+00:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn16","msg":"CMD: drop","attr":{"namespace":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.091+00:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn16","msg":"Finishing collection drop","attr":{"namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"b097a00c-acf6-4f76-9504-86a9a617877e"}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.091+00:00"},"s":"I",  "c":"STORAGE",  "id":22206,   "ctx":"conn16","msg":"Deferring table drop for index","attr":{"index":"_id_","namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"b097a00c-acf6-4f76-9504-86a9a617877e"}},"ident":"index-1-4480302202480272412","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.091+00:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn16","msg":"Deferring table drop for collection","attr":{"namespace":"free5gc.NfProfile","ident":"collection-0-4480302202480272412","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"10.100.200.6:36352","uuid":"a6b6b16f-479c-46ad-854e-8298648e7a19","connectionId":11,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"10.100.200.6:36342","uuid":"898193b9-e5aa-40d0-9f78-e466f1a9a304","connectionId":10,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"10.100.200.6:51374","uuid":"86b0c7e8-7013-4358-8292-19c662302916","connectionId":13,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn16","msg":"Connection ended","attr":{"remote":"10.100.200.6:37668","uuid":"8630201b-3fa4-4607-b6ca-ac90dcc4e6d8","connectionId":16,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":655}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"10.100.200.6:36334","uuid":"16b99522-a56c-45e0-b669-9839a8a1e094","connectionId":2,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn15","msg":"Connection ended","attr":{"remote":"10.100.200.6:37656","uuid":"bc29219e-decb-4af2-afcd-49ec13864943","connectionId":15,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.092+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn14","msg":"Connection ended","attr":{"remote":"10.100.200.6:37640","uuid":"0a39b66c-33c8-4a56-9c1c-d23d22a9e7a9","connectionId":14,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.093+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"10.100.200.6:36328","uuid":"84f1bb15-1337-430a-b901-a249964f3d0e","connectionId":1,"connectionCount":0}}
+nrf exited with code 0
+nrf exited with code 0
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.295+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.296+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.297+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.319+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":22}}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.319+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.319+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.319+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.322+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb      | {"t":{"$date":"2023-03-28T16:53:31.322+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
+mongodb exited with code 0
+http_server exited with code 0
