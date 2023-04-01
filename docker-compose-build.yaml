@@ -17,6 +17,7 @@ services:
       privnet:
         aliases:
           - upf.free5gc.org
+          - upf_slice_2.free5gc.org
 
   db:
     container_name: mongodb

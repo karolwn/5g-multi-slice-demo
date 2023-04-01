@@ -35,6 +35,14 @@ free5gc + UERANSIM:
 * 3 x UE
 * 1 x each NF
 * 1 x simple python + flask http server
+* 2 x slices:
+* 2 x slice subnet:
+	* SST: 1, SD: 10203, 200 Mb/s
+		* UE_1
+		* UE_2
+		* UE_3
+	* SST: 2, SD: 10203, 1 Gb/s
+		* UE_1 
 
 ## Useful links
 * https://www.free5gc.org
