@@ -63,11 +63,11 @@ configuration:
           - interfaceType: N3 # the type of the interface (N3 or N9)
             endpoints: # the IP address of this N3/N9 interface on this UPF
               - upf.free5gc.org
-            networkInstance: internet # Data Network Name (DNN)
+            networkInstance: highspeed # Data Network Name (DNN)
           - interfaceType: N3 # the type of the interface (N3 or N9)
             endpoints: # the IP address of this N3/N9 interface on this UPF
-              - upf.free5gc.org
-            networkInstance: highspeed # Data Network Name (DNN)
+              - upf.free5gc.org.2
+            networkInstance: internet # Data Network Name (DNN)
     links: # the topology graph of userplane, A and B represent the two nodes of each link
       - A: gNB
         B: UPF

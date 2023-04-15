@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
 RUN apt-get update \
-    && apt-get install libsctp-dev lksctp-tools iproute2 iperf hping3 bwm-ng net-tools -y \
+    && apt-get install libsctp-dev lksctp-tools iproute2 iperf3 hping3 bwm-ng net-tools -y \
     && wget https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1-linux-x86_64.sh -O cmake_installer.sh \
     && chmod +x cmake_installer.sh \
     && ./cmake_installer.sh --skip-license \
@@ -20,7 +20,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install runtime dependencies + ping
 RUN apt-get update \
-    && apt-get install libsctp-dev lksctp-tools iproute2 iputils-ping iperf hping3 bwm-ng net-tools -y \
+    && apt-get install libsctp-dev lksctp-tools iproute2 iputils-ping iperf3 hping3 bwm-ng net-tools -y \
     && apt-get clean
 
 WORKDIR /ueransim
