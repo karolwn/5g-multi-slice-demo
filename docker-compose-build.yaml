@@ -365,6 +365,216 @@ services:
       - free5gc-upf
       - ueransim-gnodeb
 
+  ueransim-ue_6:
+    container_name: ue_6
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_6.yaml
+    volumes:
+      - ./config/uecfg_6.yaml:/ueransim/config/uecfg_6.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_6.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+
+  ueransim-ue_7:
+    container_name: ue_7
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_7.yaml
+    volumes:
+      - ./config/uecfg_7.yaml:/ueransim/config/uecfg_7.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_7.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_8:
+    container_name: ue_8
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_8.yaml
+    volumes:
+      - ./config/uecfg_8.yaml:/ueransim/config/uecfg_8.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_8.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+
+  ueransim-ue_9:
+    container_name: ue_9
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_9.yaml
+    volumes:
+      - ./config/uecfg_9.yaml:/ueransim/config/uecfg_9.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_9.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_10:
+    container_name: ue_10
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_10.yaml
+    volumes:
+      - ./config/uecfg_10.yaml:/ueransim/config/uecfg_10.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_10.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_11:
+    container_name: ue_11
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_11.yaml
+    volumes:
+      - ./config/uecfg_11.yaml:/ueransim/config/uecfg_11.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_11.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_12:
+    container_name: ue_12
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_12.yaml
+    volumes:
+      - ./config/uecfg_12.yaml:/ueransim/config/uecfg_12.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_12.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_13:
+    container_name: ue_13
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_13.yaml
+    volumes:
+      - ./config/uecfg_13.yaml:/ueransim/config/uecfg_13.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_13.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+      
+  ueransim-ue_14:
+    container_name: ue_14
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_14.yaml
+    volumes:
+      - ./config/uecfg_14.yaml:/ueransim/config/uecfg_14.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_14.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+
+  ueransim-ue_15:
+    container_name: ue_15
+    build:
+      context: ./ueransim
+    command: ./nr-ue -c ./config/uecfg_15.yaml
+    volumes:
+      - ./config/uecfg_15.yaml:/ueransim/config/uecfg_15.yaml
+      - ./testing_scripts/:/ueransim/testing_scripts/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - ue_15.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+      - ueransim-gnodeb
+
   http-server:
     container_name: http_server
     build: ./http_server/

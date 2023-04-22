@@ -15,13 +15,16 @@ RUN apt-get update \
     && make
 
 FROM bitnami/minideb:bullseye
+FROM python:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install runtime dependencies + ping
 RUN apt-get update \
-    && apt-get install libsctp-dev lksctp-tools iproute2 iputils-ping iperf3 hping3 bwm-ng net-tools -y \
+    && apt-get install libsctp-dev lksctp-tools iproute2 iputils-ping iperf3 hping3 bwm-ng net-tools iperf -y \
     && apt-get clean
+
+RUN pip install scapy
 
 WORKDIR /ueransim
 

@@ -1,296 +1,1410 @@
-Attaching to amf, ausf, gnodeb, http_server, mongodb, n3iwf, nrf, nssf, pcf, smf, udm, udr, ue_1, ue_2, ue_3, ue_4, ue_5, upf, webui
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.495+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.495+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.495+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"4fb8b618501e"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.4","gitVersion":"44ff59461c1353638a71e710f385a566bcd2f547","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.496+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*","port":27017}}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.497+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.497+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:43.497+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=8270M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+Attaching to amf, ausf, gnodeb, http_server, mongodb, n3iwf, nrf, nssf, pcf, smf, udm, udr, ue_1, ue_10, ue_11, ue_12, ue_13, ue_14, ue_15, ue_2, ue_3, ue_4, ue_5, ue_6, ue_7, ue_8, ue_9, upf, webui
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.090+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"-","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.090+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.091+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"c74621e2b2d0"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.4","gitVersion":"44ff59461c1353638a71e710f385a566bcd2f547","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.092+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*","port":27017}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.093+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.093+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.093+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=8270M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
 http_server  |  * Serving Flask app 'app.py'
 http_server  |  * Debug mode: off
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.222+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":725}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.222+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.234+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.234+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.237+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.237+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.237+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"collection-0-8464981829818942286"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.238+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"index-1-8464981829818942286"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.239+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.248+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.248+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.250+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.251+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.251+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.251+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.251+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.333+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:43082","uuid":"1e02413c-db4c-4632-841f-bf02676f1ccd","connectionId":1,"connectionCount":1}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.334+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:43088","uuid":"8bd5ce30-ecf4-417d-ab76-545775bad2ed","connectionId":2,"connectionCount":2}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.334+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"10.100.200.7:43082","client":"conn1","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.334+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"10.100.200.7:43088","client":"conn2","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.394+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:60682","uuid":"c06090ec-427d-4ad5-a7d8-aa95c06ffb5a","connectionId":3,"connectionCount":3}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.394+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"10.100.200.6:60682","client":"conn3","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.395+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:60698","uuid":"4d197b42-6a97-4c5f-961e-5ae0b8d37804","connectionId":4,"connectionCount":4}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.395+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"10.100.200.6:60698","client":"conn4","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.397+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:50282","uuid":"e1741c4f-6ebd-403f-b351-04906f170aad","connectionId":5,"connectionCount":5}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.397+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"10.100.200.5:50282","client":"conn5","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.398+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:50290","uuid":"7cb45f08-4194-419f-9819-596b101cb412","connectionId":6,"connectionCount":6}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.398+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:50296","uuid":"fac7a299-1093-4749-b36c-2e3e2fe246f7","connectionId":7,"connectionCount":7}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.398+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"10.100.200.5:50290","client":"conn6","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.398+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"10.100.200.5:50296","client":"conn7","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.400+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn6","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"4c1d9a66-545b-4d30-81e5-3ff564f55d8c"}},"options":{}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.400+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn7","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"d2df1bae-0337-4453-a0db-fd199e7b2687"}},"options":{}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.413+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn6","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"4c1d9a66-545b-4d30-81e5-3ff564f55d8c"}},"namespace":"free5gc.NfProfile","index":"_id_","ident":"index-2-1088142607690098945","collectionIdent":"collection-0-1088142607690098945","commitTimestamp":null}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.418+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn7","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.696+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.11:34428","uuid":"e815571d-120d-4216-bcef-ac0d4ac74e93","connectionId":8,"connectionCount":8}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.696+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.11:34432","uuid":"c2fdb07c-b581-4303-b52d-bd21f8ab73cd","connectionId":9,"connectionCount":9}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.696+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"10.100.200.11:34428","client":"conn8","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:44.696+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"10.100.200.11:34432","client":"conn9","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-ausf         | ausf context =  &{{{0 0} {<nil>} map[] 0} {{0 0} {<nil>} map[] 0} 4f2a8e63-6021-47a5-827e-9e79079a119a ausfGroup001 8000 ausf.free5gc.org ausf.free5gc.org http://ausf.free5gc.org:8000 http http://nrf.free5gc.org:8000 map[nausf-auth:{4f2a8e63-6021-47a5-827e-9e79079a119a nausf-auth 0xc0002fabe0 http REGISTERED   0xc0002fabc0  [] <nil> [] [] <nil> 0 0 0 <nil> <nil> }] [{208 93} {123 45}]  0xc0001b4dc0 false}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.767+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":674}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.767+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.779+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.779+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.782+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.782+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.782+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"collection-0-8923889593905450397"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.783+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"index-7-8923889593905450397"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.783+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.788+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.788+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.791+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.791+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.792+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.792+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:54.792+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.094+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:43868","uuid":"73739393-85e1-4533-aea1-478d84e8c61d","connectionId":1,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.094+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"10.100.200.6:43868","client":"conn1","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.095+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:43872","uuid":"e31c4ccf-5e93-4c8b-a8b3-b7126033360b","connectionId":2,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.095+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"10.100.200.6:43872","client":"conn2","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.098+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn2","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"b10e1711-2a05-4b4b-b22e-cee129f1a67e"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.109+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn2","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"b10e1711-2a05-4b4b-b22e-cee129f1a67e"}},"namespace":"free5gc.NfProfile","index":"_id_","ident":"index-1--170125173977880955","collectionIdent":"collection-0--170125173977880955","commitTimestamp":null}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.154+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:45628","uuid":"9216477b-ad72-4a28-8d36-88a14b59ca94","connectionId":3,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.154+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"10.100.200.5:45628","client":"conn3","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.155+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:45630","uuid":"56e9b6fe-d4db-4886-a77f-9ec489feeebf","connectionId":4,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.155+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"10.100.200.5:45630","client":"conn4","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ausf         | ausf context =  &{{{0 0} {<nil>} map[] 0} {{0 0} {<nil>} map[] 0} 35e3b2a4-e6f7-472d-8275-ff9944be2f39 ausfGroup001 8000 ausf.free5gc.org ausf.free5gc.org http://ausf.free5gc.org:8000 http http://nrf.free5gc.org:8000 map[nausf-auth:{35e3b2a4-e6f7-472d-8275-ff9944be2f39 nausf-auth 0xc00000cfc0 http REGISTERED   0xc00000cfa0  [] <nil> [] [] <nil> 0 0 0 <nil> <nil> }] [{208 93} {123 45}]  0xc0000b2dc0 false}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.563+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.13:37242","uuid":"d3e224d4-2597-4870-a452-73d6ab9bfae7","connectionId":5,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.563+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.13:37230","uuid":"d12abf3e-5bd0-402f-95da-433b2e1e4210","connectionId":6,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.563+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"10.100.200.13:37242","client":"conn5","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:55.563+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"10.100.200.13:37230","client":"conn6","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
 gnodeb       | UERANSIM v3.2.6
-gnodeb       | [2023-04-15 17:48:45.082] [sctp] [info] Trying to establish SCTP connection... (10.100.200.9:38412)
-gnodeb       | [2023-04-15 17:48:45.086] [sctp] [info] SCTP connection established (10.100.200.9:38412)
-gnodeb       | [2023-04-15 17:48:45.086] [sctp] [debug] SCTP association setup ascId[19]
-gnodeb       | [2023-04-15 17:48:45.087] [ngap] [debug] Sending NG Setup Request
-gnodeb       | [2023-04-15 17:48:45.088] [ngap] [debug] NG Setup Response received
-gnodeb       | [2023-04-15 17:48:45.088] [ngap] [info] NG Setup procedure is successful
-ue_3         | UERANSIM v3.2.6
-ue_3         | [2023-04-15 17:48:45.401] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-ue_3         | [2023-04-15 17:48:45.402] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-gnodeb       | [2023-04-15 17:48:45.402] [rrc] [debug] UE[1] new signal detected
-ue_3         | [2023-04-15 17:48:45.403] [nas] [info] Selected plmn[208/93]
-ue_3         | [2023-04-15 17:48:45.403] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_3         | [2023-04-15 17:48:45.403] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-ue_3         | [2023-04-15 17:48:45.403] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-ue_3         | [2023-04-15 17:48:45.403] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-gnodeb       | [2023-04-15 17:48:45.404] [rrc] [info] RRC Setup for UE[1]
-ue_3         | [2023-04-15 17:48:45.403] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_3         | [2023-04-15 17:48:45.403] [nas] [debug] Sending Initial Registration
-ue_3         | [2023-04-15 17:48:45.404] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-ue_3         | [2023-04-15 17:48:45.404] [rrc] [debug] Sending RRC Setup Request
-ue_3         | [2023-04-15 17:48:45.404] [rrc] [info] RRC connection established
-ue_3         | [2023-04-15 17:48:45.404] [rrc] [info] UE switches to state [RRC-CONNECTED]
-ue_3         | [2023-04-15 17:48:45.404] [nas] [info] UE switches to state [CM-CONNECTED]
-gnodeb       | [2023-04-15 17:48:45.404] [ngap] [debug] Initial NAS message received from UE[1]
+gnodeb       | [2023-04-22 16:38:55.997] [sctp] [info] Trying to establish SCTP connection... (10.100.200.12:38412)
+gnodeb       | [2023-04-22 16:38:56.000] [sctp] [info] SCTP connection established (10.100.200.12:38412)
+gnodeb       | [2023-04-22 16:38:56.000] [sctp] [debug] SCTP association setup ascId[89]
+gnodeb       | [2023-04-22 16:38:56.000] [ngap] [debug] Sending NG Setup Request
+gnodeb       | [2023-04-22 16:38:56.002] [ngap] [debug] NG Setup Response received
+gnodeb       | [2023-04-22 16:38:56.002] [ngap] [info] NG Setup procedure is successful
+ue_11        | UERANSIM v3.2.6
+ue_11        | [2023-04-22 16:38:56.362] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:56.363] [rrc] [debug] UE[1] new signal detected
+ue_11        | [2023-04-22 16:38:56.363] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb       | [2023-04-22 16:38:56.367] [rrc] [info] RRC Setup for UE[1]
+gnodeb       | [2023-04-22 16:38:56.368] [ngap] [debug] Initial NAS message received from UE[1]
+ue_11        | [2023-04-22 16:38:56.363] [nas] [info] Selected plmn[208/93]
+ue_11        | [2023-04-22 16:38:56.363] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_11        | [2023-04-22 16:38:56.363] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_11        | [2023-04-22 16:38:56.363] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:38:56.363] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:38:56.367] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_11        | [2023-04-22 16:38:56.367] [nas] [debug] Sending Initial Registration
+ue_11        | [2023-04-22 16:38:56.367] [rrc] [debug] Sending RRC Setup Request
+ue_11        | [2023-04-22 16:38:56.367] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_11        | [2023-04-22 16:38:56.367] [rrc] [info] RRC connection established
+ue_11        | [2023-04-22 16:38:56.367] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_11        | [2023-04-22 16:38:56.367] [nas] [info] UE switches to state [CM-CONNECTED]
 udm          | http://nrf.free5gc.org:8000
-mongodb      | {"t":{"$date":"2023-04-15T17:48:45.428+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.11:34442","uuid":"a07eb817-748d-45d0-87d4-afb1a485df17","connectionId":10,"connectionCount":10}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:45.429+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"10.100.200.11:34442","client":"conn10","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-ue_3         | [2023-04-15 17:48:45.435] [nas] [debug] Authentication Request received
-ue_3         | [2023-04-15 17:48:45.443] [nas] [debug] Security Mode Command received
-ue_3         | [2023-04-15 17:48:45.443] [nas] [debug] Selected integrity[2] ciphering[0]
-gnodeb       | [2023-04-15 17:48:45.478] [ngap] [debug] Initial Context Setup Request received
-ue_3         | [2023-04-15 17:48:45.479] [nas] [debug] Registration accept received
-ue_3         | [2023-04-15 17:48:45.479] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_3         | [2023-04-15 17:48:45.479] [nas] [debug] Sending Registration Complete
-ue_3         | [2023-04-15 17:48:45.479] [nas] [info] Initial Registration is successful
-ue_3         | [2023-04-15 17:48:45.479] [nas] [debug] Sending PDU Session Establishment Request
-ue_3         | [2023-04-15 17:48:45.479] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_2         | UERANSIM v3.2.6
-ue_2         | [2023-04-15 17:48:45.542] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-ue_1         | UERANSIM v3.2.6
-ue_1         | [2023-04-15 17:48:45.569] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-ue_5         | UERANSIM v3.2.6
-ue_5         | [2023-04-15 17:48:45.633] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-gnodeb       | [2023-04-15 17:48:45.633] [rrc] [debug] UE[2] new signal detected
-ue_5         | [2023-04-15 17:48:45.633] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-ue_5         | [2023-04-15 17:48:45.633] [nas] [info] Selected plmn[208/93]
-ue_5         | [2023-04-15 17:48:45.633] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_5         | [2023-04-15 17:48:45.633] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-ue_5         | [2023-04-15 17:48:45.633] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-ue_5         | [2023-04-15 17:48:45.633] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-ue_5         | [2023-04-15 17:48:45.633] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_5         | [2023-04-15 17:48:45.633] [nas] [debug] Sending Initial Registration
-ue_5         | [2023-04-15 17:48:45.634] [rrc] [debug] Sending RRC Setup Request
-ue_5         | [2023-04-15 17:48:45.634] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-gnodeb       | [2023-04-15 17:48:45.634] [rrc] [info] RRC Setup for UE[2]
-ue_5         | [2023-04-15 17:48:45.634] [rrc] [info] RRC connection established
-ue_5         | [2023-04-15 17:48:45.634] [rrc] [info] UE switches to state [RRC-CONNECTED]
-ue_5         | [2023-04-15 17:48:45.634] [nas] [info] UE switches to state [CM-CONNECTED]
-gnodeb       | [2023-04-15 17:48:45.634] [ngap] [debug] Initial NAS message received from UE[2]
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.438+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:38678","uuid":"dac2c444-f542-46df-b8e4-6814cbfb4e74","connectionId":7,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.438+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:38684","uuid":"8712dc01-cc82-4515-878f-8b4a87460578","connectionId":8,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.438+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"10.100.200.10:38678","client":"conn7","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.438+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"10.100.200.10:38684","client":"conn8","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
 ue_4         | UERANSIM v3.2.6
-ue_4         | [2023-04-15 17:48:45.687] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-gnodeb       | [2023-04-15 17:48:45.687] [rrc] [debug] UE[3] new signal detected
-ue_4         | [2023-04-15 17:48:45.687] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-ue_4         | [2023-04-15 17:48:45.688] [nas] [info] Selected plmn[208/93]
-ue_4         | [2023-04-15 17:48:45.688] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [debug] Sending Initial Registration
-ue_4         | [2023-04-15 17:48:45.688] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-ue_4         | [2023-04-15 17:48:45.688] [rrc] [debug] Sending RRC Setup Request
-gnodeb       | [2023-04-15 17:48:45.688] [rrc] [info] RRC Setup for UE[3]
-ue_4         | [2023-04-15 17:48:45.688] [rrc] [info] RRC connection established
-ue_4         | [2023-04-15 17:48:45.688] [rrc] [info] UE switches to state [RRC-CONNECTED]
-gnodeb       | [2023-04-15 17:48:45.688] [ngap] [debug] Initial NAS message received from UE[3]
-ue_4         | [2023-04-15 17:48:45.688] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_4         | [2023-04-22 16:38:56.545] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb       | [2023-04-22 16:38:56.545] [rrc] [debug] UE[2] new signal detected
+gnodeb       | [2023-04-22 16:38:56.547] [rrc] [info] RRC Setup for UE[2]
+gnodeb       | [2023-04-22 16:38:56.547] [ngap] [debug] Initial NAS message received from UE[2]
+ue_4         | [2023-04-22 16:38:56.545] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [info] Selected plmn[208/93]
+ue_4         | [2023-04-22 16:38:56.546] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_4         | [2023-04-22 16:38:56.546] [nas] [debug] Sending Initial Registration
+ue_4         | [2023-04-22 16:38:56.546] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_4         | [2023-04-22 16:38:56.546] [rrc] [debug] Sending RRC Setup Request
+ue_4         | [2023-04-22 16:38:56.547] [rrc] [info] RRC connection established
+ue_4         | [2023-04-22 16:38:56.547] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_4         | [2023-04-22 16:38:56.547] [nas] [info] UE switches to state [CM-CONNECTED]
 udm          | http://nrf.free5gc.org:8000
-ue_5         | [2023-04-15 17:48:45.700] [nas] [debug] Authentication Request received
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.582+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.10:50726","uuid":"eaff79e7-c007-42f2-85e6-1f0fd648c2c4","connectionId":9,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.582+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"10.100.200.10:50726","client":"conn9","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_4         | [2023-04-22 16:38:56.590] [nas] [debug] Authentication Request received
+ue_4         | [2023-04-22 16:38:56.604] [nas] [debug] Security Mode Command received
+ue_4         | [2023-04-22 16:38:56.604] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:38:56.633] [rrc] [debug] UE[3] new signal detected
+ue_15        | UERANSIM v3.2.6
+ue_15        | [2023-04-22 16:38:56.632] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_15        | [2023-04-22 16:38:56.633] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_15        | [2023-04-22 16:38:56.633] [nas] [info] Selected plmn[208/93]
+ue_15        | [2023-04-22 16:38:56.633] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-04-22 16:38:56.633] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_15        | [2023-04-22 16:38:56.633] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:38:56.633] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:38:56.640] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_15        | [2023-04-22 16:38:56.640] [nas] [debug] Sending Initial Registration
+ue_15        | [2023-04-22 16:38:56.640] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_15        | [2023-04-22 16:38:56.640] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:56.640] [rrc] [info] RRC Setup for UE[3]
+ue_15        | [2023-04-22 16:38:56.641] [rrc] [info] RRC connection established
+ue_15        | [2023-04-22 16:38:56.641] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_15        | [2023-04-22 16:38:56.641] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:56.641] [ngap] [debug] Initial NAS message received from UE[3]
+gnodeb       | [2023-04-22 16:38:56.694] [ngap] [debug] Initial Context Setup Request received
+ue_4         | [2023-04-22 16:38:56.694] [nas] [debug] Registration accept received
+ue_4         | [2023-04-22 16:38:56.694] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:38:56.694] [nas] [debug] Sending Registration Complete
+ue_4         | [2023-04-22 16:38:56.694] [nas] [info] Initial Registration is successful
+ue_4         | [2023-04-22 16:38:56.694] [nas] [debug] Sending PDU Session Establishment Request
+ue_4         | [2023-04-22 16:38:56.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
 udm          | http://nrf.free5gc.org:8000
-ue_4         | [2023-04-15 17:48:45.712] [nas] [debug] Authentication Request received
-ue_5         | [2023-04-15 17:48:45.716] [nas] [debug] Security Mode Command received
-ue_5         | [2023-04-15 17:48:45.716] [nas] [debug] Selected integrity[2] ciphering[0]
-ue_4         | [2023-04-15 17:48:45.719] [nas] [debug] Security Mode Command received
-ue_4         | [2023-04-15 17:48:45.719] [nas] [debug] Selected integrity[2] ciphering[0]
-gnodeb       | [2023-04-15 17:48:45.740] [ngap] [debug] Initial Context Setup Request received
-ue_5         | [2023-04-15 17:48:45.740] [nas] [debug] Registration accept received
-ue_5         | [2023-04-15 17:48:45.740] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_5         | [2023-04-15 17:48:45.740] [nas] [debug] Sending Registration Complete
-ue_5         | [2023-04-15 17:48:45.740] [nas] [info] Initial Registration is successful
-ue_5         | [2023-04-15 17:48:45.740] [nas] [debug] Sending PDU Session Establishment Request
-ue_5         | [2023-04-15 17:48:45.740] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-gnodeb       | [2023-04-15 17:48:45.759] [ngap] [debug] Initial Context Setup Request received
-ue_4         | [2023-04-15 17:48:45.759] [nas] [debug] Registration accept received
-ue_4         | [2023-04-15 17:48:45.759] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_4         | [2023-04-15 17:48:45.759] [nas] [debug] Sending Registration Complete
-ue_4         | [2023-04-15 17:48:45.759] [nas] [info] Initial Registration is successful
-ue_4         | [2023-04-15 17:48:45.759] [nas] [debug] Sending PDU Session Establishment Request
-ue_4         | [2023-04-15 17:48:45.759] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-mongodb      | {"t":{"$date":"2023-04-15T17:48:45.778+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:43100","uuid":"c5248060-6e9e-4d63-b830-dac8c3568510","connectionId":11,"connectionCount":11}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:45.779+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"10.100.200.7:43100","client":"conn11","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-gnodeb       | [2023-04-15 17:48:45.794] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-ue_5         | [2023-04-15 17:48:45.794] [nas] [debug] PDU Session Establishment Accept received
-ue_5         | [2023-04-15 17:48:45.794] [nas] [info] PDU Session establishment is successful PSI[1]
-ue_5         | [2023-04-15 17:48:45.802] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
-gnodeb       | [2023-04-15 17:48:45.821] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
-ue_4         | [2023-04-15 17:48:45.821] [nas] [debug] PDU Session Establishment Accept received
-ue_4         | [2023-04-15 17:48:45.821] [nas] [info] PDU Session establishment is successful PSI[1]
-ue_4         | [2023-04-15 17:48:45.828] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.2] is up.
-gnodeb       | [2023-04-15 17:48:46.572] [rrc] [debug] UE[4] new signal detected
-ue_1         | [2023-04-15 17:48:46.572] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-ue_2         | [2023-04-15 17:48:46.572] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-ue_1         | [2023-04-15 17:48:46.572] [nas] [info] Selected plmn[208/93]
-ue_1         | [2023-04-15 17:48:46.572] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_2         | [2023-04-15 17:48:46.572] [nas] [info] Selected plmn[208/93]
-ue_1         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-gnodeb       | [2023-04-15 17:48:46.572] [rrc] [debug] UE[5] new signal detected
-ue_1         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:48:46.572] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_1         | [2023-04-15 17:48:46.572] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-ue_1         | [2023-04-15 17:48:46.572] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_1         | [2023-04-15 17:48:46.572] [nas] [debug] Sending Initial Registration
-ue_1         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-ue_1         | [2023-04-15 17:48:46.572] [rrc] [debug] Sending RRC Setup Request
-ue_2         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-ue_2         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:48:46.572] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:48:46.572] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_2         | [2023-04-15 17:48:46.572] [nas] [debug] Sending Initial Registration
-ue_2         | [2023-04-15 17:48:46.572] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-ue_2         | [2023-04-15 17:48:46.572] [rrc] [debug] Sending RRC Setup Request
-gnodeb       | [2023-04-15 17:48:46.573] [rrc] [info] RRC Setup for UE[5]
-gnodeb       | [2023-04-15 17:48:46.573] [rrc] [info] RRC Setup for UE[4]
-ue_2         | [2023-04-15 17:48:46.573] [rrc] [info] RRC connection established
-ue_2         | [2023-04-15 17:48:46.573] [rrc] [info] UE switches to state [RRC-CONNECTED]
-ue_2         | [2023-04-15 17:48:46.573] [nas] [info] UE switches to state [CM-CONNECTED]
-ue_1         | [2023-04-15 17:48:46.573] [rrc] [info] RRC connection established
-ue_1         | [2023-04-15 17:48:46.573] [rrc] [info] UE switches to state [RRC-CONNECTED]
-ue_1         | [2023-04-15 17:48:46.573] [nas] [info] UE switches to state [CM-CONNECTED]
-gnodeb       | [2023-04-15 17:48:46.573] [ngap] [debug] Initial NAS message received from UE[5]
-gnodeb       | [2023-04-15 17:48:46.573] [ngap] [debug] Initial NAS message received from UE[4]
+ue_15        | [2023-04-22 16:38:56.725] [nas] [debug] Authentication Request received
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.766+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.13:33640","uuid":"27588e1e-38dc-4084-8cee-9eb48ac42feb","connectionId":10,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-04-22T16:38:56.766+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"10.100.200.13:33640","client":"conn10","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+gnodeb       | [2023-04-22 16:38:56.806] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+ue_4         | [2023-04-22 16:38:56.806] [nas] [debug] PDU Session Establishment Accept received
+ue_4         | [2023-04-22 16:38:56.806] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_15        | [2023-04-22 16:38:56.810] [nas] [debug] Security Mode Command received
+ue_15        | [2023-04-22 16:38:56.810] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_1         | UERANSIM v3.2.6
+gnodeb       | [2023-04-22 16:38:56.836] [rrc] [debug] UE[4] new signal detected
+ue_1         | [2023-04-22 16:38:56.836] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_1         | [2023-04-22 16:38:56.836] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_1         | [2023-04-22 16:38:56.836] [nas] [info] Selected plmn[208/93]
+ue_1         | [2023-04-22 16:38:56.836] [rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_1         | [2023-04-22 16:38:56.836] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_1         | [2023-04-22 16:38:56.836] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | UERANSIM v3.2.6
+ue_3         | [2023-04-22 16:38:56.901] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:56.902] [rrc] [debug] UE[5] new signal detected
+ue_3         | [2023-04-22 16:38:56.902] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_3         | [2023-04-22 16:38:56.902] [nas] [info] Selected plmn[208/93]
+ue_3         | [2023-04-22 16:38:56.902] [rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_3         | [2023-04-22 16:38:56.902] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_3         | [2023-04-22 16:38:56.902] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_4         | [2023-04-22 16:38:56.972] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+ue_12        | UERANSIM v3.2.6
+ue_9         | UERANSIM v3.2.6
+ue_12        | [2023-04-22 16:38:57.050] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_9         | [2023-04-22 16:38:57.050] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_12        | [2023-04-22 16:38:57.050] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_9         | [2023-04-22 16:38:57.050] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_15        | [2023-04-22 16:38:57.048] [nas] [debug] Registration accept received
+ue_15        | [2023-04-22 16:38:57.048] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:38:57.048] [nas] [debug] Sending Registration Complete
+ue_15        | [2023-04-22 16:38:57.048] [nas] [info] Initial Registration is successful
+ue_15        | [2023-04-22 16:38:57.048] [nas] [debug] Sending PDU Session Establishment Request
+gnodeb       | [2023-04-22 16:38:57.048] [ngap] [debug] Initial Context Setup Request received
+gnodeb       | [2023-04-22 16:38:57.054] [rrc] [debug] UE[6] new signal detected
+ue_15        | [2023-04-22 16:38:57.054] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.054] [rrc] [debug] UE[7] new signal detected
+ue_9         | [2023-04-22 16:38:57.054] [nas] [info] Selected plmn[208/93]
+ue_9         | [2023-04-22 16:38:57.054] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_9         | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_9         | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_9         | [2023-04-22 16:38:57.054] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_9         | [2023-04-22 16:38:57.054] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [info] Selected plmn[208/93]
+ue_9         | [2023-04-22 16:38:57.054] [nas] [debug] Sending Initial Registration
+ue_9         | [2023-04-22 16:38:57.054] [rrc] [debug] Sending RRC Setup Request
+ue_9         | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_12        | [2023-04-22 16:38:57.054] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_12        | [2023-04-22 16:38:57.054] [nas] [debug] Sending Initial Registration
+ue_12        | [2023-04-22 16:38:57.054] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+gnodeb       | [2023-04-22 16:38:57.054] [rrc] [info] RRC Setup for UE[7]
+ue_12        | [2023-04-22 16:38:57.054] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:57.054] [rrc] [info] RRC Setup for UE[6]
+ue_9         | [2023-04-22 16:38:57.055] [rrc] [info] RRC connection established
+ue_9         | [2023-04-22 16:38:57.055] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_9         | [2023-04-22 16:38:57.055] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.055] [ngap] [debug] Initial NAS message received from UE[7]
+ue_12        | [2023-04-22 16:38:57.055] [rrc] [info] RRC connection established
+ue_12        | [2023-04-22 16:38:57.055] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_12        | [2023-04-22 16:38:57.055] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.055] [ngap] [debug] Initial NAS message received from UE[6]
+ue_2         | UERANSIM v3.2.6
+ue_6         | UERANSIM v3.2.6
+ue_6         | [2023-04-22 16:38:57.112] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_2         | [2023-04-22 16:38:57.112] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:57.113] [rrc] [debug] UE[8] new signal detected
+gnodeb       | [2023-04-22 16:38:57.113] [rrc] [debug] UE[9] new signal detected
+ue_2         | [2023-04-22 16:38:57.113] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_6         | [2023-04-22 16:38:57.113] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_6         | [2023-04-22 16:38:57.113] [nas] [info] Selected plmn[208/93]
+ue_6         | [2023-04-22 16:38:57.113] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_6         | [2023-04-22 16:38:57.113] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_6         | [2023-04-22 16:38:57.113] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:38:57.113] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:38:57.113] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-04-22 16:38:57.113] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_2         | [2023-04-22 16:38:57.113] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_2         | [2023-04-22 16:38:57.113] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:38:57.113] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:38:57.114] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-04-22 16:38:57.114] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-04-22 16:38:57.114] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_6         | [2023-04-22 16:38:57.114] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-04-22 16:38:57.114] [rrc] [debug] Sending RRC Setup Request
+ue_6         | [2023-04-22 16:38:57.114] [nas] [debug] Sending Initial Registration
+ue_6         | [2023-04-22 16:38:57.114] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_6         | [2023-04-22 16:38:57.114] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:57.114] [rrc] [info] RRC Setup for UE[8]
+gnodeb       | [2023-04-22 16:38:57.114] [rrc] [info] RRC Setup for UE[9]
+gnodeb       | [2023-04-22 16:38:57.114] [ngap] [debug] Initial NAS message received from UE[8]
+ue_2         | [2023-04-22 16:38:57.114] [rrc] [info] RRC connection established
+gnodeb       | [2023-04-22 16:38:57.114] [ngap] [debug] Initial NAS message received from UE[9]
+ue_6         | [2023-04-22 16:38:57.114] [rrc] [info] RRC connection established
+ue_6         | [2023-04-22 16:38:57.114] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_6         | [2023-04-22 16:38:57.114] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_2         | [2023-04-22 16:38:57.114] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_2         | [2023-04-22 16:38:57.114] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_8         | UERANSIM v3.2.6
+ue_8         | [2023-04-22 16:38:57.254] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:57.254] [rrc] [debug] UE[10] new signal detected
+ue_8         | [2023-04-22 16:38:57.254] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_8         | [2023-04-22 16:38:57.255] [nas] [info] Selected plmn[208/93]
+ue_8         | [2023-04-22 16:38:57.255] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_8         | [2023-04-22 16:38:57.255] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_8         | [2023-04-22 16:38:57.255] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+gnodeb       | [2023-04-22 16:38:57.255] [rrc] [info] RRC Setup for UE[10]
+ue_8         | [2023-04-22 16:38:57.255] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_8         | [2023-04-22 16:38:57.255] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_8         | [2023-04-22 16:38:57.255] [nas] [debug] Sending Initial Registration
+ue_8         | [2023-04-22 16:38:57.255] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_8         | [2023-04-22 16:38:57.255] [rrc] [debug] Sending RRC Setup Request
+ue_8         | [2023-04-22 16:38:57.256] [rrc] [info] RRC connection established
+ue_8         | [2023-04-22 16:38:57.256] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_8         | [2023-04-22 16:38:57.256] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.256] [ngap] [debug] Initial NAS message received from UE[10]
+ue_7         | UERANSIM v3.2.6
+ue_7         | [2023-04-22 16:38:57.259] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_7         | [2023-04-22 16:38:57.259] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb       | [2023-04-22 16:38:57.259] [rrc] [debug] UE[11] new signal detected
+ue_7         | [2023-04-22 16:38:57.259] [nas] [info] Selected plmn[208/93]
+ue_7         | [2023-04-22 16:38:57.259] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_7         | [2023-04-22 16:38:57.259] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_7         | [2023-04-22 16:38:57.259] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_7         | [2023-04-22 16:38:57.259] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_7         | [2023-04-22 16:38:57.259] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_7         | [2023-04-22 16:38:57.259] [nas] [debug] Sending Initial Registration
+ue_7         | [2023-04-22 16:38:57.259] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_7         | [2023-04-22 16:38:57.259] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:57.260] [rrc] [info] RRC Setup for UE[11]
+ue_7         | [2023-04-22 16:38:57.260] [rrc] [info] RRC connection established
+ue_7         | [2023-04-22 16:38:57.260] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_7         | [2023-04-22 16:38:57.260] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.260] [ngap] [debug] Initial NAS message received from UE[11]
 udm          | http://nrf.free5gc.org:8000
-ue_2         | [2023-04-15 17:48:46.585] [nas] [debug] Authentication Request received
+ue_9         | [2023-04-22 16:38:57.290] [nas] [debug] Authentication Request received
 udm          | http://nrf.free5gc.org:8000
-ue_1         | [2023-04-15 17:48:46.595] [nas] [debug] Authentication Request received
-ue_2         | [2023-04-15 17:48:46.599] [nas] [debug] Security Mode Command received
-ue_2         | [2023-04-15 17:48:46.599] [nas] [debug] Selected integrity[2] ciphering[0]
-ue_1         | [2023-04-15 17:48:46.602] [nas] [debug] Security Mode Command received
-ue_1         | [2023-04-15 17:48:46.602] [nas] [debug] Selected integrity[2] ciphering[0]
-gnodeb       | [2023-04-15 17:48:46.621] [ngap] [debug] Initial Context Setup Request received
-ue_2         | [2023-04-15 17:48:46.621] [nas] [debug] Registration accept received
-ue_2         | [2023-04-15 17:48:46.621] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:48:46.621] [nas] [debug] Sending Registration Complete
-ue_2         | [2023-04-15 17:48:46.621] [nas] [info] Initial Registration is successful
-ue_2         | [2023-04-15 17:48:46.621] [nas] [debug] Sending PDU Session Establishment Request
-ue_2         | [2023-04-15 17:48:46.621] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-gnodeb       | [2023-04-15 17:48:46.639] [ngap] [debug] Initial Context Setup Request received
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] Registration accept received
-ue_1         | [2023-04-15 17:48:46.640] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] Sending Registration Complete
-ue_1         | [2023-04-15 17:48:46.640] [nas] [info] Initial Registration is successful
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] Sending PDU Session Establishment Request
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] Sending PDU Session Establishment Request
-ue_1         | [2023-04-15 17:48:46.640] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-gnodeb       | [2023-04-15 17:48:46.696] [ngap] [info] PDU session resource(s) setup for UE[5] count[1]
-ue_2         | [2023-04-15 17:48:46.696] [nas] [debug] PDU Session Establishment Accept received
-ue_2         | [2023-04-15 17:48:46.696] [nas] [info] PDU Session establishment is successful PSI[1]
-ue_2         | [2023-04-15 17:48:46.705] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.3] is up.
-gnodeb       | [2023-04-15 17:48:46.733] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
-ue_1         | [2023-04-15 17:48:46.733] [nas] [debug] PDU Session Establishment Accept received
-ue_1         | [2023-04-15 17:48:46.733] [nas] [info] PDU Session establishment is successful PSI[1]
-gnodeb       | [2023-04-15 17:48:46.742] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
-ue_1         | [2023-04-15 17:48:46.742] [nas] [debug] PDU Session Establishment Accept received
-ue_1         | [2023-04-15 17:48:46.742] [nas] [info] PDU Session establishment is successful PSI[2]
-ue_1         | [2023-04-15 17:48:46.743] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.4] is up.
-ue_1         | [2023-04-15 17:48:46.748] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.70.0.1] is up.
-mongodb      | {"t":{"$date":"2023-04-15T17:48:53.894+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:48782","uuid":"0b285f23-4bf0-44b8-ac32-9ac7d6fda5db","connectionId":12,"connectionCount":12}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:53.894+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"10.100.200.6:48782","client":"conn12","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:53.896+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:55836","uuid":"d4c906de-612f-4bdd-b8aa-f81b8bc41991","connectionId":13,"connectionCount":13}}
-mongodb      | {"t":{"$date":"2023-04-15T17:48:53.897+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"10.100.200.5:55836","client":"conn13","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
-ue_3         | [2023-04-15 17:49:02.458] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
-ue_3         | [2023-04-15 17:49:02.458] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-gnodeb       | [2023-04-15 17:49:02.480] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-ue_3         | [2023-04-15 17:49:02.481] [nas] [debug] PDU Session Establishment Accept received
-ue_3         | [2023-04-15 17:49:02.481] [nas] [info] PDU Session establishment is successful PSI[1]
-ue_3         | [2023-04-15 17:49:02.489] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.5] is up.
-ue_4         | [2023-04-15 17:50:09.304] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
-ue_4         | [2023-04-15 17:50:09.304] [nas] [error] Radio link failure detected
-ue_4         | [2023-04-15 17:50:09.304] [nas] [info] UE switches to state [CM-IDLE]
-ue_4         | [2023-04-15 17:50:09.304] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_4         | [2023-04-15 17:50:09.304] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
-ue_4         | [2023-04-15 17:50:09.304] [nas] [error] PLMN selection failure, no cells in coverage
-ue_4         | [2023-04-15 17:50:09.304] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
-ue_2         | [2023-04-15 17:50:09.305] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
-ue_2         | [2023-04-15 17:50:09.305] [nas] [error] Radio link failure detected
-ue_2         | [2023-04-15 17:50:09.305] [nas] [info] UE switches to state [CM-IDLE]
-ue_2         | [2023-04-15 17:50:09.305] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_2         | [2023-04-15 17:50:09.305] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
-ue_2         | [2023-04-15 17:50:09.305] [nas] [error] PLMN selection failure, no cells in coverage
-ue_2         | [2023-04-15 17:50:09.305] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
-ue_2         | [2023-04-15 17:50:10.608] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
-ue_2         | [2023-04-15 17:50:10.608] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
-ue_4         | [2023-04-15 17:50:10.726] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
-ue_4         | [2023-04-15 17:50:10.726] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
-ue_2         | [2023-04-15 17:50:11.450] [nas] [error] PLMN selection failure, no cells in coverage
-ue_4         | [2023-04-15 17:50:11.579] [nas] [error] PLMN selection failure, no cells in coverage
-ue_2         | [2023-04-15 17:50:13.657] [nas] [error] PLMN selection failure, no cells in coverage
-ue_4         | [2023-04-15 17:50:13.781] [nas] [error] PLMN selection failure, no cells in coverage
-ue_2         | [2023-04-15 17:50:14.760] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
-ue_4         | [2023-04-15 17:50:14.893] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
-ue_4         | [2023-04-15 17:50:15.101] [nas] [info] Selected plmn[208/93]
-ue_2         | [2023-04-15 17:50:15.101] [nas] [info] Selected plmn[208/93]
-ue_4         | [2023-04-15 17:50:15.101] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_4         | [2023-04-15 17:50:15.101] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_4         | [2023-04-15 17:50:15.101] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:50:15.101] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
-ue_2         | [2023-04-15 17:50:15.101] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_2         | [2023-04-15 17:50:15.101] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_4         | [2023-04-15 17:50:15.818] [nas] [debug] Uplink data status changed PSI[1] pending[true]
-ue_4         | [2023-04-15 17:50:15.818] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
-ue_2         | [2023-04-15 17:50:15.818] [nas] [debug] Uplink data status changed PSI[1] pending[true]
-gnodeb       | [2023-04-15 17:50:15.818] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
-gnodeb       | [2023-04-15 17:50:15.818] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
-ue_4         | [2023-04-15 17:50:15.818] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
-ue_2         | [2023-04-15 17:50:15.818] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
-ue_2         | [2023-04-15 17:50:15.818] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
-ue_2         | [2023-04-15 17:50:15.818] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
-ue_2         | [2023-04-15 17:50:15.818] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
-ue_2         | [2023-04-15 17:50:15.818] [rrc] [debug] Sending RRC Setup Request
-ue_4         | [2023-04-15 17:50:15.818] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
-ue_4         | [2023-04-15 17:50:15.818] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
-ue_4         | [2023-04-15 17:50:15.818] [rrc] [debug] Sending RRC Setup Request
-ue_4         | [2023-04-15 17:50:30.841] [nas] [debug] NAS timer[3517] expired [1]
-ue_4         | [2023-04-15 17:50:30.841] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_4         | [2023-04-15 17:50:30.841] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-ue_2         | [2023-04-15 17:50:31.716] [nas] [debug] NAS timer[3517] expired [1]
-ue_2         | [2023-04-15 17:50:31.716] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-ue_2         | [2023-04-15 17:50:31.716] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:38:57.307] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_6         | [2023-04-22 16:38:57.321] [nas] [debug] Authentication Request received
+ue_10        | UERANSIM v3.2.6
+ue_10        | [2023-04-22 16:38:57.325] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_10        | [2023-04-22 16:38:57.326] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb       | [2023-04-22 16:38:57.326] [rrc] [debug] UE[12] new signal detected
+ue_10        | [2023-04-22 16:38:57.326] [nas] [info] Selected plmn[208/93]
+ue_10        | [2023-04-22 16:38:57.326] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_10        | [2023-04-22 16:38:57.326] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_10        | [2023-04-22 16:38:57.326] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_10        | [2023-04-22 16:38:57.326] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_10        | [2023-04-22 16:38:57.326] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_10        | [2023-04-22 16:38:57.326] [nas] [debug] Sending Initial Registration
+ue_10        | [2023-04-22 16:38:57.326] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_10        | [2023-04-22 16:38:57.327] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:57.327] [rrc] [info] RRC Setup for UE[12]
+ue_10        | [2023-04-22 16:38:57.327] [rrc] [info] RRC connection established
+ue_10        | [2023-04-22 16:38:57.327] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_10        | [2023-04-22 16:38:57.327] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.327] [ngap] [debug] Initial NAS message received from UE[12]
+udm          | http://nrf.free5gc.org:8000
+ue_2         | [2023-04-22 16:38:57.335] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_8         | [2023-04-22 16:38:57.346] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_7         | [2023-04-22 16:38:57.356] [nas] [debug] Authentication Request received
+gnodeb       | [2023-04-22 16:38:57.363] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
+ue_15        | [2023-04-22 16:38:57.363] [nas] [debug] PDU Session Establishment Accept received
+ue_15        | [2023-04-22 16:38:57.363] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_15        | [2023-04-22 16:38:57.371] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.2] is up.
+ue_9         | [2023-04-22 16:38:57.370] [nas] [debug] Security Mode Command received
+ue_9         | [2023-04-22 16:38:57.370] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_12        | [2023-04-22 16:38:57.374] [nas] [debug] Security Mode Command received
+ue_12        | [2023-04-22 16:38:57.374] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_6         | [2023-04-22 16:38:57.379] [nas] [debug] Security Mode Command received
+ue_6         | [2023-04-22 16:38:57.379] [nas] [debug] Selected integrity[2] ciphering[0]
+udm          | http://nrf.free5gc.org:8000
+ue_13        | UERANSIM v3.2.6
+ue_13        | [2023-04-22 16:38:57.394] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:57.395] [rrc] [debug] UE[13] new signal detected
+ue_13        | [2023-04-22 16:38:57.395] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_13        | [2023-04-22 16:38:57.396] [nas] [info] Selected plmn[208/93]
+ue_10        | [2023-04-22 16:38:57.401] [nas] [debug] Authentication Request received
+ue_5         | UERANSIM v3.2.6
+ue_5         | [2023-04-22 16:38:57.405] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:57.406] [rrc] [debug] UE[14] new signal detected
+ue_5         | [2023-04-22 16:38:57.406] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_5         | [2023-04-22 16:38:57.406] [nas] [info] Selected plmn[208/93]
+ue_5         | [2023-04-22 16:38:57.406] [rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_5         | [2023-04-22 16:38:57.406] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_5         | [2023-04-22 16:38:57.406] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_2         | [2023-04-22 16:38:57.428] [nas] [debug] Security Mode Command received
+ue_2         | [2023-04-22 16:38:57.428] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_8         | [2023-04-22 16:38:57.433] [nas] [debug] Security Mode Command received
+ue_8         | [2023-04-22 16:38:57.433] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_7         | [2023-04-22 16:38:57.436] [nas] [debug] Security Mode Command received
+ue_7         | [2023-04-22 16:38:57.436] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_14        | UERANSIM v3.2.6
+ue_14        | [2023-04-22 16:38:57.489] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-04-22 16:38:57.490] [rrc] [debug] UE[15] new signal detected
+ue_14        | [2023-04-22 16:38:57.490] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_14        | [2023-04-22 16:38:57.490] [nas] [info] Selected plmn[208/93]
+ue_14        | [2023-04-22 16:38:57.490] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_14        | [2023-04-22 16:38:57.490] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_14        | [2023-04-22 16:38:57.490] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_14        | [2023-04-22 16:38:57.490] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_14        | [2023-04-22 16:38:57.491] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_14        | [2023-04-22 16:38:57.491] [nas] [debug] Sending Initial Registration
+ue_14        | [2023-04-22 16:38:57.492] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_14        | [2023-04-22 16:38:57.492] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:57.492] [rrc] [info] RRC Setup for UE[15]
+ue_14        | [2023-04-22 16:38:57.492] [rrc] [info] RRC connection established
+ue_14        | [2023-04-22 16:38:57.492] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_14        | [2023-04-22 16:38:57.492] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:57.492] [ngap] [debug] Initial NAS message received from UE[15]
+gnodeb       | [2023-04-22 16:38:57.504] [ngap] [debug] Initial Context Setup Request received
+ue_9         | [2023-04-22 16:38:57.504] [nas] [debug] Registration accept received
+ue_9         | [2023-04-22 16:38:57.504] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_9         | [2023-04-22 16:38:57.504] [nas] [debug] Sending Registration Complete
+ue_9         | [2023-04-22 16:38:57.504] [nas] [info] Initial Registration is successful
+ue_9         | [2023-04-22 16:38:57.504] [nas] [debug] Sending PDU Session Establishment Request
+ue_9         | [2023-04-22 16:38:57.504] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.549] [ngap] [debug] Initial Context Setup Request received
+ue_12        | [2023-04-22 16:38:57.549] [nas] [debug] Registration accept received
+ue_12        | [2023-04-22 16:38:57.549] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:38:57.549] [nas] [debug] Sending Registration Complete
+ue_12        | [2023-04-22 16:38:57.549] [nas] [info] Initial Registration is successful
+ue_12        | [2023-04-22 16:38:57.549] [nas] [debug] Sending PDU Session Establishment Request
+ue_12        | [2023-04-22 16:38:57.549] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.567] [ngap] [debug] Initial Context Setup Request received
+ue_6         | [2023-04-22 16:38:57.568] [nas] [debug] Registration accept received
+ue_6         | [2023-04-22 16:38:57.568] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:38:57.568] [nas] [debug] Sending Registration Complete
+ue_6         | [2023-04-22 16:38:57.568] [nas] [info] Initial Registration is successful
+ue_6         | [2023-04-22 16:38:57.568] [nas] [debug] Sending PDU Session Establishment Request
+ue_6         | [2023-04-22 16:38:57.568] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_10        | [2023-04-22 16:38:57.572] [nas] [debug] Security Mode Command received
+ue_10        | [2023-04-22 16:38:57.572] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:38:57.589] [ngap] [debug] Initial Context Setup Request received
+ue_2         | [2023-04-22 16:38:57.589] [nas] [debug] Registration accept received
+ue_2         | [2023-04-22 16:38:57.589] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:38:57.589] [nas] [debug] Sending Registration Complete
+ue_2         | [2023-04-22 16:38:57.589] [nas] [info] Initial Registration is successful
+ue_2         | [2023-04-22 16:38:57.589] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-04-22 16:38:57.589] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.607] [ngap] [debug] Initial Context Setup Request received
+ue_8         | [2023-04-22 16:38:57.608] [nas] [debug] Registration accept received
+ue_8         | [2023-04-22 16:38:57.608] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-04-22 16:38:57.608] [nas] [debug] Sending Registration Complete
+ue_8         | [2023-04-22 16:38:57.608] [nas] [info] Initial Registration is successful
+ue_8         | [2023-04-22 16:38:57.608] [nas] [debug] Sending PDU Session Establishment Request
+ue_8         | [2023-04-22 16:38:57.608] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.625] [ngap] [debug] Initial Context Setup Request received
+ue_7         | [2023-04-22 16:38:57.625] [nas] [debug] Registration accept received
+ue_7         | [2023-04-22 16:38:57.625] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_7         | [2023-04-22 16:38:57.625] [nas] [debug] Sending Registration Complete
+ue_7         | [2023-04-22 16:38:57.625] [nas] [info] Initial Registration is successful
+ue_7         | [2023-04-22 16:38:57.625] [nas] [debug] Sending PDU Session Establishment Request
+ue_7         | [2023-04-22 16:38:57.625] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+udm          | http://nrf.free5gc.org:8000
+ue_14        | [2023-04-22 16:38:57.636] [nas] [debug] Authentication Request received
+gnodeb       | [2023-04-22 16:38:57.663] [ngap] [info] PDU session resource(s) setup for UE[7] count[1]
+ue_9         | [2023-04-22 16:38:57.663] [nas] [debug] PDU Session Establishment Accept received
+ue_9         | [2023-04-22 16:38:57.663] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_9         | [2023-04-22 16:38:57.670] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.3] is up.
+gnodeb       | [2023-04-22 16:38:57.683] [ngap] [info] PDU session resource(s) setup for UE[6] count[1]
+ue_12        | [2023-04-22 16:38:57.683] [nas] [debug] PDU Session Establishment Accept received
+ue_12        | [2023-04-22 16:38:57.683] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_12        | [2023-04-22 16:38:57.690] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.4] is up.
+gnodeb       | [2023-04-22 16:38:57.705] [ngap] [info] PDU session resource(s) setup for UE[8] count[1]
+ue_6         | [2023-04-22 16:38:57.705] [nas] [debug] PDU Session Establishment Accept received
+ue_6         | [2023-04-22 16:38:57.705] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_6         | [2023-04-22 16:38:57.712] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.5] is up.
+gnodeb       | [2023-04-22 16:38:57.729] [ngap] [debug] Initial Context Setup Request received
+ue_10        | [2023-04-22 16:38:57.730] [nas] [debug] Registration accept received
+ue_10        | [2023-04-22 16:38:57.730] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_10        | [2023-04-22 16:38:57.730] [nas] [debug] Sending Registration Complete
+ue_10        | [2023-04-22 16:38:57.730] [nas] [info] Initial Registration is successful
+ue_10        | [2023-04-22 16:38:57.730] [nas] [debug] Sending PDU Session Establishment Request
+ue_10        | [2023-04-22 16:38:57.730] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:57.758] [ngap] [info] PDU session resource(s) setup for UE[9] count[1]
+ue_2         | [2023-04-22 16:38:57.758] [nas] [debug] PDU Session Establishment Accept received
+ue_2         | [2023-04-22 16:38:57.758] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_2         | [2023-04-22 16:38:57.764] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.6] is up.
+gnodeb       | [2023-04-22 16:38:57.776] [ngap] [info] PDU session resource(s) setup for UE[10] count[1]
+ue_8         | [2023-04-22 16:38:57.776] [nas] [debug] PDU Session Establishment Accept received
+ue_8         | [2023-04-22 16:38:57.776] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_8         | [2023-04-22 16:38:57.783] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.7] is up.
+ue_14        | [2023-04-22 16:38:57.794] [nas] [debug] Security Mode Command received
+ue_14        | [2023-04-22 16:38:57.794] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:38:57.796] [ngap] [info] PDU session resource(s) setup for UE[11] count[1]
+ue_7         | [2023-04-22 16:38:57.796] [nas] [debug] PDU Session Establishment Accept received
+ue_7         | [2023-04-22 16:38:57.796] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_7         | [2023-04-22 16:38:57.801] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.8] is up.
+gnodeb       | [2023-04-22 16:38:57.851] [ngap] [info] PDU session resource(s) setup for UE[12] count[1]
+ue_10        | [2023-04-22 16:38:57.852] [nas] [debug] PDU Session Establishment Accept received
+ue_10        | [2023-04-22 16:38:57.852] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_10        | [2023-04-22 16:38:57.858] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.9] is up.
+gnodeb       | [2023-04-22 16:38:57.909] [ngap] [debug] Initial Context Setup Request received
+ue_14        | [2023-04-22 16:38:57.909] [nas] [debug] Registration accept received
+ue_14        | [2023-04-22 16:38:57.909] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_14        | [2023-04-22 16:38:57.909] [nas] [debug] Sending Registration Complete
+ue_14        | [2023-04-22 16:38:57.909] [nas] [info] Initial Registration is successful
+ue_14        | [2023-04-22 16:38:57.909] [nas] [debug] Sending PDU Session Establishment Request
+ue_14        | [2023-04-22 16:38:57.910] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:58.138] [ngap] [info] PDU session resource(s) setup for UE[15] count[1]
+ue_14        | [2023-04-22 16:38:58.138] [nas] [debug] PDU Session Establishment Accept received
+ue_14        | [2023-04-22 16:38:58.138] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_14        | [2023-04-22 16:38:58.146] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.10] is up.
+ue_1         | [2023-04-22 16:38:59.336] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [debug] Sending Initial Registration
+ue_1         | [2023-04-22 16:38:59.336] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_1         | [2023-04-22 16:38:59.336] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:59.336] [rrc] [info] RRC Setup for UE[4]
+ue_1         | [2023-04-22 16:38:59.336] [rrc] [info] RRC connection established
+ue_1         | [2023-04-22 16:38:59.336] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_1         | [2023-04-22 16:38:59.336] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:59.337] [ngap] [debug] Initial NAS message received from UE[4]
+udm          | http://nrf.free5gc.org:8000
+ue_1         | [2023-04-22 16:38:59.349] [nas] [debug] Authentication Request received
+ue_1         | [2023-04-22 16:38:59.354] [nas] [debug] Security Mode Command received
+ue_1         | [2023-04-22 16:38:59.354] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:38:59.373] [ngap] [debug] Initial Context Setup Request received
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] Registration accept received
+ue_1         | [2023-04-22 16:38:59.374] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] Sending Registration Complete
+ue_1         | [2023-04-22 16:38:59.374] [nas] [info] Initial Registration is successful
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-04-22 16:38:59.374] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-04-22 16:38:59.402] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [debug] Sending Initial Registration
+ue_3         | [2023-04-22 16:38:59.402] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_3         | [2023-04-22 16:38:59.402] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:59.402] [rrc] [info] RRC Setup for UE[5]
+ue_3         | [2023-04-22 16:38:59.402] [rrc] [info] RRC connection established
+ue_3         | [2023-04-22 16:38:59.402] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_3         | [2023-04-22 16:38:59.402] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:59.403] [ngap] [debug] Initial NAS message received from UE[5]
+gnodeb       | [2023-04-22 16:38:59.618] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
+ue_1         | [2023-04-22 16:38:59.619] [nas] [debug] PDU Session Establishment Accept received
+ue_1         | [2023-04-22 16:38:59.619] [nas] [info] PDU Session establishment is successful PSI[1]
+gnodeb       | [2023-04-22 16:38:59.620] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
+ue_1         | [2023-04-22 16:38:59.620] [nas] [debug] PDU Session Establishment Accept received
+ue_1         | [2023-04-22 16:38:59.620] [nas] [info] PDU Session establishment is successful PSI[2]
+udm          | http://nrf.free5gc.org:8000
+ue_1         | [2023-04-22 16:38:59.625] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.11] is up.
+ue_3         | [2023-04-22 16:38:59.626] [nas] [debug] Authentication Request received
+ue_1         | [2023-04-22 16:38:59.632] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.70.0.1] is up.
+ue_3         | [2023-04-22 16:38:59.639] [nas] [debug] Security Mode Command received
+ue_3         | [2023-04-22 16:38:59.639] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:38:59.662] [ngap] [debug] Initial Context Setup Request received
+ue_3         | [2023-04-22 16:38:59.662] [nas] [debug] Registration accept received
+ue_3         | [2023-04-22 16:38:59.662] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:38:59.662] [nas] [debug] Sending Registration Complete
+ue_3         | [2023-04-22 16:38:59.662] [nas] [info] Initial Registration is successful
+ue_3         | [2023-04-22 16:38:59.662] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-04-22 16:38:59.662] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:38:59.893] [ngap] [info] PDU session resource(s) setup for UE[5] count[1]
+ue_3         | [2023-04-22 16:38:59.894] [nas] [debug] PDU Session Establishment Accept received
+ue_3         | [2023-04-22 16:38:59.894] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_13        | [2023-04-22 16:38:59.895] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [debug] Sending Initial Registration
+ue_13        | [2023-04-22 16:38:59.895] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_13        | [2023-04-22 16:38:59.895] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:59.895] [rrc] [info] RRC Setup for UE[13]
+ue_13        | [2023-04-22 16:38:59.895] [rrc] [info] RRC connection established
+ue_13        | [2023-04-22 16:38:59.895] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_13        | [2023-04-22 16:38:59.895] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:59.895] [ngap] [debug] Initial NAS message received from UE[13]
+ue_3         | [2023-04-22 16:38:59.900] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.12] is up.
+ue_5         | [2023-04-22 16:38:59.906] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [debug] Sending Initial Registration
+ue_5         | [2023-04-22 16:38:59.906] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_5         | [2023-04-22 16:38:59.906] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:38:59.906] [rrc] [info] RRC Setup for UE[14]
+ue_5         | [2023-04-22 16:38:59.906] [rrc] [info] RRC connection established
+ue_5         | [2023-04-22 16:38:59.906] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_5         | [2023-04-22 16:38:59.906] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:38:59.906] [ngap] [debug] Initial NAS message received from UE[14]
+udm          | http://nrf.free5gc.org:8000
+ue_13        | [2023-04-22 16:39:00.106] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_5         | [2023-04-22 16:39:00.115] [nas] [debug] Authentication Request received
+ue_13        | [2023-04-22 16:39:00.118] [nas] [debug] Security Mode Command received
+ue_13        | [2023-04-22 16:39:00.119] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_5         | [2023-04-22 16:39:00.122] [nas] [debug] Security Mode Command received
+ue_5         | [2023-04-22 16:39:00.122] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:39:00.141] [ngap] [debug] Initial Context Setup Request received
+ue_13        | [2023-04-22 16:39:00.141] [nas] [debug] Registration accept received
+ue_13        | [2023-04-22 16:39:00.141] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_13        | [2023-04-22 16:39:00.141] [nas] [debug] Sending Registration Complete
+ue_13        | [2023-04-22 16:39:00.141] [nas] [info] Initial Registration is successful
+ue_13        | [2023-04-22 16:39:00.141] [nas] [debug] Sending PDU Session Establishment Request
+ue_13        | [2023-04-22 16:39:00.141] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:39:00.158] [ngap] [debug] Initial Context Setup Request received
+ue_5         | [2023-04-22 16:39:00.159] [nas] [debug] Registration accept received
+ue_5         | [2023-04-22 16:39:00.159] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_5         | [2023-04-22 16:39:00.159] [nas] [debug] Sending Registration Complete
+ue_5         | [2023-04-22 16:39:00.159] [nas] [info] Initial Registration is successful
+ue_5         | [2023-04-22 16:39:00.159] [nas] [debug] Sending PDU Session Establishment Request
+ue_5         | [2023-04-22 16:39:00.159] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:39:00.187] [ngap] [info] PDU session resource(s) setup for UE[13] count[1]
+ue_13        | [2023-04-22 16:39:00.187] [nas] [debug] PDU Session Establishment Accept received
+ue_13        | [2023-04-22 16:39:00.187] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_13        | [2023-04-22 16:39:00.194] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.13] is up.
+gnodeb       | [2023-04-22 16:39:00.214] [ngap] [info] PDU session resource(s) setup for UE[14] count[1]
+ue_5         | [2023-04-22 16:39:00.215] [nas] [debug] PDU Session Establishment Accept received
+ue_5         | [2023-04-22 16:39:00.215] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_5         | [2023-04-22 16:39:00.220] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.14] is up.
+mongodb      | {"t":{"$date":"2023-04-22T16:39:04.557+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:34376","uuid":"7c8ab8d5-a99a-41f5-9345-4b622be6715f","connectionId":11,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-04-22T16:39:04.558+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"10.100.200.6:34376","client":"conn11","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:39:04.654+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.5:46006","uuid":"f2779b92-ebb6-4c46-9116-17d4c810ccd2","connectionId":12,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-04-22T16:39:04.654+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"10.100.200.5:46006","client":"conn12","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_11        | [2023-04-22 16:39:11.378] [nas] [debug] NAS timer[3510] expired [1]
+ue_11        | [2023-04-22 16:39:11.378] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_11        | [2023-04-22 16:39:11.378] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+ue_11        | [2023-04-22 16:39:11.378] [nas] [info] Performing local release of NAS connection
+ue_11        | [2023-04-22 16:39:11.378] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+ue_11        | [2023-04-22 16:39:11.378] [rrc] [info] UE switches to state [RRC-IDLE]
+ue_11        | [2023-04-22 16:39:11.378] [nas] [info] UE switches to state [CM-IDLE]
+gnodeb       | [2023-04-22 16:39:11.620] [rrc] [debug] UE[16] new signal detected
+gnodeb       | [2023-04-22 16:39:13.223] [rls] [debug] UE[1] signal lost
+ue_11        | [2023-04-22 16:39:21.388] [nas] [debug] NAS timer[3511] expired [1]
+ue_11        | [2023-04-22 16:39:21.388] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+ue_11        | [2023-04-22 16:39:21.388] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_11        | [2023-04-22 16:39:21.388] [nas] [debug] Sending Initial Registration
+ue_11        | [2023-04-22 16:39:21.388] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_11        | [2023-04-22 16:39:21.388] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:39:21.388] [rrc] [info] RRC Setup for UE[16]
+ue_11        | [2023-04-22 16:39:21.389] [rrc] [info] RRC connection established
+ue_11        | [2023-04-22 16:39:21.389] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_11        | [2023-04-22 16:39:21.389] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-04-22 16:39:21.389] [ngap] [debug] Initial NAS message received from UE[16]
+udm          | http://nrf.free5gc.org:8000
+ue_11        | [2023-04-22 16:39:21.406] [nas] [debug] Authentication Request received
+ue_11        | [2023-04-22 16:39:21.410] [nas] [debug] Security Mode Command received
+ue_11        | [2023-04-22 16:39:21.410] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-04-22 16:39:21.432] [ngap] [debug] Initial Context Setup Request received
+ue_11        | [2023-04-22 16:39:21.433] [nas] [debug] Registration accept received
+ue_11        | [2023-04-22 16:39:21.433] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:39:21.433] [nas] [info] UE switches to state [5U1-UPDATED]
+ue_11        | [2023-04-22 16:39:21.433] [nas] [debug] Sending Registration Complete
+ue_11        | [2023-04-22 16:39:21.433] [nas] [info] Initial Registration is successful
+ue_11        | [2023-04-22 16:39:21.433] [nas] [debug] Sending PDU Session Establishment Request
+ue_11        | [2023-04-22 16:39:21.433] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-04-22 16:39:21.660] [ngap] [info] PDU session resource(s) setup for UE[16] count[1]
+ue_11        | [2023-04-22 16:39:21.660] [nas] [debug] PDU Session Establishment Accept received
+ue_11        | [2023-04-22 16:39:21.660] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_11        | [2023-04-22 16:39:21.666] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.15] is up.
+ue_5         | [2023-04-22 16:39:59.609] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_5         | [2023-04-22 16:39:59.609] [nas] [error] Radio link failure detected
+ue_5         | [2023-04-22 16:39:59.609] [nas] [info] UE switches to state [CM-IDLE]
+ue_5         | [2023-04-22 16:39:59.609] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_5         | [2023-04-22 16:39:59.609] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_5         | [2023-04-22 16:39:59.609] [nas] [error] PLMN selection failure, no cells in coverage
+ue_5         | [2023-04-22 16:39:59.610] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_4         | [2023-04-22 16:39:59.610] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_4         | [2023-04-22 16:39:59.610] [nas] [error] Radio link failure detected
+ue_4         | [2023-04-22 16:39:59.610] [nas] [info] UE switches to state [CM-IDLE]
+ue_4         | [2023-04-22 16:39:59.610] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_4         | [2023-04-22 16:39:59.610] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_4         | [2023-04-22 16:39:59.610] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-22 16:39:59.610] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_5         | [2023-04-22 16:39:59.931] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_5         | [2023-04-22 16:39:59.931] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_4         | [2023-04-22 16:40:01.574] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_4         | [2023-04-22 16:40:01.574] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-22 16:40:02.377] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-22 16:40:02.614] [nas] [error] PLMN selection failure, no cells in coverage
+ue_5         | [2023-04-22 16:40:04.579] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-22 16:40:04.816] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_5         | [2023-04-22 16:40:05.680] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_5         | [2023-04-22 16:40:06.004] [nas] [info] Selected plmn[208/93]
+ue_5         | [2023-04-22 16:40:06.004] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_5         | [2023-04-22 16:40:06.004] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_5         | [2023-04-22 16:40:06.004] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:40:06.004] [nas] [info] Selected plmn[208/93]
+ue_4         | [2023-04-22 16:40:06.004] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_4         | [2023-04-22 16:40:06.004] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_5         | [2023-04-22 16:40:06.005] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_4         | [2023-04-22 16:40:06.004] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:40:06.005] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_4         | [2023-04-22 16:40:06.005] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_4         | [2023-04-22 16:40:06.005] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_4         | [2023-04-22 16:40:06.005] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_4         | [2023-04-22 16:40:06.005] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_4         | [2023-04-22 16:40:06.005] [rrc] [debug] Sending RRC Setup Request
+ue_5         | [2023-04-22 16:40:06.005] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_5         | [2023-04-22 16:40:06.005] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_5         | [2023-04-22 16:40:06.005] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_5         | [2023-04-22 16:40:06.005] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_5         | [2023-04-22 16:40:06.005] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:40:06.005] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:40:06.005] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_14        | [2023-04-22 16:40:08.809] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_14        | [2023-04-22 16:40:08.809] [nas] [error] Radio link failure detected
+ue_14        | [2023-04-22 16:40:08.809] [nas] [info] UE switches to state [CM-IDLE]
+ue_14        | [2023-04-22 16:40:08.809] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_14        | [2023-04-22 16:40:08.809] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_14        | [2023-04-22 16:40:08.809] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:08.810] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_3         | [2023-04-22 16:40:08.810] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_3         | [2023-04-22 16:40:08.810] [nas] [error] Radio link failure detected
+ue_3         | [2023-04-22 16:40:08.810] [nas] [info] UE switches to state [CM-IDLE]
+ue_3         | [2023-04-22 16:40:08.810] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:40:08.810] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_3         | [2023-04-22 16:40:08.810] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:40:08.810] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_3         | [2023-04-22 16:40:09.433] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_3         | [2023-04-22 16:40:09.433] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_14        | [2023-04-22 16:40:10.018] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_14        | [2023-04-22 16:40:10.018] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_14        | [2023-04-22 16:40:11.260] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:40:11.769] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:13.462] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:40:13.971] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_14        | [2023-04-22 16:40:14.563] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_12        | [2023-04-22 16:40:15.216] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_12        | [2023-04-22 16:40:15.216] [nas] [error] Radio link failure detected
+ue_12        | [2023-04-22 16:40:15.216] [nas] [info] UE switches to state [CM-IDLE]
+ue_12        | [2023-04-22 16:40:15.216] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_12        | [2023-04-22 16:40:15.216] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_12        | [2023-04-22 16:40:15.216] [nas] [error] PLMN selection failure, no cells in coverage
+ue_12        | [2023-04-22 16:40:15.216] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_6         | [2023-04-22 16:40:15.217] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_6         | [2023-04-22 16:40:15.217] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_6         | [2023-04-22 16:40:15.217] [nas] [error] Radio link failure detected
+ue_6         | [2023-04-22 16:40:15.217] [nas] [info] UE switches to state [CM-IDLE]
+ue_6         | [2023-04-22 16:40:15.217] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:15.217] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_6         | [2023-04-22 16:40:15.217] [nas] [error] PLMN selection failure, no cells in coverage
+ue_12        | [2023-04-22 16:40:16.006] [nas] [info] Selected plmn[208/93]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [info] Selected plmn[208/93]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [info] Selected plmn[208/93]
+ue_12        | [2023-04-22 16:40:16.006] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_14        | [2023-04-22 16:40:16.006] [nas] [info] Selected plmn[208/93]
+ue_14        | [2023-04-22 16:40:16.006] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_14        | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_14        | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:40:16.006] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_6         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_3         | [2023-04-22 16:40:16.006] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_12        | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_12        | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:40:16.006] [rrc] [debug] Sending RRC Setup Request
+ue_3         | [2023-04-22 16:40:16.006] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_3         | [2023-04-22 16:40:16.006] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_3         | [2023-04-22 16:40:16.006] [rrc] [debug] Sending RRC Setup Request
+ue_3         | [2023-04-22 16:40:16.006] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+gnodeb       | [2023-04-22 16:40:16.007] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:40:16.007] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_5         | [2023-04-22 16:40:21.494] [nas] [debug] NAS timer[3517] expired [1]
+ue_5         | [2023-04-22 16:40:21.494] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_5         | [2023-04-22 16:40:21.494] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:40:21.634] [nas] [debug] NAS timer[3517] expired [1]
+ue_4         | [2023-04-22 16:40:21.634] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_4         | [2023-04-22 16:40:21.634] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:40:31.206] [nas] [debug] NAS timer[3517] expired [1]
+ue_6         | [2023-04-22 16:40:31.206] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:31.206] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:40:31.998] [nas] [debug] NAS timer[3517] expired [1]
+ue_3         | [2023-04-22 16:40:31.998] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:40:31.998] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:40:37.009] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_15        | [2023-04-22 16:40:37.009] [nas] [error] Radio link failure detected
+ue_15        | [2023-04-22 16:40:37.009] [nas] [info] UE switches to state [CM-IDLE]
+ue_15        | [2023-04-22 16:40:37.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_15        | [2023-04-22 16:40:37.009] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_15        | [2023-04-22 16:40:37.009] [nas] [error] PLMN selection failure, no cells in coverage
+ue_2         | [2023-04-22 16:40:37.009] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_2         | [2023-04-22 16:40:37.009] [nas] [error] Radio link failure detected
+ue_2         | [2023-04-22 16:40:37.010] [nas] [info] UE switches to state [CM-IDLE]
+ue_2         | [2023-04-22 16:40:37.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_2         | [2023-04-22 16:40:37.010] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_2         | [2023-04-22 16:40:37.010] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-22 16:40:37.009] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_2         | [2023-04-22 16:40:37.010] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_2         | [2023-04-22 16:40:37.152] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_2         | [2023-04-22 16:40:37.152] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | [2023-04-22 16:40:38.411] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_3         | [2023-04-22 16:40:38.411] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:40:38.411] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_3         | [2023-04-22 16:40:38.411] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:40:38.411] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_15        | [2023-04-22 16:40:39.031] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-22 16:40:39.174] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_15        | [2023-04-22 16:40:39.174] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | [2023-04-22 16:40:39.445] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_3         | [2023-04-22 16:40:39.445] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_2         | [2023-04-22 16:40:39.513] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:41.215] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_11        | [2023-04-22 16:40:41.215] [nas] [error] Radio link failure detected
+ue_11        | [2023-04-22 16:40:41.215] [nas] [info] UE switches to state [CM-IDLE]
+ue_11        | [2023-04-22 16:40:41.215] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_11        | [2023-04-22 16:40:41.215] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_11        | [2023-04-22 16:40:41.215] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:41.215] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_15        | [2023-04-22 16:40:41.233] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:41.410] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_11        | [2023-04-22 16:40:41.410] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | [2023-04-22 16:40:41.496] [nas] [error] PLMN selection failure, no cells in coverage
+ue_2         | [2023-04-22 16:40:41.715] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-22 16:40:42.334] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_2         | [2023-04-22 16:40:42.816] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_3         | [2023-04-22 16:40:43.698] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_11        | [2023-04-22 16:40:44.282] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:46.008] [nas] [info] Selected plmn[208/93]
+ue_11        | [2023-04-22 16:40:46.008] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-04-22 16:40:46.009] [nas] [info] Selected plmn[208/93]
+ue_15        | [2023-04-22 16:40:46.009] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_15        | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_11        | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:40:46.009] [nas] [info] Selected plmn[208/93]
+ue_3         | [2023-04-22 16:40:46.009] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_3         | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:40:46.009] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-04-22 16:40:46.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_2         | [2023-04-22 16:40:46.010] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_2         | [2023-04-22 16:40:46.010] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:40:46.010] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_13        | [2023-04-22 16:40:49.814] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_13        | [2023-04-22 16:40:49.814] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_14        | [2023-04-22 16:40:49.814] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_14        | [2023-04-22 16:40:49.814] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_14        | [2023-04-22 16:40:49.814] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_14        | [2023-04-22 16:40:49.814] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:49.814] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_13        | [2023-04-22 16:40:49.814] [nas] [error] Radio link failure detected
+ue_13        | [2023-04-22 16:40:49.814] [nas] [info] UE switches to state [CM-IDLE]
+ue_13        | [2023-04-22 16:40:49.814] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_13        | [2023-04-22 16:40:49.814] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_13        | [2023-04-22 16:40:49.814] [nas] [error] PLMN selection failure, no cells in coverage
+ue_13        | [2023-04-22 16:40:49.956] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_13        | [2023-04-22 16:40:49.956] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_14        | [2023-04-22 16:40:50.034] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_14        | [2023-04-22 16:40:50.034] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-22 16:40:50.415] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_10        | [2023-04-22 16:40:50.415] [nas] [error] Radio link failure detected
+ue_10        | [2023-04-22 16:40:50.415] [nas] [info] UE switches to state [CM-IDLE]
+ue_10        | [2023-04-22 16:40:50.415] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_10        | [2023-04-22 16:40:50.415] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_10        | [2023-04-22 16:40:50.415] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:50.415] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_11        | [2023-04-22 16:40:50.415] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_11        | [2023-04-22 16:40:50.415] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_11        | [2023-04-22 16:40:50.415] [nas] [error] PLMN selection failure, no cells in coverage
+gnodeb       | [2023-04-22 16:40:50.524] [rls] [debug] UE[12] signal lost
+gnodeb       | [2023-04-22 16:40:50.524] [rls] [debug] UE[16] signal lost
+ue_15        | [2023-04-22 16:40:51.216] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_15        | [2023-04-22 16:40:51.216] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_2         | [2023-04-22 16:40:51.216] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_2         | [2023-04-22 16:40:51.216] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_2         | [2023-04-22 16:40:51.216] [nas] [error] Active cell change in [CM-IDLE] state while MM specific procedure is ongoing
+ue_15        | [2023-04-22 16:40:51.216] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_2         | [2023-04-22 16:40:51.216] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_15        | [2023-04-22 16:40:51.216] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-22 16:40:51.216] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_2         | [2023-04-22 16:40:51.216] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_2         | [2023-04-22 16:40:51.216] [nas] [error] PLMN selection failure, no cells in coverage
+ue_10        | [2023-04-22 16:40:51.416] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_11        | [2023-04-22 16:40:51.417] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_5         | [2023-04-22 16:40:51.619] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_5         | [2023-04-22 16:40:51.619] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_4         | [2023-04-22 16:40:51.619] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_4         | [2023-04-22 16:40:51.619] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_4         | [2023-04-22 16:40:51.619] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_4         | [2023-04-22 16:40:51.619] [nas] [error] PLMN selection failure, no cells in coverage
+ue_5         | [2023-04-22 16:40:51.619] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_5         | [2023-04-22 16:40:51.619] [nas] [error] PLMN selection failure, no cells in coverage
+ue_5         | [2023-04-22 16:40:51.619] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_4         | [2023-04-22 16:40:51.619] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_7         | [2023-04-22 16:40:51.620] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_7         | [2023-04-22 16:40:51.620] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_7         | [2023-04-22 16:40:51.620] [nas] [error] Radio link failure detected
+ue_7         | [2023-04-22 16:40:51.620] [nas] [info] UE switches to state [CM-IDLE]
+ue_7         | [2023-04-22 16:40:51.620] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_7         | [2023-04-22 16:40:51.620] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_7         | [2023-04-22 16:40:51.620] [nas] [error] PLMN selection failure, no cells in coverage
+ue_13        | [2023-04-22 16:40:51.913] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:51.997] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-22 16:40:52.319] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_7         | [2023-04-22 16:40:52.319] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-22 16:40:52.378] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_10        | [2023-04-22 16:40:52.378] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-22 16:40:52.457] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_5         | [2023-04-22 16:40:52.457] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-22 16:40:52.938] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:53.090] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-22 16:40:53.219] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_6         | [2023-04-22 16:40:53.219] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:53.219] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_6         | [2023-04-22 16:40:53.219] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-22 16:40:53.219] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_2         | [2023-04-22 16:40:53.220] [rrc] [debug] Signal lost for cell[3], total [0] cells in coverage
+ue_2         | [2023-04-22 16:40:53.220] [nas] [error] PLMN selection failure, no cells in coverage
+ue_2         | [2023-04-22 16:40:53.220] [rrc] [debug] New signal detected for cell[4], total [1] cells in coverage
+ue_9         | [2023-04-22 16:40:53.222] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_9         | [2023-04-22 16:40:53.222] [nas] [error] Radio link failure detected
+ue_9         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [CM-IDLE]
+ue_9         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_9         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_9         | [2023-04-22 16:40:53.222] [nas] [error] PLMN selection failure, no cells in coverage
+ue_8         | [2023-04-22 16:40:53.222] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_8         | [2023-04-22 16:40:53.222] [nas] [error] Radio link failure detected
+ue_8         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [CM-IDLE]
+ue_8         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_8         | [2023-04-22 16:40:53.222] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_8         | [2023-04-22 16:40:53.222] [nas] [error] PLMN selection failure, no cells in coverage
+ue_9         | [2023-04-22 16:40:53.223] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_8         | [2023-04-22 16:40:53.223] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_15        | [2023-04-22 16:40:53.344] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-22 16:40:53.972] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-22 16:40:54.095] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_4         | [2023-04-22 16:40:54.095] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_13        | [2023-04-22 16:40:54.115] [nas] [error] PLMN selection failure, no cells in coverage
+ue_5         | [2023-04-22 16:40:54.127] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:54.199] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-22 16:40:54.362] [nas] [error] PLMN selection failure, no cells in coverage
+ue_9         | [2023-04-22 16:40:54.601] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_9         | [2023-04-22 16:40:54.601] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_6         | [2023-04-22 16:40:54.668] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_6         | [2023-04-22 16:40:54.668] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_8         | [2023-04-22 16:40:54.819] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_8         | [2023-04-22 16:40:54.819] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-22 16:40:55.140] [nas] [error] PLMN selection failure, no cells in coverage
+ue_13        | [2023-04-22 16:40:55.216] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_11        | [2023-04-22 16:40:55.292] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-22 16:40:55.300] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_15        | [2023-04-22 16:40:55.546] [nas] [error] PLMN selection failure, no cells in coverage
+ue_9         | [2023-04-22 16:40:55.958] [nas] [error] PLMN selection failure, no cells in coverage
+ue_10        | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_7         | [2023-04-22 16:40:56.009] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_6         | [2023-04-22 16:40:56.009] [nas] [info] Selected plmn[208/93]
+ue_6         | [2023-04-22 16:40:56.009] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_6         | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_13        | [2023-04-22 16:40:56.009] [nas] [info] Selected plmn[208/93]
+ue_13        | [2023-04-22 16:40:56.009] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_13        | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_13        | [2023-04-22 16:40:56.009] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_4         | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_4         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_4         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-04-22 16:40:56.009] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-04-22 16:40:56.009] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-04-22 16:40:56.009] [nas] [info] Selected plmn[208/93]
+ue_15        | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_15        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_14        | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_14        | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_14        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_14        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_11        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_11        | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_7         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_7         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_8         | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_8         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_8         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_9         | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_9         | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_10        | [2023-04-22 16:40:56.010] [nas] [info] Selected plmn[208/93]
+ue_10        | [2023-04-22 16:40:56.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_2         | [2023-04-22 16:40:56.010] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-04-22 16:40:56.010] [nas] [debug] Deleting NAS security context
+ue_2         | [2023-04-22 16:40:56.010] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_2         | [2023-04-22 16:40:56.011] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:40:56.011] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_8         | [2023-04-22 16:40:56.011] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_8         | [2023-04-22 16:40:56.011] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_8         | [2023-04-22 16:40:56.011] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_10        | [2023-04-22 16:40:56.011] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_10        | [2023-04-22 16:40:56.011] [rrc] [debug] Sending RRC Setup Request
+ue_10        | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_8         | [2023-04-22 16:40:56.011] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_8         | [2023-04-22 16:40:56.011] [rrc] [debug] Sending RRC Setup Request
+ue_8         | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_7         | [2023-04-22 16:40:56.011] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_9         | [2023-04-22 16:40:56.011] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_9         | [2023-04-22 16:40:56.011] [rrc] [debug] Sending RRC Setup Request
+ue_9         | [2023-04-22 16:40:56.011] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_7         | [2023-04-22 16:40:56.011] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_7         | [2023-04-22 16:40:56.011] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_7         | [2023-04-22 16:40:56.011] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_7         | [2023-04-22 16:40:56.012] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_7         | [2023-04-22 16:40:56.012] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:40:56.012] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:40:56.012] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:40:56.012] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:40:56.012] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_5         | [2023-04-22 16:40:56.012] [nas] [info] Selected plmn[208/93]
+ue_5         | [2023-04-22 16:40:56.012] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_5         | [2023-04-22 16:40:56.012] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_5         | [2023-04-22 16:40:56.012] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-04-22 16:40:56.410] [rrc] [debug] Signal lost for cell[3], total [0] cells in coverage
+ue_6         | [2023-04-22 16:40:56.410] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:40:56.410] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_6         | [2023-04-22 16:40:56.410] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-22 16:40:56.410] [rrc] [debug] New signal detected for cell[4], total [1] cells in coverage
+ue_6         | [2023-04-22 16:40:59.328] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-22 16:41:01.530] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+ue_11        | [2023-04-22 16:41:05.930] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_11        | [2023-04-22 16:41:05.930] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_11        | [2023-04-22 16:41:05.930] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_11        | [2023-04-22 16:41:05.930] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_11        | [2023-04-22 16:41:05.930] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_11        | [2023-04-22 16:41:05.930] [rrc] [debug] Sending RRC Setup Request
+ue_6         | [2023-04-22 16:41:06.010] [nas] [info] Selected plmn[208/93]
+ue_6         | [2023-04-22 16:41:06.010] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_6         | [2023-04-22 16:41:06.010] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_6         | [2023-04-22 16:41:06.010] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:41:09.415] [rrc] [debug] Signal lost for cell[2], total [0] cells in coverage
+ue_1         | [2023-04-22 16:41:09.415] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+ue_12        | [2023-04-22 16:41:09.415] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_12        | [2023-04-22 16:41:09.415] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_12        | [2023-04-22 16:41:09.415] [nas] [error] PLMN selection failure, no cells in coverage
+ue_12        | [2023-04-22 16:41:09.415] [rrc] [debug] New signal detected for cell[3], total [1] cells in coverage
+ue_1         | [2023-04-22 16:41:09.415] [nas] [error] Radio link failure detected
+ue_1         | [2023-04-22 16:41:09.415] [nas] [info] UE switches to state [CM-IDLE]
+ue_1         | [2023-04-22 16:41:09.415] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_1         | [2023-04-22 16:41:09.415] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_1         | [2023-04-22 16:41:09.415] [nas] [error] PLMN selection failure, no cells in coverage
+ue_1         | [2023-04-22 16:41:09.418] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+ue_12        | [2023-04-22 16:41:09.607] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_12        | [2023-04-22 16:41:09.607] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_11        | [2023-04-22 16:41:10.015] [rrc] [debug] Signal lost for cell[3], total [0] cells in coverage
+ue_11        | [2023-04-22 16:41:10.015] [nas] [error] Active cell change in [CM-IDLE] state while MM specific procedure is ongoing
+ue_11        | [2023-04-22 16:41:10.015] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_11        | [2023-04-22 16:41:10.015] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_11        | [2023-04-22 16:41:10.015] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:41:10.015] [rrc] [debug] New signal detected for cell[4], total [1] cells in coverage
+ue_3         | [2023-04-22 16:41:10.215] [rrc] [debug] Signal lost for cell[3], total [0] cells in coverage
+ue_3         | [2023-04-22 16:41:10.215] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:41:10.215] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+ue_3         | [2023-04-22 16:41:10.215] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:41:10.215] [rrc] [debug] New signal detected for cell[4], total [1] cells in coverage
+ue_9         | [2023-04-22 16:41:11.203] [nas] [debug] NAS timer[3517] expired [1]
+ue_9         | [2023-04-22 16:41:11.203] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_9         | [2023-04-22 16:41:11.203] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-04-22 16:41:11.256] [nas] [debug] NAS timer[3510] expired [1]
+ue_2         | [2023-04-22 16:41:11.256] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_2         | [2023-04-22 16:41:11.256] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+ue_2         | [2023-04-22 16:41:11.256] [rrc] [info] UE switches to state [RRC-IDLE]
+ue_2         | [2023-04-22 16:41:11.256] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+ue_7         | [2023-04-22 16:41:11.405] [nas] [debug] NAS timer[3517] expired [1]
+ue_7         | [2023-04-22 16:41:11.405] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_7         | [2023-04-22 16:41:11.405] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-04-22 16:41:11.406] [nas] [debug] NAS timer[3517] expired [1]
+ue_8         | [2023-04-22 16:41:11.406] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_8         | [2023-04-22 16:41:11.406] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:41:11.422] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+ue_11        | [2023-04-22 16:41:11.422] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-22 16:41:11.461] [nas] [debug] NAS timer[3517] expired [1]
+ue_10        | [2023-04-22 16:41:11.461] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_10        | [2023-04-22 16:41:11.461] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+gnodeb       | [2023-04-22 16:41:11.617] [rrc] [debug] UE[17] new signal detected
+ue_11        | [2023-04-22 16:41:11.618] [nas] [info] Selected plmn[208/93]
+ue_12        | [2023-04-22 16:41:11.618] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-22 16:41:11.618] [nas] [info] Selected plmn[208/93]
+ue_1         | [2023-04-22 16:41:11.618] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-22 16:41:11.619] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_12        | [2023-04-22 16:41:11.619] [nas] [info] Selected plmn[208/93]
+ue_12        | [2023-04-22 16:41:11.619] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_12        | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_12        | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-04-22 16:41:11.619] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_3         | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_3         | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_11        | [2023-04-22 16:41:11.619] [nas] [info] UE switches to state [MM-DEREGISTERED/LIMITED-SERVICE]
+ue_1         | [2023-04-22 16:41:11.619] [nas] [info] Selected plmn[208/93]
+ue_1         | [2023-04-22 16:41:11.619] [rrc] [info] Selected cell plmn[208/93] tac[1] category[ACCEPTABLE]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [info] UE switches to state [MM-REGISTERED/LIMITED-SERVICE]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [debug] Uplink data status changed PSI[2] pending[true]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_1         | [2023-04-22 16:41:11.620] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_1         | [2023-04-22 16:41:11.620] [rrc] [debug] Sending RRC Setup Request
+ue_1         | [2023-04-22 16:41:11.620] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+gnodeb       | [2023-04-22 16:41:11.620] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+gnodeb       | [2023-04-22 16:41:12.619] [rls] [debug] UE[9] signal lost
+ue_12        | [2023-04-22 16:41:15.888] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_12        | [2023-04-22 16:41:15.888] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_12        | [2023-04-22 16:41:15.888] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_12        | [2023-04-22 16:41:15.888] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_12        | [2023-04-22 16:41:15.888] [rrc] [debug] Sending RRC Setup Request
+ue_12        | [2023-04-22 16:41:15.888] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+gnodeb       | [2023-04-22 16:41:15.889] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_2         | [2023-04-22 16:41:21.266] [nas] [debug] NAS timer[3511] expired [1]
+ue_2         | [2023-04-22 16:41:21.266] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+ue_2         | [2023-04-22 16:41:21.266] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_2         | [2023-04-22 16:41:21.266] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-04-22 16:41:21.266] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_2         | [2023-04-22 16:41:21.266] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:41:21.266] [rrc] [info] RRC Setup for UE[17]
+ue_2         | [2023-04-22 16:41:21.267] [rrc] [info] RRC connection established
+ue_2         | [2023-04-22 16:41:21.267] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_2         | [2023-04-22 16:41:21.267] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_2         | [2023-04-22 16:41:21.267] [nas] [debug] Uplink data status changed PSI[1] pending[false]
+gnodeb       | [2023-04-22 16:41:21.267] [ngap] [debug] Initial NAS message received from UE[17]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.268] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.269] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.270] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+ue_2         | [2023-04-22 16:41:21.271] [nas] [error] Initial Registration failed [UNSPECIFIED_PROTOCOL_ERROR]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+ue_2         | [2023-04-22 16:41:21.271] [nas] [debug] Handling Registration Reject abnormal case
+ue_2         | [2023-04-22 16:41:21.271] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+gnodeb       | [2023-04-22 16:41:21.271] [gtp] [error] Uplink data failure, PDU session not found. UE[17] PSI[1]
+ue_13        | [2023-04-22 16:41:25.909] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_13        | [2023-04-22 16:41:25.909] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_13        | [2023-04-22 16:41:25.909] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_13        | [2023-04-22 16:41:25.909] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_13        | [2023-04-22 16:41:25.909] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_13        | [2023-04-22 16:41:25.910] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:41:25.910] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_1         | [2023-04-22 16:41:27.001] [nas] [debug] NAS timer[3517] expired [1]
+ue_1         | [2023-04-22 16:41:27.001] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_1         | [2023-04-22 16:41:27.001] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-04-22 16:41:31.226] [nas] [debug] NAS timer[3517] expired [1]
+ue_12        | [2023-04-22 16:41:31.226] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_12        | [2023-04-22 16:41:31.226] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_14        | [2023-04-22 16:41:35.924] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_14        | [2023-04-22 16:41:35.924] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_14        | [2023-04-22 16:41:35.925] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_14        | [2023-04-22 16:41:35.925] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_14        | [2023-04-22 16:41:35.925] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_14        | [2023-04-22 16:41:35.925] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:41:35.925] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_13        | [2023-04-22 16:41:41.561] [nas] [debug] NAS timer[3517] expired [1]
+ue_13        | [2023-04-22 16:41:41.561] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_13        | [2023-04-22 16:41:41.561] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:41:45.941] [nas] [debug] Uplink data status changed PSI[1] pending[true]
+ue_15        | [2023-04-22 16:41:45.941] [nas] [debug] Service request required due to [IDLE-UPLINK-DATA-PENDING]
+ue_15        | [2023-04-22 16:41:45.941] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_data]
+ue_15        | [2023-04-22 16:41:45.941] [nas] [debug] Sending Service Request due to [IDLE-UPLINK-DATA-PENDING]
+ue_15        | [2023-04-22 16:41:45.941] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-04-22 16:41:45.942] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+ue_15        | [2023-04-22 16:41:45.942] [nas] [info] UE switches to state [MM-SERVICE-REQUEST-INITIATED]
+ue_14        | [2023-04-22 16:41:51.670] [nas] [debug] NAS timer[3517] expired [1]
+ue_14        | [2023-04-22 16:41:51.670] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_14        | [2023-04-22 16:41:51.670] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-04-22 16:42:01.822] [nas] [debug] NAS timer[3517] expired [1]
+ue_15        | [2023-04-22 16:42:01.822] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+ue_15        | [2023-04-22 16:42:01.822] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.291+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"10.100.200.5:46006","uuid":"f2779b92-ebb6-4c46-9116-17d4c810ccd2","connectionId":12,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.291+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"10.100.200.5:45630","uuid":"56e9b6fe-d4db-4886-a77f-9ec489feeebf","connectionId":4,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.291+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn3","msg":"Interrupted operation as its client disconnected","attr":{"opId":3181}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.291+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"10.100.200.5:45628","uuid":"9216477b-ad72-4a28-8d36-88a14b59ca94","connectionId":3,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.296+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:50156","uuid":"86343b0a-a4d5-4144-bbf3-62f893aa530a","connectionId":13,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:18.296+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"10.100.200.6:50156","client":"conn13","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.300+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn7","msg":"Interrupted operation as its client disconnected","attr":{"opId":3199}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.300+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"10.100.200.10:50726","uuid":"eaff79e7-c007-42f2-85e6-1f0fd648c2c4","connectionId":9,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.301+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"10.100.200.10:38678","uuid":"dac2c444-f542-46df-b8e4-6814cbfb4e74","connectionId":7,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.301+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"10.100.200.10:38684","uuid":"8712dc01-cc82-4515-878f-8b4a87460578","connectionId":8,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.303+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn5","msg":"Interrupted operation as its client disconnected","attr":{"opId":3188}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.303+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"10.100.200.13:33640","uuid":"27588e1e-38dc-4084-8cee-9eb48ac42feb","connectionId":10,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.303+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"10.100.200.13:37230","uuid":"d12abf3e-5bd0-402f-95da-433b2e1e4210","connectionId":6,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:19.303+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"10.100.200.13:37242","uuid":"d3e224d4-2597-4870-a452-73d6ab9bfae7","connectionId":5,"connectionCount":4}}
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[2] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[3] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[4] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[5] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[6] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[7] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[8] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[11] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[13] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[14] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[15] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[16] signal lost
+gnodeb       | [2023-04-22 16:42:20.050] [rls] [debug] UE[17] signal lost
+ue_14 exited with code 0
+ue_14 exited with code 0
+ue_13 exited with code 0
+ue_13 exited with code 0
+ue_9 exited with code 0
+ue_9 exited with code 0
+webui exited with code 0
+webui exited with code 2
+ue_1 exited with code 0
+ue_1 exited with code 0
+ue_6 exited with code 0
+ue_6 exited with code 0
+ue_7 exited with code 0
+ue_7 exited with code 0
+ue_10 exited with code 0
+ue_10 exited with code 0
+ue_3 exited with code 0
+ue_3 exited with code 0
+ue_15 exited with code 0
+ue_15 exited with code 0
+ue_8 exited with code 0
+ue_8 exited with code 0
+ue_12 exited with code 0
+ue_12 exited with code 0
+ue_4 exited with code 0
+ue_4 exited with code 0
+ue_2 exited with code 0
+ue_2 exited with code 0
+ue_5 exited with code 0
+ue_5 exited with code 0
+ue_11 exited with code 0
+ue_11 exited with code 0
+ausf exited with code 0
+pcf exited with code 0
+ausf exited with code 0
+pcf exited with code 0
+nssf exited with code 0
+nssf exited with code 0
+udm exited with code 0
+udm exited with code 0
+udr exited with code 0
+udr exited with code 0
+n3iwf exited with code 0
+n3iwf exited with code 0
+gnodeb exited with code 0
+gnodeb exited with code 0
+smf exited with code 0
+smf exited with code 0
+amf exited with code 0
+amf exited with code 0
+upf exited with code 0
+upf exited with code 0
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.513+00:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn13","msg":"CMD: drop","attr":{"namespace":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.513+00:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn13","msg":"Finishing collection drop","attr":{"namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"b10e1711-2a05-4b4b-b22e-cee129f1a67e"}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.513+00:00"},"s":"I",  "c":"STORAGE",  "id":22206,   "ctx":"conn13","msg":"Deferring table drop for index","attr":{"index":"_id_","namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"b10e1711-2a05-4b4b-b22e-cee129f1a67e"}},"ident":"index-1--170125173977880955","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.513+00:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn13","msg":"Deferring table drop for collection","attr":{"namespace":"free5gc.NfProfile","ident":"collection-0--170125173977880955","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.515+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":3179}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.515+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"10.100.200.6:50156","uuid":"86343b0a-a4d5-4144-bbf3-62f893aa530a","connectionId":13,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.515+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"10.100.200.6:43872","uuid":"e31c4ccf-5e93-4c8b-a8b3-b7126033360b","connectionId":2,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.515+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"10.100.200.6:34376","uuid":"7c8ab8d5-a99a-41f5-9345-4b622be6715f","connectionId":11,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.515+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"10.100.200.6:43868","uuid":"73739393-85e1-4533-aea1-478d84e8c61d","connectionId":1,"connectionCount":0}}
+nrf exited with code 0
+nrf exited with code 0
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.710+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.711+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.712+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.712+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.712+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.712+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.727+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":15}}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.727+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.727+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.727+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.730+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb      | {"t":{"$date":"2023-04-22T16:42:24.730+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
+mongodb exited with code 0
+http_server exited with code 0

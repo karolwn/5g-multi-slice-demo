@@ -7,7 +7,19 @@ ueRoutingInfo: # the list of UE routing information
     members:
     - imsi-208930000000001 # Subscription Permanent Identifier of the UE
     - imsi-208930000000002 
-    - imsi-208930000000003 
+    - imsi-208930000000003
+    - imsi-208930000000004
+    - imsi-208930000000005
+    - imsi-208930000000006
+    - imsi-208930000000007
+    - imsi-208930000000008
+    - imsi-208930000000009
+    - imsi-208930000000010
+    - imsi-208930000000011
+    - imsi-208930000000012
+    - imsi-208930000000013
+    - imsi-208930000000014
+    - imsi-208930000000015
     
     topology: # Network topology for this group (Uplink: A->B, Downlink: B->A)
     # default path derived from this topology
