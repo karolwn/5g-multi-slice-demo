@@ -31,6 +31,17 @@ fi
 if [ "$1" == "build" ]
 then
 	make all
+
+	cd ../gnbsim
+	pwd
+	git pull
+        go mod tidy
+        go mod vendor
+	go build
+	make docker-build
+	cd ../5g-multi-slice-demo
+	cp config/gnbsim.yaml ../gnbsim/config/
+
         sudo docker compose -f docker-compose-build.yaml build
 fi
 
