@@ -5,10 +5,10 @@ DEFAULT_TIME_SPACING=10
 ENDGAME=10
 NUMBER_OF_UE=15
 STARTING_PORT=10000
-DEFAULT_BANDWIDTH="200M"
+DEFAULT_BANDWIDTH="10M"
 
 
-docker exec ue_1 bash -c "iperf -c http_server.com -B 10.70.0.1 -t 160 -u -b 100M -p 20001 > /dev/null" &
+docker exec ue_1 bash -c "iperf -c http_server.com -B 10.70.0.1 -t 160 -u -b 5M -p 20001 > /dev/null" &
 
 
 for i in $(seq ${NUMBER_OF_UE})
@@ -18,7 +18,7 @@ do
 	port=$((STARTING_PORT + i))
 	if [[ ${i} -eq 1 ]]
 	then
-		docker exec ${container_name} bash -c "./testing_scripts/ue_test_core.sh http_server.com ${port} ${TOTAL_DURATION} 100M" &
+		docker exec ${container_name} bash -c "./testing_scripts/ue_test_core.sh http_server.com ${port} ${TOTAL_DURATION} 5M" &
 	else
 		docker exec ${container_name} bash -c "./testing_scripts/ue_test_core.sh http_server.com ${port} ${TOTAL_DURATION} ${DEFAULT_BANDWIDTH}" &
 	fi

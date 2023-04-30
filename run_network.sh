@@ -30,7 +30,13 @@ fi
 
 if [ "$1" == "build" ]
 then
-	make all
+	cd ../openairinterface5g/
+	docker build --target ran-base --tag ran-base:latest --file docker/Dockerfile.base.ubuntu20 .
+	docker build --target ran-build --tag ran-build:latest --file docker/Dockerfile.build.ubuntu20 .
+	docker build --target oai-gnb --tag oai-gnb:latest --file docker/Dockerfile.gNB.ubuntu20 .
+	docker image prune --force
+	cd ../5g-multi-slice-demo/
+        make all
         sudo docker compose -f docker-compose-build.yaml build
 fi
 

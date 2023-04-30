@@ -241,13 +241,18 @@ services:
     depends_on:
       - db
 
-  ueransim-gnodeb:
-    container_name: gnodeb
-    build:
-      context: ./ueransim
-    command: ./nr-gnb -c ./config/gnbcfg.yaml
+
+  gnb_mono_tdd:
+    image: oai-gnb:latest
+    privileged: true
+    container_name: openair-gnb
+    environment:
+      USE_VOLUMED_CONF: 'yes'
+      USE_B2XX: 'yes'
+      USE_ADDITIONAL_OPTIONS: --sa -E --continuous-tx
     volumes:
-      - ./config/gnbcfg.yaml:/ueransim/config/gnbcfg.yaml
+      - /dev:/dev
+      - ./config/openair_gnb.conf:/opt/oai-gnb/etc/mounted.conf
     cap_add:
       - NET_ADMIN
     devices:
@@ -255,10 +260,34 @@ services:
     networks:
       privnet:
         aliases:
-          - gnb.free5gc.org
+          - gnb.openair.org
     depends_on:
       - free5gc-amf
       - free5gc-upf
+
+  #ueransim-gnodeb:
+  #  container_name: gnodeb
+  #  build:
+  #    context: ./ueransim
+  #  command: ./nr-gnb -c ./config/gnbcfg.yaml
+  #  volumes:
+  #    - ./config/gnbcfg.yaml:/ueransim/config/gnbcfg.yaml
+  #  cap_add:
+  #    - NET_ADMIN
+  #  deploy:
+  #    resources:
+  #      limits:
+  #        # cpus: '1.0'
+  #        memory: 50M
+  #          # devices:
+  #    - "/dev/net/tun"
+  #  networks:
+  #    privnet:
+  #      aliases:
+  #        - gnb.free5gc.org
+  #  depends_on:
+  #    - free5gc-amf
+  #    - free5gc-upf
 
   ueransim-ue_1:
     container_name: ue_1
@@ -279,7 +308,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_2:
     container_name: ue_2
@@ -300,7 +329,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_3:
     container_name: ue_3
@@ -321,7 +350,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_4:
     container_name: ue_4
@@ -342,7 +371,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_5:
     container_name: ue_5
@@ -363,7 +392,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_6:
     container_name: ue_6
@@ -384,7 +413,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_7:
     container_name: ue_7
@@ -405,7 +434,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_8:
     container_name: ue_8
@@ -426,7 +455,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_9:
     container_name: ue_9
@@ -447,7 +476,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_10:
     container_name: ue_10
@@ -468,7 +497,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_11:
     container_name: ue_11
@@ -489,7 +518,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_12:
     container_name: ue_12
@@ -510,7 +539,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_13:
     container_name: ue_13
@@ -531,7 +560,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
       
   ueransim-ue_14:
     container_name: ue_14
@@ -552,7 +581,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   ueransim-ue_15:
     container_name: ue_15
@@ -573,7 +602,7 @@ services:
     depends_on:
       - free5gc-amf
       - free5gc-upf
-      - ueransim-gnodeb
+      - gnb_mono_tdd
 
   http-server:
     container_name: http_server
