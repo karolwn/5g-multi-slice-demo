@@ -1397,3 +1397,219 @@ ue_6         | [2023-04-30 13:43:46.602] [nas] [error] PLMN selection failure, n
 ue_11        | [2023-04-30 13:43:46.759] [nas] [error] PLMN selection failure, no cells in coverage
 ue_3         | [2023-04-30 13:43:46.759] [nas] [error] PLMN selection failure, no cells in coverage
 ue_1         | [2023-04-30 13:43:46.759] [nas] [error] PLMN selection failure, no cells in coverage
+ue_8         | [2023-04-30 13:44:02.014] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_8         | [2023-04-30 13:44:02.014] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_2         | [2023-04-30 13:44:02.120] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_2         | [2023-04-30 13:44:02.120] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-30 13:44:02.152] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_5         | [2023-04-30 13:44:02.152] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_13        | [2023-04-30 13:44:02.354] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_13        | [2023-04-30 13:44:02.354] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_14        | [2023-04-30 13:44:02.494] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_14        | [2023-04-30 13:44:02.494] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_15        | [2023-04-30 13:44:02.518] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_15        | [2023-04-30 13:44:02.518] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_7         | [2023-04-30 13:44:02.585] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_7         | [2023-04-30 13:44:02.585] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_4         | [2023-04-30 13:44:02.626] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_4         | [2023-04-30 13:44:02.626] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-30 13:44:02.673] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_10        | [2023-04-30 13:44:02.673] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_9         | [2023-04-30 13:44:02.757] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_9         | [2023-04-30 13:44:02.757] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_6         | [2023-04-30 13:44:02.843] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_6         | [2023-04-30 13:44:02.843] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_12        | [2023-04-30 13:44:02.852] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_12        | [2023-04-30 13:44:02.852] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | [2023-04-30 13:44:02.904] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_3         | [2023-04-30 13:44:02.904] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_11        | [2023-04-30 13:44:03.084] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_11        | [2023-04-30 13:44:03.084] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_1         | [2023-04-30 13:44:03.158] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_1         | [2023-04-30 13:44:03.158] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-30 13:44:16.613] [nas] [error] PLMN selection failure, no cells in coverage
+ue_8         | [2023-04-30 13:44:16.684] [nas] [error] PLMN selection failure, no cells in coverage
+ue_2         | [2023-04-30 13:44:16.782] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-30 13:44:17.007] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-30 13:44:17.037] [nas] [error] PLMN selection failure, no cells in coverage
+ue_13        | [2023-04-30 13:44:17.038] [nas] [error] PLMN selection failure, no cells in coverage
+ue_10        | [2023-04-30 13:44:17.241] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-30 13:44:17.305] [nas] [error] PLMN selection failure, no cells in coverage
+ue_9         | [2023-04-30 13:44:17.309] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-30 13:44:17.310] [nas] [error] PLMN selection failure, no cells in coverage
+ue_12        | [2023-04-30 13:44:17.310] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-30 13:44:17.452] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-30 13:44:17.634] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-30 13:44:17.644] [nas] [error] PLMN selection failure, no cells in coverage
+ue_1         | [2023-04-30 13:44:17.644] [nas] [error] PLMN selection failure, no cells in coverage
+ue_8         | [2023-04-30 13:44:32.039] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_8         | [2023-04-30 13:44:32.039] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_2         | [2023-04-30 13:44:32.143] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_2         | [2023-04-30 13:44:32.143] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-30 13:44:32.205] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_5         | [2023-04-30 13:44:32.205] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_13        | [2023-04-30 13:44:32.408] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_13        | [2023-04-30 13:44:32.408] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_14        | [2023-04-30 13:44:32.519] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_14        | [2023-04-30 13:44:32.519] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_15        | [2023-04-30 13:44:32.558] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_15        | [2023-04-30 13:44:32.558] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_7         | [2023-04-30 13:44:32.629] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_7         | [2023-04-30 13:44:32.629] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_4         | [2023-04-30 13:44:32.656] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_4         | [2023-04-30 13:44:32.656] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_10        | [2023-04-30 13:44:32.706] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_10        | [2023-04-30 13:44:32.706] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_9         | [2023-04-30 13:44:32.789] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_9         | [2023-04-30 13:44:32.789] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_12        | [2023-04-30 13:44:32.879] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_12        | [2023-04-30 13:44:32.879] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_6         | [2023-04-30 13:44:32.879] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_6         | [2023-04-30 13:44:32.879] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_3         | [2023-04-30 13:44:32.958] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_3         | [2023-04-30 13:44:32.958] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_11        | [2023-04-30 13:44:33.123] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_11        | [2023-04-30 13:44:33.123] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_1         | [2023-04-30 13:44:33.179] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+ue_1         | [2023-04-30 13:44:33.179] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+ue_5         | [2023-04-30 13:44:47.479] [nas] [error] PLMN selection failure, no cells in coverage
+ue_8         | [2023-04-30 13:44:47.546] [nas] [error] PLMN selection failure, no cells in coverage
+ue_2         | [2023-04-30 13:44:47.687] [nas] [error] PLMN selection failure, no cells in coverage
+ue_7         | [2023-04-30 13:44:47.852] [nas] [error] PLMN selection failure, no cells in coverage
+ue_14        | [2023-04-30 13:44:47.910] [nas] [error] PLMN selection failure, no cells in coverage
+ue_13        | [2023-04-30 13:44:47.910] [nas] [error] PLMN selection failure, no cells in coverage
+ue_15        | [2023-04-30 13:44:48.163] [nas] [error] PLMN selection failure, no cells in coverage
+ue_9         | [2023-04-30 13:44:48.163] [nas] [error] PLMN selection failure, no cells in coverage
+ue_12        | [2023-04-30 13:44:48.164] [nas] [error] PLMN selection failure, no cells in coverage
+ue_10        | [2023-04-30 13:44:48.163] [nas] [error] PLMN selection failure, no cells in coverage
+ue_4         | [2023-04-30 13:44:48.164] [nas] [error] PLMN selection failure, no cells in coverage
+ue_6         | [2023-04-30 13:44:48.308] [nas] [error] PLMN selection failure, no cells in coverage
+ue_3         | [2023-04-30 13:44:48.535] [nas] [error] PLMN selection failure, no cells in coverage
+ue_11        | [2023-04-30 13:44:48.535] [nas] [error] PLMN selection failure, no cells in coverage
+ue_1         | [2023-04-30 13:44:48.538] [nas] [error] PLMN selection failure, no cells in coverage
+mongodb      | {"t":{"$date":"2023-04-30T13:44:59.520+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":7870}}
+mongodb      | {"t":{"$date":"2023-04-30T13:44:59.520+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"10.100.200.6:51822","uuid":"8bf5ba80-7c01-4c48-9272-0f0fe3e28e9d","connectionId":2,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-04-30T13:44:59.521+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"10.100.200.6:36190","uuid":"d5751dea-1c7a-4746-8a30-9518cf80d4c2","connectionId":12,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-04-30T13:44:59.521+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"10.100.200.6:51820","uuid":"c06c0883-0858-4fe4-aa5a-36490523b9cc","connectionId":1,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.528+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn7","msg":"Interrupted operation as its client disconnected","attr":{"opId":7879}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.528+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"10.100.200.10:37036","uuid":"e62eb8c3-295f-4ff7-a3f5-07712c249c5a","connectionId":8,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.529+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"10.100.200.10:37044","uuid":"4b2d9e71-b0f5-4ac4-9f1e-129c6a5943e7","connectionId":7,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.532+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn10","msg":"Interrupted operation as its client disconnected","attr":{"opId":7881}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.532+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"10.100.200.13:42366","uuid":"0767310c-b13e-4645-99b1-eb8232a08cce","connectionId":9,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:00.533+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"10.100.200.13:42372","uuid":"4cc1db3d-01a2-403d-b152-0cda581f9c19","connectionId":10,"connectionCount":5}}
+ue_15 exited with code 0
+ue_15 exited with code 0
+ue_9 exited with code 0
+ue_9 exited with code 0
+ue_6 exited with code 0
+ue_6 exited with code 0
+ue_13 exited with code 0
+ue_13 exited with code 0
+ue_3 exited with code 0
+ue_3 exited with code 0
+ue_2 exited with code 0
+ue_2 exited with code 0
+ue_7 exited with code 0
+ue_7 exited with code 0
+ue_12 exited with code 0
+ue_12 exited with code 0
+ue_10 exited with code 0
+ue_5 exited with code 0
+ue_5 exited with code 0
+webui exited with code 0
+webui exited with code 2
+ue_1 exited with code 0
+ue_1 exited with code 0
+ue_4 exited with code 0
+ue_4 exited with code 0
+ue_8 exited with code 0
+ue_8 exited with code 0
+ue_14 exited with code 0
+ue_14 exited with code 0
+ue_11 exited with code 0
+nssf exited with code 0
+nssf exited with code 0
+pcf exited with code 0
+pcf exited with code 0
+udr exited with code 0
+udr exited with code 0
+udm exited with code 0
+udm exited with code 0
+ausf exited with code 0
+ausf exited with code 0
+n3iwf exited with code 0
+n3iwf exited with code 0
+smf exited with code 0
+smf exited with code 0
+amf exited with code 0
+amf exited with code 0
+upf exited with code 0
+upf exited with code 0
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.890+00:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn5","msg":"CMD: drop","attr":{"namespace":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.891+00:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn5","msg":"Finishing collection drop","attr":{"namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"e79fccd6-b3f2-4775-9278-118c402aaf7c"}}}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.891+00:00"},"s":"I",  "c":"STORAGE",  "id":22206,   "ctx":"conn5","msg":"Deferring table drop for index","attr":{"index":"_id_","namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"e79fccd6-b3f2-4775-9278-118c402aaf7c"}},"ident":"index-2-4791111628375150592","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.891+00:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn5","msg":"Deferring table drop for collection","attr":{"namespace":"free5gc.NfProfile","ident":"collection-0-4791111628375150592","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.892+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn3","msg":"Interrupted operation as its client disconnected","attr":{"opId":8045}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.892+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"10.100.200.5:42816","uuid":"abae5e97-6c6b-452e-9f92-e2ad9da0ef8b","connectionId":5,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.892+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"10.100.200.5:42830","uuid":"baafd6df-3252-44c7-9be9-10895c030b9d","connectionId":6,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.892+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"10.100.200.5:37936","uuid":"ad045042-3acf-410a-af45-ba01960d1e3c","connectionId":11,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.893+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"10.100.200.5:42814","uuid":"35c7cdb5-1790-4ceb-96a7-96f024668fbb","connectionId":4,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:05.893+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"10.100.200.5:42806","uuid":"373921a4-b009-42c6-8b74-bcaa3bce9f4c","connectionId":3,"connectionCount":0}}
+nrf exited with code 0
+nrf exited with code 0
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.066+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.067+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.068+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.069+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.087+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":18}}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.087+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.087+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.087+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.089+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb      | {"t":{"$date":"2023-04-30T13:45:06.089+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
+mongodb exited with code 0
+http_server exited with code 0
