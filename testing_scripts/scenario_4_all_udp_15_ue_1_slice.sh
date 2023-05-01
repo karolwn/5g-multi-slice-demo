@@ -15,7 +15,7 @@ do
 	container_name="ue_${i}"
 	echo "starting ${container_name}, traffic will last ${TOTAL_DURATION} seconds"
 	port=$((STARTING_PORT + i))
-	docker exec ${container_name} bash -c "./testing_scripts/ue_test_core_tcp.sh http_server.com ${port} ${TOTAL_DURATION} ${DEFAULT_BANDWIDTH}" &
+	docker exec ${container_name} bash -c "./testing_scripts/ue_test_core_udp.sh http_server.com ${port} ${TOTAL_DURATION} ${DEFAULT_BANDWIDTH}" &
 	TOTAL_DURATION=$((TOTAL_DURATION - DEFAULT_TIME_SPACING))
 	sleep ${DEFAULT_TIME_SPACING}
 done
