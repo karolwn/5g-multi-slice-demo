@@ -1,0 +1,2 @@
+second;transfer_MB;bandwidth_Mbps;jitter_ms;lost_packets;total_packets;latency_avg_ms
+0.0000;4.24;35.5;0.235;68;3090;6516.631

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   free5gc-upf:
-    container_name: upf
+    container_name: branching_upf
     build:
       context: ./nf_upf
       args:
@@ -17,7 +17,40 @@ services:
       privnet:
         aliases:
           - upf.free5gc.org
-          - upf.free5gc.org.2
+  
+  free5gc-upf-anchor1:
+    container_name: upf_anchor1
+    build:
+      context: ./nf_upf
+      args:
+        DEBUG_TOOLS: "false"
+    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
+    volumes:
+      - ./config/upfcfg_1.yaml:/free5gc/config/upfcfg.yaml
+      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+    cap_add:
+      - NET_ADMIN
+    networks:
+      privnet:
+        aliases:
+          - upf_1.free5gc.org
+
+  free5gc-upf-anchor2:
+    container_name: upf_anchor2
+    build:
+      context: ./nf_upf
+      args:
+        DEBUG_TOOLS: "false"
+    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
+    volumes:
+      - ./config/upfcfg_2.yaml:/free5gc/config/upfcfg.yaml
+      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+    cap_add:
+      - NET_ADMIN
+    networks:
+      privnet:
+        aliases:
+          - upf_2.free5gc.org
 
   db:
     container_name: mongodb
