@@ -18,39 +18,39 @@ services:
         aliases:
           - upf.free5gc.org
   
-  free5gc-upf-anchor1:
-    container_name: upf_anchor1
-    build:
-      context: ./nf_upf
-      args:
-        DEBUG_TOOLS: "false"
-    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
-    volumes:
-      - ./config/upfcfg_1.yaml:/free5gc/config/upfcfg.yaml
-      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
-    cap_add:
-      - NET_ADMIN
-    networks:
-      privnet:
-        aliases:
-          - upf_1.free5gc.org
+  #free5gc-upf-anchor1:
+  #  container_name: upf_anchor1
+  #  build:
+  #    context: ./nf_upf
+  #    args:
+  #      DEBUG_TOOLS: "false"
+  #  command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
+  #  volumes:
+  #    - ./config/upfcfg_1.yaml:/free5gc/config/upfcfg.yaml
+  #    - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+  #  cap_add:
+  #    - NET_ADMIN
+  #  networks:
+  #    privnet:
+  #      aliases:
+  #        - upf_1.free5gc.org
 
-  free5gc-upf-anchor2:
-    container_name: upf_anchor2
-    build:
-      context: ./nf_upf
-      args:
-        DEBUG_TOOLS: "false"
-    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
-    volumes:
-      - ./config/upfcfg_2.yaml:/free5gc/config/upfcfg.yaml
-      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
-    cap_add:
-      - NET_ADMIN
-    networks:
-      privnet:
-        aliases:
-          - upf_2.free5gc.org
+  #free5gc-upf-anchor2:
+  #  container_name: upf_anchor2
+  #  build:
+  #    context: ./nf_upf
+  #    args:
+  #      DEBUG_TOOLS: "false"
+  #  command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
+  #  volumes:
+  #    - ./config/upfcfg_2.yaml:/free5gc/config/upfcfg.yaml
+  #    - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+  #  cap_add:
+  #    - NET_ADMIN
+  #  networks:
+  #    privnet:
+  #      aliases:
+  #        - upf_2.free5gc.org
 
   db:
     container_name: mongodb
@@ -289,6 +289,44 @@ services:
       privnet:
         aliases:
           - gnb.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+
+  ueransim-gnodeb_2:
+    container_name: gnodeb_2
+    build:
+      context: ./ueransim
+    command: ./nr-gnb -c ./config/gnbcfg.yaml
+    volumes:
+      - ./config/gnbcfg_2.yaml:/ueransim/config/gnbcfg.yaml
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - gnb_2.free5gc.org
+    depends_on:
+      - free5gc-amf
+      - free5gc-upf
+
+  ueransim-gnodeb_3:
+    container_name: gnodeb_3
+    build:
+      context: ./ueransim
+    command: ./nr-gnb -c ./config/gnbcfg.yaml
+    volumes:
+      - ./config/gnbcfg_3.yaml:/ueransim/config/gnbcfg.yaml
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - gnb_3.free5gc.org
     depends_on:
       - free5gc-amf
       - free5gc-upf

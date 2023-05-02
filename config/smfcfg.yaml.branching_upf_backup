@@ -42,9 +42,9 @@ configuration:
       gNB: # the name of the node
         type: AN # the type of the node (AN or UPF)
         nodeID: gnb.free5gc.org
-      gNB_2: # the name of the node
-        type: AN # the type of the node (AN or UPF)
-        nodeID: gnb_2.free5gc.org
+      #gNB_2: # the name of the node
+      #  type: AN # the type of the node (AN or UPF)
+      #  nodeID: gnb_2.free5gc.org
       gNB_3: # the name of the node
         type: AN # the type of the node (AN or UPF)
         nodeID: gnb_3.free5gc.org
@@ -57,8 +57,53 @@ configuration:
               sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
             dnnUpfInfoList: # DNN information list for this S-NSSAI
               - dnn: internet
+                #pools:
+                #  - cidr: 10.60.0.0/24
+          - sNssai: # S-NSSAI (Single Network Slice Selection Assistance Information)
+              sst: 2 # Slice/Service Type (uinteger, range: 0~255)
+              sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
+            dnnUpfInfoList: # DNN information list for this S-NSSAI
+              - dnn: highspeed
+                #pools:
+                #  - cidr: 10.70.0.0/24
+        interfaces: # Interface list for this UPF
+          - interfaceType: N3 # the type of the interface (N3 or N9)
+            endpoints: # the IP address of this N3/N9 interface on this UPF
+              - upf.free5gc.org
+            networkInstance: highspeed # Data Network Name (DNN)
+          - interfaceType: N9 # the type of the interface (N3 or N9)
+            endpoints: # the IP address of this N3/N9 interface on this UPF
+              - upf.free5gc.org
+            networkInstance: highspeed # Data Network Name (DNN)
+
+          - interfaceType: N3 # the type of the interface (N3 or N9)
+            endpoints: # the IP address of this N3/N9 interface on this UPF
+              - upf.free5gc.org
+            networkInstance: internet # Data Network Name (DNN)
+          - interfaceType: N9 # the type of the interface (N3 or N9)
+            endpoints: # the IP address of this N3/N9 interface on this UPF
+              - upf.free5gc.org
+            networkInstance: internet # Data Network Name (DNN)
+      AnchorUPF1:  # the name of the node
+        type: UPF # the type of the node (AN or UPF)
+        nodeID: upf_1.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
+        sNssaiUpfInfos: # S-NSSAI information list for this UPF
+          - sNssai: # S-NSSAI (Single Network Slice Selection Assistance Information)
+              sst: 1 # Slice/Service Type (uinteger, range: 0~255)
+              sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
+            dnnUpfInfoList: # DNN information list for this S-NSSAI
+              - dnn: internet
                 pools:
                   - cidr: 10.60.0.0/16
+        interfaces: # Interface list for this UPF
+          - interfaceType: N9 # the type of the interface (N3 or N9)
+            endpoints: # the IP address of this N3/N9 interface on this UPF
+              - upf_1.free5gc.org
+            networkInstance: internet # Data Network Name (DNN)
+      AnchorUPF2:  # the name of the node
+        type: UPF # the type of the node (AN or UPF)
+        nodeID: upf_2.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
+        sNssaiUpfInfos: # S-NSSAI information list for this UPF
           - sNssai: # S-NSSAI (Single Network Slice Selection Assistance Information)
               sst: 2 # Slice/Service Type (uinteger, range: 0~255)
               sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
@@ -67,66 +112,21 @@ configuration:
                 pools:
                   - cidr: 10.70.0.0/16
         interfaces: # Interface list for this UPF
-          - interfaceType: N3 # the type of the interface (N3 or N9)
+          - interfaceType: N9 # the type of the interface (N3 or N9)
             endpoints: # the IP address of this N3/N9 interface on this UPF
-              - upf.free5gc.org
+              - upf_2.free5gc.org
             networkInstance: highspeed # Data Network Name (DNN)
-          #- interfaceType: N9 # the type of the interface (N3 or N9)
-          #  endpoints: # the IP address of this N3/N9 interface on this UPF
-          #    - upf.free5gc.org
-          #  networkInstance: highspeed # Data Network Name (DNN)
-
-          - interfaceType: N3 # the type of the interface (N3 or N9)
-            endpoints: # the IP address of this N3/N9 interface on this UPF
-              - upf.free5gc.org
-            networkInstance: internet # Data Network Name (DNN)
-          #- interfaceType: N9 # the type of the interface (N3 or N9)
-          #  endpoints: # the IP address of this N3/N9 interface on this UPF
-          #    - upf.free5gc.org
-          #  networkInstance: internet # Data Network Name (DNN)
-      #AnchorUPF1:  # the name of the node
-      #  type: UPF # the type of the node (AN or UPF)
-      #  nodeID: upf_1.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
-      #  sNssaiUpfInfos: # S-NSSAI information list for this UPF
-      #    - sNssai: # S-NSSAI (Single Network Slice Selection Assistance Information)
-      #        sst: 1 # Slice/Service Type (uinteger, range: 0~255)
-      #        sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
-      #      dnnUpfInfoList: # DNN information list for this S-NSSAI
-      #        - dnn: internet
-      #          pools:
-      #            - cidr: 10.60.0.0/16
-      #  interfaces: # Interface list for this UPF
-      #    - interfaceType: N9 # the type of the interface (N3 or N9)
-      #      endpoints: # the IP address of this N3/N9 interface on this UPF
-      #        - upf_1.free5gc.org
-      #      networkInstance: internet # Data Network Name (DNN)
-      #AnchorUPF2:  # the name of the node
-      #  type: UPF # the type of the node (AN or UPF)
-      #  nodeID: upf_2.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
-      #  sNssaiUpfInfos: # S-NSSAI information list for this UPF
-      #    - sNssai: # S-NSSAI (Single Network Slice Selection Assistance Information)
-      #        sst: 2 # Slice/Service Type (uinteger, range: 0~255)
-      #        sd: 010203 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
-      #      dnnUpfInfoList: # DNN information list for this S-NSSAI
-      #        - dnn: highspeed
-      #          pools:
-      #            - cidr: 10.70.0.0/16
-      #  interfaces: # Interface list for this UPF
-      #    - interfaceType: N9 # the type of the interface (N3 or N9)
-      #      endpoints: # the IP address of this N3/N9 interface on this UPF
-      #        - upf_2.free5gc.org
-      #      networkInstance: highspeed # Data Network Name (DNN)
     links: # the topology graph of userplane, A and B represent the two nodes of each link
       - A: gNB
         B: BranchingUPF
-      - A: gNB_2
-        B: BranchingUPF
+      #- A: gNB_2
+      #  B: BranchingUPF
       - A: gNB_3
         B: BranchingUPF
-      #- A: BranchingUPF
-      #  B: AnchorUPF1
-      #- A: BranchingUPF
-      #  B: AnchorUPF2
+      - A: BranchingUPF
+        B: AnchorUPF1
+      - A: BranchingUPF
+        B: AnchorUPF2
   nrfUri: http://nrf.free5gc.org:8000 # a valid URI of NRF
 
 # the kind of log output
