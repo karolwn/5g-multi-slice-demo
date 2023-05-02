@@ -41,6 +41,8 @@ configuration:
     upNodes: # information of userplane node (AN or UPF)
       gNB: # the name of the node
         type: AN # the type of the node (AN or UPF)
+        an_ip: gnb.free5gc.org
+
       BranchingUPF:  # the name of the node
         type: UPF # the type of the node (AN or UPF)
         nodeID: upf.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
@@ -77,6 +79,7 @@ configuration:
             endpoints: # the IP address of this N3/N9 interface on this UPF
               - upf.free5gc.org
             networkInstance: internet # Data Network Name (DNN)
+
       AnchorUPF1:  # the name of the node
         type: UPF # the type of the node (AN or UPF)
         nodeID: upf_1.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
@@ -93,6 +96,7 @@ configuration:
             endpoints: # the IP address of this N3/N9 interface on this UPF
               - upf_1.free5gc.org
             networkInstance: internet # Data Network Name (DNN)
+
       AnchorUPF2:  # the name of the node
         type: UPF # the type of the node (AN or UPF)
         nodeID: upf_2.free5gc.org # the IP/FQDN of N4 interface on this UPF (PFCP)
@@ -109,6 +113,7 @@ configuration:
             endpoints: # the IP address of this N3/N9 interface on this UPF
               - upf_2.free5gc.org
             networkInstance: highspeed # Data Network Name (DNN)
+
     links: # the topology graph of userplane, A and B represent the two nodes of each link
       - A: gNB
         B: BranchingUPF
@@ -117,6 +122,7 @@ configuration:
       - A: BranchingUPF
         B: AnchorUPF2
   nrfUri: http://nrf.free5gc.org:8000 # a valid URI of NRF
+  ulcl: true
 
 # the kind of log output
 # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic

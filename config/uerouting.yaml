@@ -28,6 +28,10 @@ ueRoutingInfo: # the list of UE routing information
         B: BranchingUPF
       - A: BranchingUPF
         B: AnchorUPF1
+
+    specificPath:
+      - dest: 10.60.0.0/16
+        path: [BranchingUPF, AnchorUPF1]
   
   UE2: # Group Name
     members:
@@ -40,4 +44,9 @@ ueRoutingInfo: # the list of UE routing information
         B: BranchingUPF
       - A: BranchingUPF
         B: AnchorUPF2
+    
+    specificPath:
+      - dest: 10.70.0.0/16
+        path: [BranchingUPF, AnchorUPF2]
+
 
