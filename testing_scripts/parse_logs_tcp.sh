@@ -8,3 +8,5 @@ do
 done
 
 grep gnodeb_docker_stats.log -e 'gnodeb' | awk 'BEGIN {print "CPU_usage;RAM_usage"}; {split($3, a, "%"); split($4, b, "[A-Z]")}; { print a[1]";"b[1] }' > ./results/gnodeb_stats_tcp.csv
+grep gnodeb_2_docker_stats.log -e 'gnodeb' | awk 'BEGIN {print "CPU_usage;RAM_usage"}; {split($3, a, "%"); split($4, b, "[A-Z]")}; { print a[1]";"b[1] }' > ./results/gnodeb_2_stats_tcp.csv
+

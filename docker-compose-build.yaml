@@ -17,7 +17,23 @@ services:
       privnet:
         aliases:
           - upf.free5gc.org
-          - upf.free5gc.org.2
+
+  free5gc-upf-2:
+    container_name: upf_2
+    build:
+      context: ./nf_upf
+      args:
+        DEBUG_TOOLS: "false"
+    command: bash -c "./upf-iptables.sh && ./upf -c ./config/upfcfg.yaml"
+    volumes:
+      - ./config/upfcfg_2.yaml:/free5gc/config/upfcfg.yaml
+      - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+    cap_add:
+      - NET_ADMIN
+    networks:
+      privnet:
+        aliases:
+          - upf2.free5gc.org
 
   db:
     container_name: mongodb
@@ -70,6 +86,26 @@ services:
       privnet:
         aliases:
           - amf.free5gc.org
+    depends_on:
+      - free5gc-nrf
+
+  free5gc-amf-2:
+    container_name: amf_2
+    build:
+      context: ./nf_amf
+      args:
+        DEBUG_TOOLS: "false"
+    command: ./amf -c ./config/amfcfg.yaml
+    expose:
+      - "8000"
+    volumes:
+      - ./config/amfcfg_2.yaml:/free5gc/config/amfcfg.yaml
+    environment:
+      GIN_MODE: release
+    networks:
+      privnet:
+        aliases:
+          - amf2.free5gc.org
     depends_on:
       - free5gc-nrf
 
@@ -133,6 +169,26 @@ services:
     depends_on:
       - free5gc-nrf
 
+  free5gc-pcf-2:
+    container_name: pcf_2
+    build:
+      context: ./nf_pcf
+      args:
+        DEBUG_TOOLS: "false"
+    command: ./pcf -c ./config/pcfcfg.yaml
+    expose:
+      - "8000"
+    volumes:
+      - ./config/pcfcfg_2.yaml:/free5gc/config/pcfcfg.yaml
+    environment:
+      GIN_MODE: release
+    networks:
+      privnet:
+        aliases:
+          - pcf2.free5gc.org
+    depends_on:
+      - free5gc-nrf        
+
   free5gc-smf:
     container_name: smf
     build:
@@ -154,6 +210,28 @@ services:
     depends_on:
       - free5gc-nrf
       - free5gc-upf
+
+  free5gc-smf-2:
+    container_name: smf_2
+    build:
+      context: ./nf_smf
+      args:
+        DEBUG_TOOLS: "false"
+    command: ./smf -c ./config/smfcfg.yaml -u ./config/uerouting.yaml
+    expose:
+      - "8000"
+    volumes:
+      - ./config/smfcfg_2.yaml:/free5gc/config/smfcfg.yaml
+      - ./config/uerouting.yaml:/free5gc/config/uerouting.yaml
+    environment:
+      GIN_MODE: release
+    networks:
+      privnet:
+        aliases:
+          - smf2.free5gc.org
+    depends_on:
+      - free5gc-nrf
+      - free5gc-upf-2
 
   free5gc-udm:
     container_name: udm
@@ -260,6 +338,25 @@ services:
       - free5gc-amf
       - free5gc-upf
 
+  ueransim-gnodeb-2:
+    container_name: gnodeb_2
+    build:
+      context: ./ueransim
+    command: ./nr-gnb -c ./config/gnbcfg.yaml
+    volumes:
+      - ./config/gnbcfg_2.yaml:/ueransim/config/gnbcfg.yaml
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun"
+    networks:
+      privnet:
+        aliases:
+          - gnb2.free5gc.org
+    depends_on:
+      - free5gc-amf-2
+      - free5gc-upf-2
+
   ueransim-ue_1:
     container_name: ue_1
     build:
@@ -280,6 +377,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_2:
     container_name: ue_2
@@ -301,6 +401,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_3:
     container_name: ue_3
@@ -322,6 +425,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_4:
     container_name: ue_4
@@ -343,6 +449,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_5:
     container_name: ue_5
@@ -364,6 +473,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_6:
     container_name: ue_6
@@ -385,6 +497,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_7:
     container_name: ue_7
@@ -406,6 +521,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_8:
     container_name: ue_8
@@ -427,6 +545,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_9:
     container_name: ue_9
@@ -448,6 +569,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_10:
     container_name: ue_10
@@ -469,6 +593,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_11:
     container_name: ue_11
@@ -490,6 +617,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_12:
     container_name: ue_12
@@ -511,6 +641,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_13:
     container_name: ue_13
@@ -532,6 +665,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
       
   ueransim-ue_14:
     container_name: ue_14
@@ -553,6 +689,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   ueransim-ue_15:
     container_name: ue_15
@@ -574,6 +713,9 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
+      - free5gc-amf-2
+      - free5gc-upf-2
+      - ueransim-gnodeb-2
 
   http-server:
     container_name: http_server

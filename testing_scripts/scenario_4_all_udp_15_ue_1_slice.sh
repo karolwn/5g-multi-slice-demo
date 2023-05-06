@@ -5,10 +5,12 @@ DEFAULT_TIME_SPACING=10
 ENDGAME=10
 NUMBER_OF_UE=15
 STARTING_PORT=10000
-DEFAULT_BANDWIDTH="50M"
+DEFAULT_BANDWIDTH="50m"
 
 
 docker stats gnodeb > gnodeb_docker_stats.log &
+docker stats gnodeb_2 > gnodeb_2_docker_stats.log &
+
 
 for i in $(seq ${NUMBER_OF_UE})
 do

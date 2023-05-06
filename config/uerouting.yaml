@@ -26,3 +26,5 @@ ueRoutingInfo: # the list of UE routing information
     # node name should be consistent with smfcfg.yaml
       - A: gNB
         B: UPF
+      - A: gNB2
+        B: UPF2
