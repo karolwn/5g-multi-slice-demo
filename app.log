@@ -732,3 +732,619 @@ ue_1           | [2023-05-02 12:16:23.739] [nas] [warning] Retransmitting PDU Se
 ue_1           | [2023-05-02 12:16:23.739] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
 ue_1           | [2023-05-02 12:16:39.765] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
 ue_1           | [2023-05-02 12:16:39.765] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:16:55.791] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:16:55.791] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:17:11.807] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:17:11.807] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:17:11.894] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:17:11.894] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:17:28.830] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:17:28.830] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:17:44.882] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:17:44.882] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:18:00.898] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:18:00.898] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:18:16.924] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:18:16.924] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:18:32.951] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:18:32.951] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:18:33.095] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:18:33.095] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:18:49.969] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:18:49.969] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:19:05.993] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:19:05.993] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:19:22.020] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:19:22.020] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:19:38.038] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:19:38.038] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:19:54.062] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:19:54.062] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:19:55.022] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:19:55.022] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:20:11.113] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:20:11.113] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:20:27.167] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:20:27.167] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:20:43.255] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:20:43.255] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:20:59.308] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:20:59.308] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:21:15.375] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:21:15.375] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:21:15.549] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:21:15.549] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:21:32.474] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:21:32.474] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:21:48.494] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:21:48.494] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:22:04.523] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:22:04.523] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:22:20.550] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:22:20.550] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:22:36.586] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:22:36.586] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:22:37.129] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:22:37.129] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:22:53.628] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:22:53.628] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:23:09.646] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:23:09.646] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:23:25.662] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:23:25.662] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:23:41.678] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:23:41.678] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:23:57.694] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:23:57.694] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:23:58.726] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:23:58.726] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:24:15.712] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:24:15.712] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:24:31.728] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:24:31.728] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:24:47.744] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:24:47.744] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:25:03.761] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:25:03.761] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:25:19.780] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:25:19.780] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:25:20.338] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:25:20.338] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:25:36.801] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:25:36.801] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:25:52.826] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:25:52.826] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:26:08.847] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:26:08.847] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:26:24.877] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:26:24.877] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:26:40.897] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:26:40.897] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:26:41.978] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:26:41.978] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:26:58.945] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:26:58.945] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:27:14.992] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:27:14.993] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:27:31.024] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:27:31.024] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:27:47.074] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:27:47.074] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:28:03.117] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:28:03.117] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:28:03.258] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:28:03.258] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:28:20.221] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:28:20.221] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:28:36.246] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:28:36.246] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:28:52.286] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:28:52.286] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:29:08.325] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:29:08.325] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:29:24.342] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:29:24.342] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:29:25.286] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:29:25.286] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:29:41.377] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:29:41.377] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:29:57.394] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:29:57.394] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:30:13.429] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:30:13.429] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:30:29.512] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:30:29.512] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:30:45.549] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:30:45.549] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:30:45.773] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:30:45.773] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:31:02.616] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:31:02.616] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:31:18.701] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:31:18.701] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:31:34.789] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:31:34.789] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:31:50.816] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:31:50.816] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:32:06.836] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:32:06.836] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:32:07.321] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:32:07.321] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:32:23.854] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:32:23.854] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:32:39.870] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:32:39.870] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:32:55.886] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:32:55.886] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:33:11.903] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:33:11.903] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:33:27.919] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:33:27.919] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:33:28.986] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:33:28.986] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:33:45.938] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:33:45.938] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:34:01.958] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:34:01.958] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:34:17.975] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:34:17.975] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:34:33.992] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:34:33.992] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:34:50.010] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:34:50.010] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:34:50.540] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:34:50.540] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:35:07.027] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:35:07.027] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:35:23.050] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:35:23.050] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:35:39.087] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:35:39.087] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:35:55.143] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:35:55.143] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:36:11.163] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:36:11.163] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:36:12.197] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:36:12.197] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:36:28.201] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:36:28.201] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:36:44.225] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:36:44.225] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:37:00.261] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:37:00.261] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:37:16.294] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:37:16.294] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:37:32.319] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:37:32.319] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:37:32.784] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:37:32.784] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:37:49.336] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:37:49.336] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:38:05.358] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:38:05.358] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:38:21.384] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:38:21.384] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:38:37.464] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:38:37.464] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:38:53.510] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:38:53.510] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:38:54.388] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:38:54.388] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:39:10.534] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:39:10.534] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:39:26.587] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:39:26.587] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:39:42.631] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:39:42.631] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:39:58.702] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:39:58.702] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:40:14.752] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:40:14.752] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:40:14.984] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:40:14.984] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:40:31.788] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:40:31.788] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:40:47.852] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:40:47.852] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:41:03.874] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:41:03.874] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:41:19.901] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:41:19.901] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:41:35.938] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:41:35.938] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:41:36.705] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:41:36.705] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:41:52.957] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:41:52.957] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:42:09.007] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:42:09.007] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:42:25.044] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:42:25.044] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:42:41.066] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:42:41.066] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:42:57.089] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:42:57.089] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:42:57.603] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:42:57.603] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:43:14.121] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:43:14.121] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:43:30.171] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:43:30.171] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:43:46.261] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:43:46.261] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:44:02.325] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:44:02.325] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:44:18.358] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:44:18.358] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:44:19.257] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:44:19.257] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:44:35.396] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:44:35.396] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:44:51.415] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:44:51.415] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:45:07.475] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:45:07.476] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:45:23.502] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:45:23.502] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:45:39.538] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:45:39.538] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:45:39.745] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:45:39.745] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:45:56.558] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:45:56.558] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:46:12.579] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:46:12.579] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:46:28.615] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:46:28.615] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:46:44.658] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:46:44.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:47:00.718] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:47:00.718] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:47:01.392] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:47:01.392] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:47:17.747] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:47:17.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:47:33.769] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:47:33.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:47:49.799] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:47:49.799] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:48:05.815] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:48:05.815] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:48:21.831] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:48:21.831] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:48:21.965] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:48:21.965] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:48:38.848] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:48:38.848] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:48:54.866] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:48:54.866] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:49:10.888] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:49:10.888] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:49:26.918] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:49:26.918] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:49:42.967] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:49:42.967] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:49:43.591] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:49:43.592] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:50:00.018] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:50:00.018] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:50:16.077] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:50:16.077] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:50:32.103] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:50:32.103] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:50:48.187] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:50:48.187] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:51:04.214] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:51:04.214] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:51:04.250] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:51:04.250] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:51:20.277] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:51:20.277] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:51:36.353] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:51:36.353] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:51:52.388] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:51:52.388] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:52:08.423] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:52:08.423] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:52:24.466] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:52:24.466] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:52:24.769] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:52:24.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:52:41.546] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:52:41.546] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:52:57.590] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:52:57.590] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:53:13.630] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:53:13.630] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:53:29.733] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:53:29.733] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:53:45.759] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:53:45.759] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:53:46.455] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:53:46.455] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:54:02.778] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:54:02.778] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:54:18.830] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:54:18.831] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:54:34.874] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:54:34.874] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:54:50.894] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:54:50.894] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:55:06.936] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:55:06.936] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:55:07.076] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:55:07.076] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:55:23.977] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:55:23.977] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:55:39.995] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:55:39.995] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:55:56.011] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:55:56.011] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:56:12.029] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:56:12.029] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:56:28.045] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:56:28.045] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:56:28.939] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:56:28.939] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:56:45.067] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:56:45.067] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:57:01.090] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:57:01.090] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:57:17.108] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:57:17.108] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:57:33.135] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:57:33.135] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:57:49.200] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:57:49.200] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:57:49.419] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:57:49.419] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:58:06.217] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:58:06.217] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:58:22.240] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:58:22.240] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:58:38.256] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:58:38.256] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:58:54.277] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:58:54.277] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:59:10.303] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 12:59:10.303] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 12:59:11.222] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 12:59:11.222] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:59:27.320] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:59:27.320] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:59:43.336] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:59:43.336] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 12:59:59.352] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 12:59:59.352] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:00:15.368] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:00:15.368] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:00:31.386] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:00:31.386] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:00:31.725] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:00:31.725] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:00:48.414] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:00:48.414] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:01:04.445] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:01:04.445] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:01:20.461] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:01:20.461] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:01:36.480] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:01:36.480] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:01:52.497] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:01:52.497] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:01:53.287] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:01:53.287] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:02:09.516] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:02:09.516] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:02:25.542] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:02:25.542] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:02:41.619] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:02:41.619] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:02:57.641] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:02:57.641] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:03:13.691] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:03:13.691] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:03:13.817] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:03:13.818] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:03:30.734] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:03:30.734] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:03:46.764] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:03:46.765] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:04:02.792] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:04:02.792] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:04:18.828] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:04:18.828] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:04:34.872] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:04:34.872] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:04:35.521] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:04:35.521] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:04:51.911] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:04:51.911] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:05:07.957] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:05:07.957] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:05:23.979] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:05:23.979] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:05:39.999] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:05:39.999] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:05:56.020] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:05:56.020] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:05:56.302] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:05:56.302] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:06:13.037] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:06:13.037] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:06:29.065] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:06:29.065] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:06:45.095] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:06:45.095] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:07:01.124] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:07:01.124] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:07:17.141] [nas] [error] PDU Session Establishment procedure failure, no response from the network after 5 attempts
+ue_1           | [2023-05-02 13:07:17.141] [nas] [debug] Aborting SM procedure for PTI[1], PSI[2]
+ue_1           | [2023-05-02 13:07:17.860] [nas] [debug] Sending PDU Session Establishment Request
+ue_1           | [2023-05-02 13:07:17.860] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:07:34.158] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:07:34.158] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1           | [2023-05-02 13:07:50.178] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+ue_1           | [2023-05-02 13:07:50.178] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+mongodb        | {"t":{"$date":"2023-05-02T13:07:58.533+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":54892}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:58.533+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"10.100.200.7:49928","uuid":"f9f9a782-1556-4d45-badc-be6de927afa6","connectionId":2,"connectionCount":11}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:58.533+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"10.100.200.7:35598","uuid":"a094de6d-29bc-4c49-8d23-bebbb572b848","connectionId":12,"connectionCount":12}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:58.533+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"10.100.200.7:49914","uuid":"189572ed-ac61-4bc2-b7de-72a5a68a4f32","connectionId":1,"connectionCount":10}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.563+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:53494","uuid":"8a73f7f3-9a25-4748-a859-5f7802cb8a8f","connectionId":14,"connectionCount":11}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.563+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:53510","uuid":"0198c15f-de0d-4a43-acb4-dd88c57a37b3","connectionId":15,"connectionCount":12}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.563+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"10.100.200.8:53494","client":"conn14","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.563+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"10.100.200.8:53510","client":"conn15","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.564+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:53522","uuid":"1b68bdee-d759-4564-9bcf-499ddded3d82","connectionId":16,"connectionCount":13}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.564+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:53526","uuid":"bea876f2-dd21-4c9d-9761-5737e8dc4801","connectionId":17,"connectionCount":14}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.564+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"10.100.200.8:53522","client":"conn16","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.565+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn17","msg":"client metadata","attr":{"remote":"10.100.200.8:53526","client":"conn17","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.568+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn7","msg":"Interrupted operation as its client disconnected","attr":{"opId":54899}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.568+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"10.100.200.11:58378","uuid":"9afe3886-55b4-4ac9-b854-c85982179d6b","connectionId":6,"connectionCount":12}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.568+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"10.100.200.11:58388","uuid":"77c7343c-d95b-4b18-8989-00bc91fd25d1","connectionId":11,"connectionCount":13}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.568+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"10.100.200.11:58374","uuid":"14455451-38c4-473c-a434-518d3ced13c3","connectionId":7,"connectionCount":11}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.569+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn9","msg":"Interrupted operation as its client disconnected","attr":{"opId":54907}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.569+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"10.100.200.14:34384","uuid":"19404c57-4bf8-4ac4-a513-8b77f669c5d8","connectionId":8,"connectionCount":10}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.569+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"10.100.200.14:34398","uuid":"b29de503-ecf1-4b41-8f3d-d545ed772aa1","connectionId":10,"connectionCount":9}}
+mongodb        | {"t":{"$date":"2023-05-02T13:07:59.569+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"10.100.200.14:34392","uuid":"ab6b78ff-4614-4491-9ab2-87299241097e","connectionId":9,"connectionCount":8}}
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[1] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[3] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[4] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[6] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[8] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[9] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[11] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[13] signal lost
+gnodeb         | [2023-05-02 13:08:00.334] [rls] [debug] UE[14] signal lost
+ue_11 exited with code 0
+ue_11 exited with code 0
+ue_13 exited with code 0
+ue_13 exited with code 0
+ue_6 exited with code 0
+ue_6 exited with code 0
+upf_anchor1 exited with code 0
+upf_anchor1 exited with code 0
+ue_15 exited with code 0
+ue_15 exited with code 0
+ue_1 exited with code 0
+ue_1 exited with code 0
+ue_12 exited with code 0
+ue_12 exited with code 0
+ue_10 exited with code 0
+ue_10 exited with code 0
+ue_9 exited with code 0
+ue_9 exited with code 0
+ue_2 exited with code 0
+ue_2 exited with code 0
+webui exited with code 0
+webui exited with code 2
+ue_5 exited with code 0
+ue_5 exited with code 0
+ue_14 exited with code 0
+ue_14 exited with code 0
+ue_4 exited with code 0
+ue_4 exited with code 0
+ue_3 exited with code 0
+ue_3 exited with code 0
+ue_7 exited with code 0
+ue_7 exited with code 0
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[2] signal lost
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[5] signal lost
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[7] signal lost
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[10] signal lost
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[12] signal lost
+gnodeb         | [2023-05-02 13:08:01.344] [rls] [debug] UE[15] signal lost
+upf_anchor2 exited with code 0
+upf_anchor2 exited with code 0
+ue_8 exited with code 0
+ue_8 exited with code 0
+ausf exited with code 0
+ausf exited with code 0
+nssf exited with code 0
+nssf exited with code 0
+udr exited with code 0
+udr exited with code 0
+udm exited with code 0
+udm exited with code 0
+pcf exited with code 0
+pcf exited with code 0
+n3iwf exited with code 0
+n3iwf exited with code 0
+gnodeb exited with code 0
+gnodeb exited with code 0
+smf exited with code 0
+smf exited with code 0
+amf exited with code 0
+amf exited with code 0
+branching_upf exited with code 0
+branching_upf exited with code 0
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.203+00:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn14","msg":"CMD: drop","attr":{"namespace":"free5gc.NfProfile"}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.204+00:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn14","msg":"Finishing collection drop","attr":{"namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"3cab5f47-3911-4f7d-b672-d4b82049f613"}}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.204+00:00"},"s":"I",  "c":"STORAGE",  "id":22206,   "ctx":"conn14","msg":"Deferring table drop for index","attr":{"index":"_id_","namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"3cab5f47-3911-4f7d-b672-d4b82049f613"}},"ident":"index-2--2369029225640977656","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.204+00:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn14","msg":"Deferring table drop for collection","attr":{"namespace":"free5gc.NfProfile","ident":"collection-0--2369029225640977656","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn17","msg":"Connection ended","attr":{"remote":"10.100.200.8:53526","uuid":"bea876f2-dd21-4c9d-9761-5737e8dc4801","connectionId":17,"connectionCount":7}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn15","msg":"Connection ended","attr":{"remote":"10.100.200.8:53510","uuid":"0198c15f-de0d-4a43-acb4-dd88c57a37b3","connectionId":15,"connectionCount":5}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn16","msg":"Connection ended","attr":{"remote":"10.100.200.8:53522","uuid":"1b68bdee-d759-4564-9bcf-499ddded3d82","connectionId":16,"connectionCount":6}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn3","msg":"Interrupted operation as its client disconnected","attr":{"opId":54888}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"10.100.200.8:45232","uuid":"8f437ed0-2be4-47a8-b21a-3b3e1e9548fd","connectionId":4,"connectionCount":4}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"10.100.200.8:45248","uuid":"83d8b1d7-0dd2-4ea2-9df0-ba550e0be309","connectionId":5,"connectionCount":3}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn14","msg":"Connection ended","attr":{"remote":"10.100.200.8:53494","uuid":"8a73f7f3-9a25-4748-a859-5f7802cb8a8f","connectionId":14,"connectionCount":2}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"10.100.200.8:41974","uuid":"b8a83889-66de-43a3-8252-c33146ee7874","connectionId":13,"connectionCount":1}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.206+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"10.100.200.8:45218","uuid":"e6330740-dd7b-40d1-adc9-337654f621ed","connectionId":3,"connectionCount":0}}
+nrf exited with code 0
+nrf exited with code 0
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.421+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.421+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.421+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.421+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.422+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.423+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.424+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.440+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":16}}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.440+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.440+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.440+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.444+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb        | {"t":{"$date":"2023-05-02T13:08:05.444+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
+mongodb exited with code 0
+http_server exited with code 137
