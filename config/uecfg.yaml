@@ -20,7 +20,7 @@ imeiSv: '4370816125816151'
 
 # List of gNB IP addresses for Radio Link Simulation
 gnbSearchList:
-  - gnb.free5gc.org
+  #- gnb.free5gc.org
   - gnb2.free5gc.org
 
 # UAC Access Identities Configuration
@@ -39,11 +39,11 @@ uacAcc:
 
 # Initial PDU sessions to be established
 sessions:
-  - type: 'IPv4'
-    apn: 'internet'
-    slice:
-      sst: 0x01
-      sd: 0x010203
+  #- type: 'IPv4'
+  #  apn: 'internet'
+  #  slice:
+  #    sst: 0x01
+  #    sd: 0x010203
   - type: 'IPv4'
     apn: 'highspeed'
     slice:
@@ -54,8 +54,8 @@ sessions:
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
-  - sst: 0x01
-    sd: 0x010203
+  #- sst: 0x01
+  #  sd: 0x010203
   - sst: 0x02
     sd: 0x010203
 

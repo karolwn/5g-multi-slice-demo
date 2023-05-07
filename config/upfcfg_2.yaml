@@ -23,11 +23,11 @@ gtpu:
 dnnList:
   #- dnn: internet # Data Network Name
   #  cidr: 10.60.0.0/24 # Classless Inter-Domain Routing for assigned IPv4 pool of UE
-  #  # natifname: eth0
-  #- dnn: highspeed # Data Network Name
-  #  cidr: 10.70.0.0/24 # Classless Inter-Domain Routing for assigned IPv4 pool of UE
-  - dnn: internet # Data Network Name
-    cidr: 10.0.0.0/8 # Classless Inter-Domain Routing for assigned IPv4 pool of UE
+    # natifname: eth0
+  - dnn: highspeed # Data Network Name
+    cidr: 10.70.0.0/16 # Classless Inter-Domain Routing for assigned IPv4 pool of UE
+  #- dnn: internet # Data Network Name
+  #  cidr: 10.0.0.0/8 # Classless Inter-Domain Routing for assigned IPv4 pool of UE
 
 logger: # log output setting
   enable: true # true or false
