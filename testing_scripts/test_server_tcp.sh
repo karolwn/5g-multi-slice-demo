@@ -23,7 +23,9 @@ do
        port=$((STARTING_PORT + i))
        echo "starting server on port ${port}"
 #       iperf -s -i 1 -u -e -l 999M -w 999M -p ${port} > ${i}_ue_metrics.log &
-       iperf -s -i 1 -e -p ${port} > ${i}_ue_metrics.log &
+       iperf -s -i 1 -e -p ${port} > ./testing_scripts/${i}_ue_metrics.log &
+       #iperf -s -i 1 -e -p ${port} &
+
 done
 
 ps -a | grep iperf
