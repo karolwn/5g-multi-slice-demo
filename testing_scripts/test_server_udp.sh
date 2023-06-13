@@ -15,7 +15,7 @@ STARTING_PORT=10000
 #echo "ctrl-c to exit"
 # iperf -s -i 1 -u -e -l 999M -w 32K> iperf2_test.log
 
-iperf -s -i 1 -u -e -l 999M -w 999M -p 20001 > 1_ue_metrics_slice_2.log &
+iperf -s -i 1 -u -e -l 999M -w 999M -p 20001 > ./testing_scripts/1_ue_metrics_slice_2.log &
 
 
 for i in $(seq ${NUMBER_OF_UE})
