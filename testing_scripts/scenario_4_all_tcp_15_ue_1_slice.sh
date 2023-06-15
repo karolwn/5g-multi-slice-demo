@@ -9,7 +9,6 @@ DEFAULT_BANDWIDTH="50M"
 
 
 docker stats gnodeb > gnodeb_docker_stats.log &
-docker stats gnodeb_2 > gnodeb_2_docker_stats.log &
 
 for i in $(seq ${NUMBER_OF_UE})
 do
