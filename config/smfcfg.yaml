@@ -122,7 +122,7 @@ configuration:
       - A: BranchingUPF
         B: AnchorUPF2
   nrfUri: http://nrf.free5gc.org:8000 # a valid URI of NRF
-  ulcl: true
+#  ulcl: true
 
 # the kind of log output
 # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic
