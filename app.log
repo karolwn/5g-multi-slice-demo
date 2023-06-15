@@ -1,0 +1,817 @@
+Attaching to amf, amf_2, ausf, gnodeb, gnodeb_2, http_server, mongodb, n3iwf, nrf, nssf, pcf, pcf_2, smf, smf_2, udm, udr, ue_1, ue_10, ue_11, ue_12, ue_13, ue_14, ue_15, ue_2, ue_3, ue_4, ue_5, ue_6, ue_7, ue_8, ue_9, upf, upf_2, webui
+http_server  |  * Serving Flask app 'app.py'
+http_server  |  * Debug mode: off
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.450+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.452+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.452+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"bafe3502f4d6"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.4","gitVersion":"44ff59461c1353638a71e710f385a566bcd2f547","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.455+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*","port":27017}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.456+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.456+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:29.456+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=8270M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.188+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":732}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.188+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.205+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.205+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.209+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":17,"maxWireVersion":17},"outgoing":{"minWireVersion":17,"maxWireVersion":17},"isInternalClient":true}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.209+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"6.0","context":"startup"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.209+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"collection-0--3591381979599249331"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.210+00:00"},"s":"I",  "c":"STORAGE",  "id":22251,   "ctx":"initandlisten","msg":"Dropping unknown ident","attr":{"ident":"index-1--3591381979599249331"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.211+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.219+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.219+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.234+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.234+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.235+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.236+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.236+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.616+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50496","uuid":"4a6de280-d300-4e23-869a-4a74328f4564","connectionId":1,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.617+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:39712","uuid":"a02e7e2e-71c4-4b0e-82f5-1bd32fb28354","connectionId":2,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.617+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"10.100.200.7:50496","client":"conn1","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.617+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"10.100.200.6:39712","client":"conn2","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:39716","uuid":"f5a6cc0e-0815-40d2-b2c7-75ce781734a0","connectionId":3,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50506","uuid":"fbd02ef9-75b7-40ad-9a23-e327ce6ce802","connectionId":4,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"10.100.200.6:39716","client":"conn3","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50510","uuid":"f5189e1d-73e9-4bf8-a25d-65e9d052aaca","connectionId":5,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"10.100.200.7:50506","client":"conn4","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.618+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"10.100.200.7:50510","client":"conn5","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.620+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50512","uuid":"b11d6169-00f2-4e7f-b334-f96c55cd25c8","connectionId":6,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.620+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50518","uuid":"e3bb9826-4304-4891-a575-a57a36954e4c","connectionId":7,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.620+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"10.100.200.7:50518","client":"conn7","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.620+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"10.100.200.7:50512","client":"conn6","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.623+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50524","uuid":"19543f6b-7a04-40a0-8d72-2f08e77a7bd0","connectionId":8,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.624+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50534","uuid":"c55d7b73-cfd2-4ca3-b567-c4e5d842ae42","connectionId":9,"connectionCount":9}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.624+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"10.100.200.7:50524","client":"conn8","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.624+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"10.100.200.7:50534","client":"conn9","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.625+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:50544","uuid":"36c0fcb0-0777-4437-b0d5-c153ccada161","connectionId":10,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.625+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"10.100.200.7:50544","client":"conn10","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.626+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn8","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"9bdc76ba-5a5a-4547-9a7b-abcf8a249adc"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.626+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn9","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"a5b6c743-246c-4a73-8216-06a2e33a3e4b"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.626+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn10","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"ab5f85d3-27ef-41d2-b4a3-ac059f37ef64"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.626+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn5","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"92b4faec-52f3-4f18-a72b-08e3ee5cadb0"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.626+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn7","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"882da210-78d9-418e-858b-136d319b5974"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.642+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn4","msg":"createCollection","attr":{"namespace":"free5gc.NfProfile","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"200ff835-fdad-4741-bcd6-5ac8d1e26b34"}},"options":{}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.658+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn7","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"882da210-78d9-418e-858b-136d319b5974"}},"namespace":"free5gc.NfProfile","index":"_id_","ident":"index-10--5304941707430600056","collectionIdent":"collection-4--5304941707430600056","commitTimestamp":null}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.666+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn5","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.671+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn10","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.675+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn9","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.678+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn8","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.682+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn4","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.731+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.14:34012","uuid":"0f2f297d-45e5-4ff4-94af-3562b000e0f1","connectionId":11,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.731+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.14:34024","uuid":"c08225af-e71b-46e7-922f-cfc3932aa053","connectionId":12,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.731+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"10.100.200.14:34012","client":"conn11","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:30.731+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"10.100.200.14:34024","client":"conn12","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ausf         | ausf context =  &{{{0 0} {<nil>} map[] 0} {{0 0} {<nil>} map[] 0} 54ee21c4-29c7-4077-88cd-2c392302b07b ausfGroup001 8000 ausf.free5gc.org ausf.free5gc.org http://ausf.free5gc.org:8000 http http://nrf.free5gc.org:8000 map[nausf-auth:{54ee21c4-29c7-4077-88cd-2c392302b07b nausf-auth 0xc00000cd00 http REGISTERED   0xc00000cce0  [] <nil> [] [] <nil> 0 0 0 <nil> <nil> }] [{208 93} {123 45}]  0xc0000aadc0 false}
+gnodeb_2     | UERANSIM v3.2.6
+gnodeb_2     | [2023-06-15 08:21:30.871] [sctp] [info] Trying to establish SCTP connection... (10.100.200.10:38412)
+gnodeb_2     | [2023-06-15 08:21:30.875] [sctp] [info] SCTP connection established (10.100.200.10:38412)
+gnodeb_2     | [2023-06-15 08:21:30.875] [sctp] [debug] SCTP association setup ascId[3]
+gnodeb_2     | [2023-06-15 08:21:30.875] [ngap] [debug] Sending NG Setup Request
+gnodeb_2     | [2023-06-15 08:21:30.876] [ngap] [debug] NG Setup Response received
+gnodeb_2     | [2023-06-15 08:21:30.876] [ngap] [info] NG Setup procedure is successful
+gnodeb       | UERANSIM v3.2.6
+gnodeb       | [2023-06-15 08:21:31.070] [sctp] [info] Trying to establish SCTP connection... (10.100.200.16:38412)
+gnodeb       | [2023-06-15 08:21:31.072] [sctp] [info] SCTP connection established (10.100.200.16:38412)
+gnodeb       | [2023-06-15 08:21:31.073] [sctp] [debug] SCTP association setup ascId[5]
+gnodeb       | [2023-06-15 08:21:31.073] [ngap] [debug] Sending NG Setup Request
+gnodeb       | [2023-06-15 08:21:31.074] [ngap] [debug] NG Setup Response received
+gnodeb       | [2023-06-15 08:21:31.074] [ngap] [info] NG Setup procedure is successful
+ue_9         | UERANSIM v3.2.6
+ue_9         | [2023-06-15 08:21:31.525] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:31.525] [rrc] [debug] UE[1] new signal detected
+gnodeb_2     | [2023-06-15 08:21:31.525] [rrc] [debug] UE[1] new signal detected
+ue_9         | [2023-06-15 08:21:31.525] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_9         | [2023-06-15 08:21:31.525] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_9         | [2023-06-15 08:21:31.525] [nas] [info] Selected plmn[208/93]
+ue_9         | [2023-06-15 08:21:31.525] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_9         | [2023-06-15 08:21:31.525] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_9         | [2023-06-15 08:21:31.525] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_9         | [2023-06-15 08:21:31.525] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_9         | [2023-06-15 08:21:31.525] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_9         | [2023-06-15 08:21:31.525] [nas] [debug] Sending Initial Registration
+ue_9         | [2023-06-15 08:21:31.526] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_9         | [2023-06-15 08:21:31.526] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:31.526] [rrc] [info] RRC Setup for UE[1]
+ue_9         | [2023-06-15 08:21:31.526] [rrc] [info] RRC connection established
+ue_9         | [2023-06-15 08:21:31.526] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_9         | [2023-06-15 08:21:31.526] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:31.526] [ngap] [debug] Initial NAS message received from UE[1]
+udm          | http://nrf.free5gc.org:8000
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.535+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.14:34036","uuid":"4df404a3-437a-4ea8-a3f2-40968e1f31e2","connectionId":13,"connectionCount":13}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.536+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"10.100.200.14:34036","client":"conn13","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_9         | [2023-06-15 08:21:31.543] [nas] [debug] Authentication Request received
+ue_9         | [2023-06-15 08:21:31.551] [nas] [debug] Security Mode Command received
+ue_9         | [2023-06-15 08:21:31.551] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_7         | UERANSIM v3.2.6
+gnodeb       | [2023-06-15 08:21:31.576] [rrc] [debug] UE[2] new signal detected
+ue_7         | [2023-06-15 08:21:31.576] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_7         | [2023-06-15 08:21:31.576] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_7         | [2023-06-15 08:21:31.576] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_7         | [2023-06-15 08:21:31.576] [nas] [info] Selected plmn[208/93]
+gnodeb_2     | [2023-06-15 08:21:31.576] [rrc] [debug] UE[2] new signal detected
+ue_7         | [2023-06-15 08:21:31.576] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_7         | [2023-06-15 08:21:31.576] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_7         | [2023-06-15 08:21:31.576] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_7         | [2023-06-15 08:21:31.576] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_7         | [2023-06-15 08:21:31.578] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_7         | [2023-06-15 08:21:31.578] [nas] [debug] Sending Initial Registration
+ue_7         | [2023-06-15 08:21:31.578] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_7         | [2023-06-15 08:21:31.578] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-06-15 08:21:31.578] [rrc] [info] RRC Setup for UE[2]
+gnodeb       | [2023-06-15 08:21:31.579] [ngap] [debug] Initial NAS message received from UE[2]
+ue_7         | [2023-06-15 08:21:31.578] [rrc] [info] RRC connection established
+ue_7         | [2023-06-15 08:21:31.578] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_7         | [2023-06-15 08:21:31.578] [nas] [info] UE switches to state [CM-CONNECTED]
+udm          | http://nrf.free5gc.org:8000
+ue_9         | [2023-06-15 08:21:31.589] [nas] [debug] Registration accept received
+ue_9         | [2023-06-15 08:21:31.589] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_9         | [2023-06-15 08:21:31.589] [nas] [debug] Sending Registration Complete
+ue_9         | [2023-06-15 08:21:31.589] [nas] [info] Initial Registration is successful
+ue_9         | [2023-06-15 08:21:31.589] [nas] [debug] Sending PDU Session Establishment Request
+gnodeb_2     | [2023-06-15 08:21:31.589] [ngap] [debug] Initial Context Setup Request received
+ue_7         | [2023-06-15 08:21:31.591] [nas] [debug] Authentication Request received
+ue_9         | [2023-06-15 08:21:31.591] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_7         | [2023-06-15 08:21:31.603] [nas] [debug] Security Mode Command received
+ue_7         | [2023-06-15 08:21:31.603] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-06-15 08:21:31.633] [ngap] [debug] Initial Context Setup Request received
+ue_7         | [2023-06-15 08:21:31.634] [nas] [debug] Registration accept received
+ue_7         | [2023-06-15 08:21:31.634] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_7         | [2023-06-15 08:21:31.634] [nas] [debug] Sending Registration Complete
+ue_7         | [2023-06-15 08:21:31.634] [nas] [info] Initial Registration is successful
+ue_7         | [2023-06-15 08:21:31.634] [nas] [debug] Sending PDU Session Establishment Request
+ue_7         | [2023-06-15 08:21:31.634] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.833+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:45058","uuid":"203a6216-a2be-4155-850b-5399f6a71b5a","connectionId":14,"connectionCount":14}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.833+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"10.100.200.8:45058","client":"conn14","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.834+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:45072","uuid":"58b56b23-934d-44b5-8c0b-a9940b6dbb07","connectionId":15,"connectionCount":15}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.834+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"10.100.200.8:45072","client":"conn15","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.859+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.9:40356","uuid":"5ef5d951-345d-4188-bf8b-667e3192c900","connectionId":16,"connectionCount":16}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.859+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"10.100.200.9:40356","client":"conn16","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.861+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.9:40368","uuid":"2002c8ab-6a3a-4d4c-849a-b3a231f19ff9","connectionId":17,"connectionCount":17}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:31.861+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn17","msg":"client metadata","attr":{"remote":"10.100.200.9:40368","client":"conn17","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_3         | UERANSIM v3.2.6
+ue_3         | [2023-06-15 08:21:31.884] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb_2     | [2023-06-15 08:21:31.884] [rrc] [debug] UE[3] new signal detected
+gnodeb       | [2023-06-15 08:21:31.884] [rrc] [debug] UE[3] new signal detected
+ue_3         | [2023-06-15 08:21:31.884] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_3         | [2023-06-15 08:21:31.885] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_3         | [2023-06-15 08:21:31.885] [nas] [info] Selected plmn[208/93]
+ue_3         | [2023-06-15 08:21:31.885] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [debug] Sending Initial Registration
+ue_3         | [2023-06-15 08:21:31.885] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_3         | [2023-06-15 08:21:31.885] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:31.885] [rrc] [info] RRC Setup for UE[3]
+gnodeb_2     | [2023-06-15 08:21:31.885] [ngap] [debug] Initial NAS message received from UE[3]
+ue_3         | [2023-06-15 08:21:31.885] [rrc] [info] RRC connection established
+ue_3         | [2023-06-15 08:21:31.885] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_3         | [2023-06-15 08:21:31.885] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_15        | UERANSIM v3.2.6
+ue_15        | [2023-06-15 08:21:31.896] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb_2     | [2023-06-15 08:21:31.901] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+ue_9         | [2023-06-15 08:21:31.901] [nas] [debug] PDU Session Establishment Accept received
+ue_9         | [2023-06-15 08:21:31.901] [nas] [info] PDU Session establishment is successful PSI[1]
+udm          | http://nrf.free5gc.org:8000
+ue_3         | [2023-06-15 08:21:31.907] [nas] [debug] Authentication Request received
+gnodeb       | [2023-06-15 08:21:31.921] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+ue_7         | [2023-06-15 08:21:31.931] [nas] [debug] PDU Session Establishment Accept received
+ue_7         | [2023-06-15 08:21:31.931] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_10        | UERANSIM v3.2.6
+ue_10        | [2023-06-15 08:21:31.943] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_10        | [2023-06-15 08:21:31.943] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb_2     | [2023-06-15 08:21:31.943] [rrc] [debug] UE[4] new signal detected
+gnodeb       | [2023-06-15 08:21:31.943] [rrc] [debug] UE[4] new signal detected
+ue_10        | [2023-06-15 08:21:31.944] [nas] [info] Selected plmn[208/93]
+ue_10        | [2023-06-15 08:21:31.944] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_10        | [2023-06-15 08:21:31.944] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [debug] Sending Initial Registration
+ue_10        | [2023-06-15 08:21:31.944] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_10        | [2023-06-15 08:21:31.944] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:31.944] [rrc] [info] RRC Setup for UE[4]
+ue_10        | [2023-06-15 08:21:31.944] [rrc] [info] RRC connection established
+ue_10        | [2023-06-15 08:21:31.944] [rrc] [info] UE switches to state [RRC-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:31.944] [ngap] [debug] Initial NAS message received from UE[4]
+ue_10        | [2023-06-15 08:21:31.944] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_2         | UERANSIM v3.2.6
+ue_2         | [2023-06-15 08:21:31.946] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:31.946] [rrc] [debug] UE[5] new signal detected
+ue_2         | [2023-06-15 08:21:31.947] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_2         | [2023-06-15 08:21:31.947] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_2         | [2023-06-15 08:21:31.947] [nas] [info] Selected plmn[208/93]
+ue_2         | [2023-06-15 08:21:31.947] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_2         | [2023-06-15 08:21:31.947] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_2         | [2023-06-15 08:21:31.947] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-06-15 08:21:31.947] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+gnodeb_2     | [2023-06-15 08:21:31.946] [rrc] [debug] UE[5] new signal detected
+ue_2         | [2023-06-15 08:21:31.948] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_2         | [2023-06-15 08:21:31.948] [nas] [debug] Sending Initial Registration
+ue_2         | [2023-06-15 08:21:31.948] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_2         | [2023-06-15 08:21:31.948] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-06-15 08:21:31.948] [rrc] [info] RRC Setup for UE[5]
+ue_2         | [2023-06-15 08:21:31.948] [rrc] [info] RRC connection established
+ue_2         | [2023-06-15 08:21:31.948] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_2         | [2023-06-15 08:21:31.948] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-06-15 08:21:31.948] [ngap] [debug] Initial NAS message received from UE[5]
+ue_9         | [2023-06-15 08:21:32.031] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+ue_7         | [2023-06-15 08:21:32.036] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+ue_11        | UERANSIM v3.2.6
+gnodeb_2     | [2023-06-15 08:21:32.064] [rrc] [debug] UE[6] new signal detected
+gnodeb       | [2023-06-15 08:21:32.064] [rrc] [debug] UE[6] new signal detected
+ue_11        | [2023-06-15 08:21:32.063] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_11        | [2023-06-15 08:21:32.064] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_11        | [2023-06-15 08:21:32.065] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_11        | [2023-06-15 08:21:32.065] [nas] [info] Selected plmn[208/93]
+ue_11        | [2023-06-15 08:21:32.065] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_11        | [2023-06-15 08:21:32.065] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_11        | [2023-06-15 08:21:32.065] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-06-15 08:21:32.065] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_11        | [2023-06-15 08:21:32.066] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_11        | [2023-06-15 08:21:32.066] [nas] [debug] Sending Initial Registration
+gnodeb       | [2023-06-15 08:21:32.066] [rrc] [info] RRC Setup for UE[6]
+ue_11        | [2023-06-15 08:21:32.066] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_11        | [2023-06-15 08:21:32.066] [rrc] [debug] Sending RRC Setup Request
+ue_11        | [2023-06-15 08:21:32.067] [rrc] [info] RRC connection established
+ue_11        | [2023-06-15 08:21:32.067] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_11        | [2023-06-15 08:21:32.067] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-06-15 08:21:32.067] [ngap] [debug] Initial NAS message received from UE[6]
+ue_14        | UERANSIM v3.2.6
+ue_14        | [2023-06-15 08:21:32.070] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb_2     | [2023-06-15 08:21:32.071] [rrc] [debug] UE[7] new signal detected
+ue_14        | [2023-06-15 08:21:32.071] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+gnodeb       | [2023-06-15 08:21:32.071] [rrc] [debug] UE[7] new signal detected
+ue_14        | [2023-06-15 08:21:32.071] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_14        | [2023-06-15 08:21:32.071] [nas] [info] Selected plmn[208/93]
+ue_14        | [2023-06-15 08:21:32.071] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_14        | [2023-06-15 08:21:32.071] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_14        | [2023-06-15 08:21:32.071] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_14        | [2023-06-15 08:21:32.071] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_14        | [2023-06-15 08:21:32.071] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_14        | [2023-06-15 08:21:32.071] [nas] [debug] Sending Initial Registration
+ue_14        | [2023-06-15 08:21:32.071] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_14        | [2023-06-15 08:21:32.071] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:32.071] [rrc] [info] RRC Setup for UE[7]
+gnodeb_2     | [2023-06-15 08:21:32.072] [ngap] [debug] Initial NAS message received from UE[7]
+ue_14        | [2023-06-15 08:21:32.071] [rrc] [info] RRC connection established
+ue_14        | [2023-06-15 08:21:32.072] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_14        | [2023-06-15 08:21:32.072] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_3         | [2023-06-15 08:21:32.118] [nas] [debug] Security Mode Command received
+ue_3         | [2023-06-15 08:21:32.118] [nas] [debug] Selected integrity[2] ciphering[0]
+udm          | http://nrf.free5gc.org:8000
+ue_10        | [2023-06-15 08:21:32.147] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+udm          | http://nrf.free5gc.org:8000
+ue_2         | [2023-06-15 08:21:32.153] [nas] [debug] Authentication Request received
+ue_14        | [2023-06-15 08:21:32.159] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+mongodb      | {"t":{"$date":"2023-06-15T08:21:32.167+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.14:34042","uuid":"bc7c095c-ee17-44ad-9021-f21a9603d440","connectionId":18,"connectionCount":18}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:32.167+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn18","msg":"client metadata","attr":{"remote":"10.100.200.14:34042","client":"conn18","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:32.167+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.14:34050","uuid":"05eb8eb3-b1dd-4af4-adae-1a9e43baf240","connectionId":19,"connectionCount":19}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:32.168+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn19","msg":"client metadata","attr":{"remote":"10.100.200.14:34050","client":"conn19","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+ue_11        | [2023-06-15 08:21:32.170] [nas] [debug] Authentication Request received
+ue_2         | [2023-06-15 08:21:32.170] [nas] [debug] Security Mode Command received
+ue_2         | [2023-06-15 08:21:32.171] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_11        | [2023-06-15 08:21:32.190] [nas] [debug] Security Mode Command received
+ue_11        | [2023-06-15 08:21:32.190] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb_2     | [2023-06-15 08:21:32.192] [ngap] [debug] Initial Context Setup Request received
+ue_3         | [2023-06-15 08:21:32.192] [nas] [debug] Registration accept received
+ue_3         | [2023-06-15 08:21:32.192] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_3         | [2023-06-15 08:21:32.192] [nas] [debug] Sending Registration Complete
+ue_3         | [2023-06-15 08:21:32.192] [nas] [info] Initial Registration is successful
+ue_3         | [2023-06-15 08:21:32.192] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-06-15 08:21:32.192] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_10        | [2023-06-15 08:21:32.208] [nas] [debug] Security Mode Command received
+ue_10        | [2023-06-15 08:21:32.208] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_14        | [2023-06-15 08:21:32.213] [nas] [debug] Security Mode Command received
+ue_14        | [2023-06-15 08:21:32.213] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-06-15 08:21:32.238] [ngap] [debug] Initial Context Setup Request received
+ue_2         | [2023-06-15 08:21:32.238] [nas] [debug] Registration accept received
+ue_2         | [2023-06-15 08:21:32.238] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_2         | [2023-06-15 08:21:32.238] [nas] [debug] Sending Registration Complete
+ue_2         | [2023-06-15 08:21:32.238] [nas] [info] Initial Registration is successful
+ue_2         | [2023-06-15 08:21:32.238] [nas] [debug] Sending PDU Session Establishment Request
+ue_2         | [2023-06-15 08:21:32.239] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_8         | UERANSIM v3.2.6
+ue_8         | [2023-06-15 08:21:32.250] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:32.251] [rrc] [debug] UE[8] new signal detected
+ue_8         | [2023-06-15 08:21:32.252] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_8         | [2023-06-15 08:21:32.252] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_8         | [2023-06-15 08:21:32.252] [nas] [info] Selected plmn[208/93]
+ue_12        | UERANSIM v3.2.6
+ue_8         | [2023-06-15 08:21:32.252] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_8         | [2023-06-15 08:21:32.252] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_8         | [2023-06-15 08:21:32.252] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-06-15 08:21:32.252] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_8         | [2023-06-15 08:21:32.253] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_8         | [2023-06-15 08:21:32.253] [nas] [debug] Sending Initial Registration
+gnodeb_2     | [2023-06-15 08:21:32.251] [rrc] [debug] UE[8] new signal detected
+ue_8         | [2023-06-15 08:21:32.253] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_8         | [2023-06-15 08:21:32.253] [rrc] [debug] Sending RRC Setup Request
+ue_8         | [2023-06-15 08:21:32.253] [rrc] [info] RRC connection established
+ue_8         | [2023-06-15 08:21:32.253] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_8         | [2023-06-15 08:21:32.253] [nas] [info] UE switches to state [CM-CONNECTED]
+ue_12        | [2023-06-15 08:21:32.254] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb_2     | [2023-06-15 08:21:32.253] [rrc] [info] RRC Setup for UE[8]
+gnodeb_2     | [2023-06-15 08:21:32.254] [ngap] [debug] Initial NAS message received from UE[8]
+gnodeb_2     | [2023-06-15 08:21:32.254] [rrc] [debug] UE[9] new signal detected
+gnodeb       | [2023-06-15 08:21:32.254] [rrc] [debug] UE[9] new signal detected
+ue_12        | [2023-06-15 08:21:32.254] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_12        | [2023-06-15 08:21:32.254] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_12        | [2023-06-15 08:21:32.255] [nas] [info] Selected plmn[208/93]
+ue_12        | [2023-06-15 08:21:32.255] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_12        | [2023-06-15 08:21:32.255] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_12        | [2023-06-15 08:21:32.255] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-06-15 08:21:32.255] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_12        | [2023-06-15 08:21:32.256] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_12        | [2023-06-15 08:21:32.256] [nas] [debug] Sending Initial Registration
+ue_12        | [2023-06-15 08:21:32.256] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_12        | [2023-06-15 08:21:32.256] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:32.256] [rrc] [info] RRC Setup for UE[9]
+ue_12        | [2023-06-15 08:21:32.257] [rrc] [info] RRC connection established
+ue_12        | [2023-06-15 08:21:32.257] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_12        | [2023-06-15 08:21:32.257] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:32.257] [ngap] [debug] Initial NAS message received from UE[9]
+ue_11        | [2023-06-15 08:21:32.280] [nas] [debug] Registration accept received
+ue_11        | [2023-06-15 08:21:32.280] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_11        | [2023-06-15 08:21:32.280] [nas] [debug] Sending Registration Complete
+ue_11        | [2023-06-15 08:21:32.280] [nas] [info] Initial Registration is successful
+ue_11        | [2023-06-15 08:21:32.280] [nas] [debug] Sending PDU Session Establishment Request
+ue_11        | [2023-06-15 08:21:32.282] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-06-15 08:21:32.280] [ngap] [debug] Initial Context Setup Request received
+ue_10        | [2023-06-15 08:21:32.285] [nas] [debug] Registration accept received
+ue_10        | [2023-06-15 08:21:32.285] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_10        | [2023-06-15 08:21:32.285] [nas] [debug] Sending Registration Complete
+ue_10        | [2023-06-15 08:21:32.285] [nas] [info] Initial Registration is successful
+ue_10        | [2023-06-15 08:21:32.285] [nas] [debug] Sending PDU Session Establishment Request
+ue_3         | [2023-06-15 08:21:32.284] [nas] [debug] PDU Session Establishment Accept received
+ue_3         | [2023-06-15 08:21:32.284] [nas] [info] PDU Session establishment is successful PSI[1]
+gnodeb_2     | [2023-06-15 08:21:32.284] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
+gnodeb_2     | [2023-06-15 08:21:32.284] [ngap] [debug] Initial Context Setup Request received
+ue_10        | [2023-06-15 08:21:32.289] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_3         | [2023-06-15 08:21:32.295] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.2] is up.
+ue_6         | UERANSIM v3.2.6
+ue_6         | [2023-06-15 08:21:32.307] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:32.307] [rrc] [debug] UE[10] new signal detected
+ue_6         | [2023-06-15 08:21:32.308] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_6         | [2023-06-15 08:21:32.308] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_6         | [2023-06-15 08:21:32.308] [nas] [info] Selected plmn[208/93]
+gnodeb_2     | [2023-06-15 08:21:32.308] [ngap] [debug] Initial Context Setup Request received
+gnodeb_2     | [2023-06-15 08:21:32.308] [rrc] [debug] UE[10] new signal detected
+ue_14        | [2023-06-15 08:21:32.309] [nas] [debug] Registration accept received
+ue_14        | [2023-06-15 08:21:32.309] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_14        | [2023-06-15 08:21:32.309] [nas] [debug] Sending Registration Complete
+ue_14        | [2023-06-15 08:21:32.309] [nas] [info] Initial Registration is successful
+ue_14        | [2023-06-15 08:21:32.309] [nas] [debug] Sending PDU Session Establishment Request
+ue_14        | [2023-06-15 08:21:32.309] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+udm          | http://nrf.free5gc.org:8000
+ue_8         | [2023-06-15 08:21:32.318] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_12        | [2023-06-15 08:21:32.328] [nas] [debug] Authentication Request received
+gnodeb       | [2023-06-15 08:21:32.345] [ngap] [info] PDU session resource(s) setup for UE[5] count[1]
+ue_2         | [2023-06-15 08:21:32.346] [nas] [debug] PDU Session Establishment Accept received
+ue_2         | [2023-06-15 08:21:32.346] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_2         | [2023-06-15 08:21:32.354] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.2] is up.
+ue_13        | UERANSIM v3.2.6
+ue_13        | [2023-06-15 08:21:32.368] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb_2     | [2023-06-15 08:21:32.369] [rrc] [debug] UE[11] new signal detected
+gnodeb       | [2023-06-15 08:21:32.369] [rrc] [debug] UE[11] new signal detected
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_13        | [2023-06-15 08:21:32.369] [nas] [info] Selected plmn[208/93]
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [debug] Sending Initial Registration
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [debug] Sending RRC Setup Request
+ue_13        | [2023-06-15 08:21:32.369] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [info] RRC connection established
+ue_13        | [2023-06-15 08:21:32.369] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_13        | [2023-06-15 08:21:32.369] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:32.369] [rrc] [info] RRC Setup for UE[11]
+gnodeb_2     | [2023-06-15 08:21:32.369] [ngap] [debug] Initial NAS message received from UE[11]
+ue_11        | [2023-06-15 08:21:32.377] [nas] [debug] PDU Session Establishment Accept received
+ue_11        | [2023-06-15 08:21:32.377] [nas] [info] PDU Session establishment is successful PSI[1]
+gnodeb       | [2023-06-15 08:21:32.377] [ngap] [info] PDU session resource(s) setup for UE[6] count[1]
+ue_11        | [2023-06-15 08:21:32.385] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.3] is up.
+gnodeb_2     | [2023-06-15 08:21:32.387] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
+ue_10        | [2023-06-15 08:21:32.387] [nas] [debug] PDU Session Establishment Accept received
+ue_10        | [2023-06-15 08:21:32.387] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_10        | [2023-06-15 08:21:32.394] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.3] is up.
+ue_8         | [2023-06-15 08:21:32.406] [nas] [debug] Security Mode Command received
+ue_8         | [2023-06-15 08:21:32.406] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_12        | [2023-06-15 08:21:32.410] [nas] [debug] Security Mode Command received
+ue_12        | [2023-06-15 08:21:32.410] [nas] [debug] Selected integrity[2] ciphering[0]
+udm          | http://nrf.free5gc.org:8000
+ue_13        | [2023-06-15 08:21:32.419] [nas] [debug] Authentication Request received
+gnodeb_2     | [2023-06-15 08:21:32.440] [ngap] [info] PDU session resource(s) setup for UE[7] count[1]
+ue_14        | [2023-06-15 08:21:32.441] [nas] [debug] PDU Session Establishment Accept received
+ue_14        | [2023-06-15 08:21:32.441] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_1         | UERANSIM v3.2.6
+ue_1         | [2023-06-15 08:21:32.457] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:32.458] [rrc] [debug] UE[12] new signal detected
+ue_1         | [2023-06-15 08:21:32.458] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_1         | [2023-06-15 08:21:32.458] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+gnodeb_2     | [2023-06-15 08:21:32.458] [rrc] [debug] UE[12] new signal detected
+ue_1         | [2023-06-15 08:21:32.458] [nas] [info] Selected plmn[208/93]
+ue_1         | [2023-06-15 08:21:32.458] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_1         | [2023-06-15 08:21:32.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_1         | [2023-06-15 08:21:32.458] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-06-15 08:21:32.458] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_1         | [2023-06-15 08:21:32.458] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-06-15 08:21:32.458] [nas] [debug] Sending Initial Registration
+ue_1         | [2023-06-15 08:21:32.458] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_1         | [2023-06-15 08:21:32.458] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:32.459] [rrc] [info] RRC Setup for UE[12]
+ue_1         | [2023-06-15 08:21:32.459] [rrc] [info] RRC connection established
+ue_1         | [2023-06-15 08:21:32.459] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_1         | [2023-06-15 08:21:32.459] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:32.459] [ngap] [debug] Initial NAS message received from UE[12]
+gnodeb_2     | [2023-06-15 08:21:32.469] [ngap] [debug] Initial Context Setup Request received
+ue_8         | [2023-06-15 08:21:32.469] [nas] [debug] Registration accept received
+ue_8         | [2023-06-15 08:21:32.469] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_8         | [2023-06-15 08:21:32.469] [nas] [debug] Sending Registration Complete
+ue_8         | [2023-06-15 08:21:32.469] [nas] [info] Initial Registration is successful
+ue_8         | [2023-06-15 08:21:32.469] [nas] [debug] Sending PDU Session Establishment Request
+ue_8         | [2023-06-15 08:21:32.470] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb_2     | [2023-06-15 08:21:32.484] [ngap] [debug] Initial Context Setup Request received
+ue_12        | [2023-06-15 08:21:32.484] [nas] [debug] Registration accept received
+ue_12        | [2023-06-15 08:21:32.484] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_12        | [2023-06-15 08:21:32.484] [nas] [debug] Sending Registration Complete
+ue_12        | [2023-06-15 08:21:32.484] [nas] [info] Initial Registration is successful
+ue_12        | [2023-06-15 08:21:32.484] [nas] [debug] Sending PDU Session Establishment Request
+ue_12        | [2023-06-15 08:21:32.484] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_13        | [2023-06-15 08:21:32.487] [nas] [debug] Security Mode Command received
+ue_13        | [2023-06-15 08:21:32.487] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_14        | [2023-06-15 08:21:32.537] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.4] is up.
+udm          | http://nrf.free5gc.org:8000
+ue_1         | [2023-06-15 08:21:32.547] [nas] [debug] Authentication Request received
+ue_5         | UERANSIM v3.2.6
+ue_5         | [2023-06-15 08:21:32.558] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+gnodeb       | [2023-06-15 08:21:32.558] [rrc] [debug] UE[13] new signal detected
+ue_5         | [2023-06-15 08:21:32.558] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_5         | [2023-06-15 08:21:32.558] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+gnodeb_2     | [2023-06-15 08:21:32.558] [rrc] [debug] UE[13] new signal detected
+ue_5         | [2023-06-15 08:21:32.559] [nas] [info] Selected plmn[208/93]
+ue_5         | [2023-06-15 08:21:32.559] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_4         | UERANSIM v3.2.6
+ue_5         | [2023-06-15 08:21:32.559] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_5         | [2023-06-15 08:21:32.559] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_5         | [2023-06-15 08:21:32.559] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_5         | [2023-06-15 08:21:32.560] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_5         | [2023-06-15 08:21:32.560] [nas] [debug] Sending Initial Registration
+ue_5         | [2023-06-15 08:21:32.560] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_5         | [2023-06-15 08:21:32.560] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:32.561] [rrc] [info] RRC Setup for UE[13]
+ue_5         | [2023-06-15 08:21:32.561] [rrc] [info] RRC connection established
+ue_5         | [2023-06-15 08:21:32.561] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_4         | [2023-06-15 08:21:32.561] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+ue_5         | [2023-06-15 08:21:32.561] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:32.561] [ngap] [debug] Initial NAS message received from UE[13]
+gnodeb_2     | [2023-06-15 08:21:32.561] [rrc] [debug] UE[14] new signal detected
+gnodeb       | [2023-06-15 08:21:32.561] [rrc] [debug] UE[14] new signal detected
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_4         | [2023-06-15 08:21:32.562] [nas] [info] Selected plmn[208/93]
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+gnodeb_2     | [2023-06-15 08:21:32.562] [rrc] [info] RRC Setup for UE[14]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [debug] Sending Initial Registration
+ue_4         | [2023-06-15 08:21:32.562] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [debug] Sending RRC Setup Request
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [info] RRC connection established
+ue_4         | [2023-06-15 08:21:32.562] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_4         | [2023-06-15 08:21:32.562] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:32.563] [ngap] [debug] Initial NAS message received from UE[14]
+gnodeb_2     | [2023-06-15 08:21:32.573] [ngap] [info] PDU session resource(s) setup for UE[8] count[1]
+ue_8         | [2023-06-15 08:21:32.573] [nas] [debug] PDU Session Establishment Accept received
+ue_8         | [2023-06-15 08:21:32.573] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_8         | [2023-06-15 08:21:32.579] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.5] is up.
+gnodeb_2     | [2023-06-15 08:21:32.589] [ngap] [info] PDU session resource(s) setup for UE[9] count[1]
+ue_12        | [2023-06-15 08:21:32.589] [nas] [debug] PDU Session Establishment Accept received
+ue_12        | [2023-06-15 08:21:32.589] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_12        | [2023-06-15 08:21:32.595] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.6] is up.
+gnodeb_2     | [2023-06-15 08:21:32.598] [ngap] [debug] Initial Context Setup Request received
+ue_13        | [2023-06-15 08:21:32.598] [nas] [debug] Registration accept received
+ue_13        | [2023-06-15 08:21:32.598] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_13        | [2023-06-15 08:21:32.598] [nas] [debug] Sending Registration Complete
+ue_13        | [2023-06-15 08:21:32.598] [nas] [info] Initial Registration is successful
+ue_13        | [2023-06-15 08:21:32.598] [nas] [debug] Sending PDU Session Establishment Request
+ue_13        | [2023-06-15 08:21:32.598] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-06-15 08:21:32.601] [nas] [debug] Security Mode Command received
+ue_1         | [2023-06-15 08:21:32.601] [nas] [debug] Selected integrity[2] ciphering[0]
+udm          | http://nrf.free5gc.org:8000
+ue_5         | [2023-06-15 08:21:32.610] [nas] [debug] Authentication Request received
+udm          | http://nrf.free5gc.org:8000
+ue_4         | [2023-06-15 08:21:32.635] [nas] [debug] Authentication Request received
+gnodeb_2     | [2023-06-15 08:21:32.666] [ngap] [debug] Initial Context Setup Request received
+ue_1         | [2023-06-15 08:21:32.666] [nas] [debug] Registration accept received
+ue_1         | [2023-06-15 08:21:32.667] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_1         | [2023-06-15 08:21:32.667] [nas] [debug] Sending Registration Complete
+ue_1         | [2023-06-15 08:21:32.667] [nas] [info] Initial Registration is successful
+ue_1         | [2023-06-15 08:21:32.667] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-06-15 08:21:32.667] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_1         | [2023-06-15 08:21:32.667] [nas] [debug] Sending PDU Session Establishment Request
+ue_1         | [2023-06-15 08:21:32.667] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_5         | [2023-06-15 08:21:32.670] [nas] [debug] Security Mode Command received
+ue_5         | [2023-06-15 08:21:32.670] [nas] [debug] Selected integrity[2] ciphering[0]
+ue_4         | [2023-06-15 08:21:32.673] [nas] [debug] Security Mode Command received
+ue_4         | [2023-06-15 08:21:32.673] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb_2     | [2023-06-15 08:21:32.678] [ngap] [info] PDU session resource(s) setup for UE[11] count[1]
+ue_13        | [2023-06-15 08:21:32.678] [nas] [debug] PDU Session Establishment Accept received
+ue_13        | [2023-06-15 08:21:32.678] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_13        | [2023-06-15 08:21:32.684] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.7] is up.
+gnodeb_2     | [2023-06-15 08:21:32.703] [ngap] [info] PDU session resource(s) setup for UE[12] count[1]
+ue_1         | [2023-06-15 08:21:32.703] [nas] [debug] PDU Session Establishment Accept received
+ue_1         | [2023-06-15 08:21:32.703] [nas] [info] PDU Session establishment is successful PSI[1]
+gnodeb_2     | [2023-06-15 08:21:32.707] [ngap] [info] PDU session resource(s) setup for UE[12] count[1]
+ue_1         | [2023-06-15 08:21:32.707] [nas] [debug] PDU Session Establishment Accept received
+ue_1         | [2023-06-15 08:21:32.707] [nas] [info] PDU Session establishment is successful PSI[2]
+ue_1         | [2023-06-15 08:21:32.709] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.8] is up.
+ue_1         | [2023-06-15 08:21:32.713] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.70.0.1] is up.
+gnodeb_2     | [2023-06-15 08:21:32.743] [ngap] [debug] Initial Context Setup Request received
+ue_5         | [2023-06-15 08:21:32.743] [nas] [debug] Registration accept received
+ue_5         | [2023-06-15 08:21:32.743] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_5         | [2023-06-15 08:21:32.743] [nas] [debug] Sending Registration Complete
+ue_5         | [2023-06-15 08:21:32.743] [nas] [info] Initial Registration is successful
+ue_5         | [2023-06-15 08:21:32.743] [nas] [debug] Sending PDU Session Establishment Request
+ue_5         | [2023-06-15 08:21:32.743] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb_2     | [2023-06-15 08:21:32.758] [ngap] [debug] Initial Context Setup Request received
+ue_4         | [2023-06-15 08:21:32.758] [nas] [debug] Registration accept received
+ue_4         | [2023-06-15 08:21:32.758] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_4         | [2023-06-15 08:21:32.758] [nas] [debug] Sending Registration Complete
+ue_4         | [2023-06-15 08:21:32.758] [nas] [info] Initial Registration is successful
+ue_4         | [2023-06-15 08:21:32.758] [nas] [debug] Sending PDU Session Establishment Request
+ue_4         | [2023-06-15 08:21:32.758] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb_2     | [2023-06-15 08:21:32.784] [ngap] [info] PDU session resource(s) setup for UE[13] count[1]
+ue_5         | [2023-06-15 08:21:32.784] [nas] [debug] PDU Session Establishment Accept received
+ue_5         | [2023-06-15 08:21:32.784] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_5         | [2023-06-15 08:21:32.790] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.9] is up.
+gnodeb_2     | [2023-06-15 08:21:32.844] [ngap] [info] PDU session resource(s) setup for UE[14] count[1]
+ue_4         | [2023-06-15 08:21:32.844] [nas] [debug] PDU Session Establishment Accept received
+ue_4         | [2023-06-15 08:21:32.844] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_4         | [2023-06-15 08:21:32.851] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.10] is up.
+gnodeb       | [2023-06-15 08:21:32.918] [rrc] [debug] UE[15] new signal detected
+gnodeb_2     | [2023-06-15 08:21:32.918] [rrc] [debug] UE[15] new signal detected
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+ue_15        | [2023-06-15 08:21:32.919] [nas] [info] Selected plmn[208/93]
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+ue_15        | [2023-06-15 08:21:32.919] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_15        | [2023-06-15 08:21:32.919] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-06-15 08:21:32.919] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_15        | [2023-06-15 08:21:32.919] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_15        | [2023-06-15 08:21:32.919] [nas] [debug] Sending Initial Registration
+ue_15        | [2023-06-15 08:21:32.919] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [debug] Sending RRC Setup Request
+gnodeb       | [2023-06-15 08:21:32.919] [rrc] [info] RRC Setup for UE[15]
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [info] RRC connection established
+ue_15        | [2023-06-15 08:21:32.919] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_15        | [2023-06-15 08:21:32.920] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb       | [2023-06-15 08:21:32.920] [ngap] [debug] Initial NAS message received from UE[15]
+udm          | http://nrf.free5gc.org:8000
+ue_15        | [2023-06-15 08:21:32.929] [nas] [debug] Authentication Request received
+ue_15        | [2023-06-15 08:21:32.933] [nas] [debug] Security Mode Command received
+ue_15        | [2023-06-15 08:21:32.933] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb       | [2023-06-15 08:21:32.948] [ngap] [debug] Initial Context Setup Request received
+ue_15        | [2023-06-15 08:21:32.948] [nas] [debug] Registration accept received
+ue_15        | [2023-06-15 08:21:32.948] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_15        | [2023-06-15 08:21:32.948] [nas] [debug] Sending Registration Complete
+ue_15        | [2023-06-15 08:21:32.948] [nas] [info] Initial Registration is successful
+ue_15        | [2023-06-15 08:21:32.948] [nas] [debug] Sending PDU Session Establishment Request
+ue_15        | [2023-06-15 08:21:32.948] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb       | [2023-06-15 08:21:33.176] [ngap] [info] PDU session resource(s) setup for UE[15] count[1]
+ue_15        | [2023-06-15 08:21:33.176] [nas] [debug] PDU Session Establishment Accept received
+ue_15        | [2023-06-15 08:21:33.176] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_15        | [2023-06-15 08:21:33.182] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.4] is up.
+ue_6         | [2023-06-15 08:21:34.809] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+ue_6         | [2023-06-15 08:21:34.809] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+ue_6         | [2023-06-15 08:21:34.809] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-06-15 08:21:34.809] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+ue_6         | [2023-06-15 08:21:34.809] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+ue_6         | [2023-06-15 08:21:34.809] [nas] [debug] Sending Initial Registration
+ue_6         | [2023-06-15 08:21:34.810] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+ue_6         | [2023-06-15 08:21:34.810] [rrc] [debug] Sending RRC Setup Request
+gnodeb_2     | [2023-06-15 08:21:34.810] [rrc] [info] RRC Setup for UE[10]
+ue_6         | [2023-06-15 08:21:34.810] [rrc] [info] RRC connection established
+ue_6         | [2023-06-15 08:21:34.810] [rrc] [info] UE switches to state [RRC-CONNECTED]
+ue_6         | [2023-06-15 08:21:34.810] [nas] [info] UE switches to state [CM-CONNECTED]
+gnodeb_2     | [2023-06-15 08:21:34.810] [ngap] [debug] Initial NAS message received from UE[10]
+udm          | http://nrf.free5gc.org:8000
+ue_6         | [2023-06-15 08:21:34.822] [nas] [debug] Authentication Request received
+ue_6         | [2023-06-15 08:21:34.826] [nas] [debug] Security Mode Command received
+ue_6         | [2023-06-15 08:21:34.826] [nas] [debug] Selected integrity[2] ciphering[0]
+gnodeb_2     | [2023-06-15 08:21:34.845] [ngap] [debug] Initial Context Setup Request received
+ue_6         | [2023-06-15 08:21:34.845] [nas] [debug] Registration accept received
+ue_6         | [2023-06-15 08:21:34.845] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+ue_6         | [2023-06-15 08:21:34.845] [nas] [debug] Sending Registration Complete
+ue_6         | [2023-06-15 08:21:34.846] [nas] [info] Initial Registration is successful
+ue_6         | [2023-06-15 08:21:34.846] [nas] [debug] Sending PDU Session Establishment Request
+ue_6         | [2023-06-15 08:21:34.846] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+gnodeb_2     | [2023-06-15 08:21:35.068] [ngap] [info] PDU session resource(s) setup for UE[10] count[1]
+ue_6         | [2023-06-15 08:21:35.069] [nas] [debug] PDU Session Establishment Accept received
+ue_6         | [2023-06-15 08:21:35.069] [nas] [info] PDU Session establishment is successful PSI[1]
+ue_6         | [2023-06-15 08:21:35.074] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.11] is up.
+mongodb      | {"t":{"$date":"2023-06-15T08:21:39.616+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.7:39254","uuid":"661e47c6-26bd-4ba6-a651-4d1daf8b0fb5","connectionId":20,"connectionCount":20}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:39.616+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.6:50424","uuid":"1ec85e9b-31d1-4f59-ba9b-191f71c2f6e2","connectionId":21,"connectionCount":21}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:39.616+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn20","msg":"client metadata","attr":{"remote":"10.100.200.7:39254","client":"conn20","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:39.616+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn21","msg":"client metadata","attr":{"remote":"10.100.200.6:50424","client":"conn21","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:40.030+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.8:59378","uuid":"a78abc50-6ded-40bf-b79f-943d42bed5b8","connectionId":22,"connectionCount":22}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:40.031+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn22","msg":"client metadata","attr":{"remote":"10.100.200.8:59378","client":"conn22","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:40.187+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.100.200.9:34548","uuid":"70a72911-a0ca-459c-9da3-0768ffb65701","connectionId":23,"connectionCount":23}}
+mongodb      | {"t":{"$date":"2023-06-15T08:21:40.187+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn23","msg":"client metadata","attr":{"remote":"10.100.200.9:34548","client":"conn23","doc":{"driver":{"name":"mongo-go-driver","version":"v1.8.4"},"os":{"type":"linux","architecture":"amd64"},"platform":"go1.14.4"}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:55.689+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn2","msg":"Interrupted operation as its client disconnected","attr":{"opId":1651}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:55.689+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn21","msg":"Connection ended","attr":{"remote":"10.100.200.6:50424","uuid":"1ec85e9b-31d1-4f59-ba9b-191f71c2f6e2","connectionId":21,"connectionCount":22}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:55.689+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"10.100.200.6:39716","uuid":"f5a6cc0e-0815-40d2-b2c7-75ce781734a0","connectionId":3,"connectionCount":21}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:55.700+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"10.100.200.6:39712","uuid":"a02e7e2e-71c4-4b0e-82f5-1bd32fb28354","connectionId":2,"connectionCount":20}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.697+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn14","msg":"Interrupted operation as its client disconnected","attr":{"opId":1668}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.697+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn15","msg":"Connection ended","attr":{"remote":"10.100.200.8:45072","uuid":"58b56b23-934d-44b5-8c0b-a9940b6dbb07","connectionId":15,"connectionCount":19}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.697+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn22","msg":"Connection ended","attr":{"remote":"10.100.200.8:59378","uuid":"a78abc50-6ded-40bf-b79f-943d42bed5b8","connectionId":22,"connectionCount":18}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.697+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn14","msg":"Connection ended","attr":{"remote":"10.100.200.8:45058","uuid":"203a6216-a2be-4155-850b-5399f6a71b5a","connectionId":14,"connectionCount":17}}
+gnodeb       | [2023-06-15 08:22:56.698] [rls] [debug] UE[5] signal lost
+gnodeb       | [2023-06-15 08:22:56.698] [rls] [debug] UE[7] signal lost
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn19","msg":"Connection ended","attr":{"remote":"10.100.200.14:34050","uuid":"05eb8eb3-b1dd-4af4-adae-1a9e43baf240","connectionId":19,"connectionCount":15}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn18","msg":"Connection ended","attr":{"remote":"10.100.200.14:34042","uuid":"bc7c095c-ee17-44ad-9021-f21a9603d440","connectionId":18,"connectionCount":16}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn13","msg":"Connection ended","attr":{"remote":"10.100.200.14:34036","uuid":"4df404a3-437a-4ea8-a3f2-40968e1f31e2","connectionId":13,"connectionCount":14}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn12","msg":"Interrupted operation as its client disconnected","attr":{"opId":1654}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"10.100.200.14:34012","uuid":"0f2f297d-45e5-4ff4-94af-3562b000e0f1","connectionId":11,"connectionCount":13}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"10.100.200.14:34024","uuid":"c08225af-e71b-46e7-922f-cfc3932aa053","connectionId":12,"connectionCount":12}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.705+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn16","msg":"Interrupted operation as its client disconnected","attr":{"opId":1669}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.705+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn17","msg":"Connection ended","attr":{"remote":"10.100.200.9:40368","uuid":"2002c8ab-6a3a-4d4c-849a-b3a231f19ff9","connectionId":17,"connectionCount":11}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.705+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn23","msg":"Connection ended","attr":{"remote":"10.100.200.9:34548","uuid":"70a72911-a0ca-459c-9da3-0768ffb65701","connectionId":23,"connectionCount":10}}
+mongodb      | {"t":{"$date":"2023-06-15T08:22:56.705+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn16","msg":"Connection ended","attr":{"remote":"10.100.200.9:40356","uuid":"5ef5d951-345d-4188-bf8b-667e3192c900","connectionId":16,"connectionCount":9}}
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[1] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[2] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[3] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[5] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[7] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[8] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[9] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[10] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[11] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[12] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[13] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[14] signal lost
+gnodeb_2     | [2023-06-15 08:22:57.500] [rls] [debug] UE[15] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[1] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[2] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[3] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[4] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[6] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[8] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[9] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[10] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[11] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[12] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[13] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[14] signal lost
+gnodeb       | [2023-06-15 08:22:57.702] [rls] [debug] UE[15] signal lost
+ue_14 exited with code 0
+ue_14 exited with code 0
+webui exited with code 0
+webui exited with code 2
+ue_13 exited with code 0
+ue_13 exited with code 0
+ue_7 exited with code 0
+ue_7 exited with code 0
+ue_3 exited with code 0
+ue_3 exited with code 0
+ue_6 exited with code 0
+ue_6 exited with code 0
+ue_11 exited with code 0
+ue_11 exited with code 0
+ue_12 exited with code 0
+ue_12 exited with code 0
+ue_2 exited with code 0
+ue_2 exited with code 0
+ue_15 exited with code 0
+ue_15 exited with code 0
+ue_10 exited with code 0
+ue_10 exited with code 0
+ue_4 exited with code 0
+ue_4 exited with code 0
+ue_8 exited with code 0
+ue_8 exited with code 0
+ue_5 exited with code 0
+ue_5 exited with code 0
+ue_9 exited with code 0
+ue_9 exited with code 0
+ue_1 exited with code 0
+ue_1 exited with code 0
+smf_2 exited with code 0
+smf_2 exited with code 0
+pcf exited with code 0
+pcf exited with code 0
+nssf exited with code 0
+nssf exited with code 0
+ausf exited with code 0
+ausf exited with code 0
+udm exited with code 0
+udm exited with code 0
+udr exited with code 0
+udr exited with code 0
+pcf_2 exited with code 0
+pcf_2 exited with code 0
+n3iwf exited with code 0
+n3iwf exited with code 0
+gnodeb exited with code 0
+gnodeb exited with code 0
+gnodeb_2 exited with code 0
+gnodeb_2 exited with code 0
+upf_2 exited with code 0
+upf_2 exited with code 0
+smf exited with code 0
+smf exited with code 0
+upf exited with code 0
+upf exited with code 0
+amf exited with code 0
+amf exited with code 0
+amf_2 exited with code 0
+amf_2 exited with code 0
+http_server exited with code 0
+http_server exited with code 137
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.579+00:00"},"s":"I",  "c":"COMMAND",  "id":518070,  "ctx":"conn8","msg":"CMD: drop","attr":{"namespace":"free5gc.NfProfile"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.579+00:00"},"s":"I",  "c":"STORAGE",  "id":20318,   "ctx":"conn8","msg":"Finishing collection drop","attr":{"namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"882da210-78d9-418e-858b-136d319b5974"}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.579+00:00"},"s":"I",  "c":"STORAGE",  "id":22206,   "ctx":"conn8","msg":"Deferring table drop for index","attr":{"index":"_id_","namespace":"free5gc.NfProfile","uuid":{"uuid":{"$uuid":"882da210-78d9-418e-858b-136d319b5974"}},"ident":"index-10--5304941707430600056","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.579+00:00"},"s":"I",  "c":"STORAGE",  "id":22214,   "ctx":"conn8","msg":"Deferring table drop for collection","attr":{"namespace":"free5gc.NfProfile","ident":"collection-4--5304941707430600056","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"10.100.200.7:50534","uuid":"c55d7b73-cfd2-4ca3-b567-c4e5d842ae42","connectionId":9,"connectionCount":8}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"10.100.200.7:50544","uuid":"36c0fcb0-0777-4437-b0d5-c153ccada161","connectionId":10,"connectionCount":7}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"10.100.200.7:50518","uuid":"e3bb9826-4304-4891-a575-a57a36954e4c","connectionId":7,"connectionCount":6}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":1850}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"10.100.200.7:50524","uuid":"19543f6b-7a04-40a0-8d72-2f08e77a7bd0","connectionId":8,"connectionCount":5}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"10.100.200.7:50512","uuid":"b11d6169-00f2-4e7f-b334-f96c55cd25c8","connectionId":6,"connectionCount":4}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"10.100.200.7:50510","uuid":"f5189e1d-73e9-4bf8-a25d-65e9d052aaca","connectionId":5,"connectionCount":3}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"10.100.200.7:50506","uuid":"fbd02ef9-75b7-40ad-9a23-e327ce6ce802","connectionId":4,"connectionCount":2}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn20","msg":"Connection ended","attr":{"remote":"10.100.200.7:39254","uuid":"661e47c6-26bd-4ba6-a651-4d1daf8b0fb5","connectionId":20,"connectionCount":1}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.581+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"10.100.200.7:50496","uuid":"4a6de280-d300-4e23-869a-4a74328f4564","connectionId":1,"connectionCount":0}}
+nrf exited with code 0
+nrf exited with code 0
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.767+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.767+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":0,"uid":0}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.767+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.767+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.775+00:00"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"SignalHandler","msg":"Attempting to enter quiesce mode"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.775+00:00"},"s":"I",  "c":"-",        "id":6371601, "ctx":"SignalHandler","msg":"Shutting down the FLE Crud thread pool"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.775+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.775+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.775+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"TENANT_M", "id":5093807, "ctx":"SignalHandler","msg":"Shutting down all TenantMigrationAccessBlockers on global shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"ASIO",     "id":22582,   "ctx":"MigrationUtil-TaskExecutor","msg":"Killing all outstanding egress activity."}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"COMMAND",  "id":4784923, "ctx":"SignalHandler","msg":"Shutting down the ServiceEntryPoint"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":20609,   "ctx":"SignalHandler","msg":"Shutting down free monitoring"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"SignalHandler","msg":"Shutting down the TTL monitor"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"INDEX",    "id":3684100, "ctx":"SignalHandler","msg":"Shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"INDEX",    "id":3684101, "ctx":"SignalHandler","msg":"Finished shutting down TTL collection monitor thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":6278511, "ctx":"SignalHandler","msg":"Shutting down the Change Stream Expired Pre-images Remover"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"CONTROL",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.776+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.777+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.778+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.794+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":16}}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.795+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.795+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.795+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.797+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+mongodb      | {"t":{"$date":"2023-06-15T08:23:06.797+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+mongodb exited with code 0
