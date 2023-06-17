@@ -26,6 +26,7 @@ fi
 if [ "$1" == "delete" ]
 then
         docker compose -f docker-compose-build.yaml rm
+	docker image prune --force
 fi
 
 if [ "$1" == "build" ]

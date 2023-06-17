@@ -8,11 +8,8 @@ STARTING_PORT=10000
 DEFAULT_BANDWIDTH="50m"
 
 rm gnodeb_docker_stats.log
-rm gnodeb_2_docker_stats.log
 
 docker stats gnodeb > gnodeb_docker_stats.log &
-docker stats gnodeb_2 > gnodeb_2_docker_stats.log &
-
 
 docker exec ue_1 bash -c "iperf -c http_server.com -B 10.70.0.1 -t 160 -u -b 25m -p 20001 > /dev/null" &
 
