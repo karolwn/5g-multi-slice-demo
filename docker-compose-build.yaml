@@ -89,26 +89,6 @@ services:
     depends_on:
       - free5gc-nrf
 
-  free5gc-amf-2:
-    container_name: amf_2
-    build:
-      context: ./nf_amf
-      args:
-        DEBUG_TOOLS: "false"
-    command: ./amf -c ./config/amfcfg.yaml
-    expose:
-      - "8000"
-    volumes:
-      - ./config/amfcfg_2.yaml:/free5gc/config/amfcfg.yaml
-    environment:
-      GIN_MODE: release
-    networks:
-      privnet:
-        aliases:
-          - amf2.free5gc.org
-    depends_on:
-      - free5gc-nrf
-
   free5gc-ausf:
     container_name: ausf
     build:
@@ -168,26 +148,6 @@ services:
           - pcf.free5gc.org
     depends_on:
       - free5gc-nrf
-
-  free5gc-pcf-2:
-    container_name: pcf_2
-    build:
-      context: ./nf_pcf
-      args:
-        DEBUG_TOOLS: "false"
-    command: ./pcf -c ./config/pcfcfg.yaml
-    expose:
-      - "8000"
-    volumes:
-      - ./config/pcfcfg_2.yaml:/free5gc/config/pcfcfg.yaml
-    environment:
-      GIN_MODE: release
-    networks:
-      privnet:
-        aliases:
-          - pcf2.free5gc.org
-    depends_on:
-      - free5gc-nrf        
 
   free5gc-smf:
     container_name: smf
@@ -354,8 +314,8 @@ services:
         aliases:
           - gnb2.free5gc.org
     depends_on:
-      - free5gc-amf-2
       - free5gc-upf-2
+      - free5gc-amf
 
   ueransim-ue_1:
     container_name: ue_1
@@ -377,7 +337,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -401,7 +360,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -425,7 +383,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -449,7 +406,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -473,7 +429,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -497,7 +452,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -521,7 +475,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -545,7 +498,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -569,7 +521,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -593,7 +544,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -617,7 +567,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -641,7 +590,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -665,7 +613,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
       
@@ -689,7 +636,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
@@ -713,7 +659,6 @@ services:
       - free5gc-amf
       - free5gc-upf
       - ueransim-gnodeb
-      - free5gc-amf-2
       - free5gc-upf-2
       - ueransim-gnodeb-2
 
