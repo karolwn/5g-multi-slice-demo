@@ -15,15 +15,24 @@ STARTING_PORT=10000
 #echo "ctrl-c to exit"
 # iperf -s -i 1 -u -e -l 999M -w 32K> iperf2_test.log
 
-iperf -s -i 1 -e -l 999M -w 999M -p 20001 > 1_ue_metrics_slice_2.log &
-
+if [[ ${1} -eq 2 ]]
+then
+	iperf -s -i 1 -e -l 999M -w 999M -p 20001 > ./testing_scripts/1_ue_metrics_slice_2.log &
+fi
 
 for i in $(seq ${NUMBER_OF_UE})
 do
-       port=$((STARTING_PORT + i))
-       echo "starting server on port ${port}"
-#       iperf -s -i 1 -u -e -l 999M -w 999M -p ${port} > ${i}_ue_metrics.log &
-       iperf -s -i 1 -e -p ${port} > ${i}_ue_metrics.log &
+	port=$((STARTING_PORT + i))
+	if [[ ${i} -eq 1  ]] &&  [[ ${1} -eq 2 ]]
+	then 
+		continue
+	else
+		echo "starting server on port ${port}"
+		# iperf -s -i 1 -u -e -l 999M -w 999M -p ${port} > ${i}_ue_metrics.log &
+       		iperf -s -i 1 -e -p ${port} > ./testing_scripts/${i}_ue_metrics.log &
+       		# iperf -s -i 1 -e -p ${port} &
+	fi
+
 done
 
 ps -a | grep iperf
