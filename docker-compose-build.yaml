@@ -11,6 +11,7 @@ services:
     volumes:
       - ./config/upfcfg.yaml:/free5gc/config/upfcfg.yaml
       - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+      - ./testing_scripts/:/free5gc/testing_scripts
     cap_add:
       - NET_ADMIN
     networks:
@@ -28,6 +29,7 @@ services:
     volumes:
       - ./config/upfcfg_1.yaml:/free5gc/config/upfcfg.yaml
       - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+      - ./testing_scripts/:/free5gc/testing_scripts
     cap_add:
       - NET_ADMIN
     networks:
@@ -45,6 +47,7 @@ services:
     volumes:
       - ./config/upfcfg_2.yaml:/free5gc/config/upfcfg.yaml
       - ./config/upf-iptables.sh:/free5gc/upf-iptables.sh
+      - ./testing_scripts/:/free5gc/testing_scripts
     cap_add:
       - NET_ADMIN
     networks:
